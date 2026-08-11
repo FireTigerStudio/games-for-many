@@ -1,0 +1,4 @@
+site,dr,traffic,contact,submission_url,type,status,date_submitted
+Sample Game Directory,0,0,editor@example.com,https://example.com/submit,directory,research,
+Sample Developer Site,0,0,developer@example.com,https://example.com/contact,developer-outreach,planned,
+Sample Community,0,0,moderator-contact,https://example.com/rules,community,rule-check,

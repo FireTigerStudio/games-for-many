@@ -1,0 +1,3 @@
+source_url,destination_url,status_code,reason,date_added,status
+/games/old-sample,/games/new-sample,301,slug-change,2026-08-10,planned
+/category/two-player-games,/category/2-player,301,category-normalization,2026-08-10,planned

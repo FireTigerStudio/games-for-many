@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+.DS_Store
+npm-debug.log*
+compliance/private/
+data/generated/
+.tmp_*/
+/*.csv
+/*.xlsx
+*.tsbuildinfo
+/bgames.com-sitemap.txt
