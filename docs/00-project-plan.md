@@ -54,6 +54,19 @@
 
 “免费游玩”“可 iframe”与“开源”是三件不同的事。任何游戏在进入 `games.csv` 前都要有 `license_status=verified` 的内部审核记录；阶段 1 的 CSV 模板会加入许可证据字段建议，但不会改变用户指定的核心字段。
 
+## 3.1 已确认的可扩展内容与 SEO 架构
+
+站点首发聚焦 two-player / multiplayer，但数据和页面架构必须能从 30–50 款扩展到数百款合规游戏。扩展方式不是把所有游戏堆在一个页面，也不是按每个关键词自动造页，而是使用统一游戏实体和多维分类：
+
+1. **玩家连接方式：** local 2-player、online 2-player、online with friends、random online multiplayer、local multiplayer、group/party；
+2. **游戏类型：** board、sports、racing、arcade/action、platform/parkour、puzzle/physics、trivia/party、card；
+3. **设备与输入：** same keyboard、same computer、separate devices、desktop/mobile、room code/invite link；
+4. **内容意图：** 分类页负责浏览和直接玩，Guide 负责比较和场景选择，游戏页负责指定游戏、controls 和 how-to-play。
+
+同一款游戏可进入一个主要玩家模式、一个主要类型和多个经过验证的属性集合；它仍然只有一个 canonical 游戏 URL。分类与集合页只有在库存和独有内容达到门槛时才索引。完整词簇与 URL 分工见 `docs/02-keyword-map.md`，页面模块见 `docs/04-content-templates.md`，生成与导入规则见 `docs/03-tech-architecture.md`。
+
+供给目标中的“数百款游戏”仅表示系统容量，不是自动发布目标。所有来源无论 API、feed 或手工录入，都必须经过授权、安全、功能试玩和编辑内容审核；未经批准的候选只存在于审核队列，不能生成可索引生产页。
+
 ## 4. 26 周路线图
 
 ### 月 1：定垂类、定证据、搭可验证骨架

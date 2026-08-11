@@ -22,6 +22,8 @@ export type Game = {
   gameplayType: "local" | "online" | "both";
   licenseStatus: "pending" | "verified" | "rejected";
   safetyStatus: "pending" | "approved" | "rejected";
+  adIntegrationStatus?: "unknown" | "sdk-detected" | "ad-observed" | "not-found";
+  adObservedDuringReview?: boolean;
   featured: boolean;
   publishedAt: string;
   reviewedAt: string;

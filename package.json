@@ -5,6 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "import:games": "node scripts/import-games.mjs",
+    "import:gamepix": "node scripts/import-games.mjs --source gamepix",
+    "screen:games": "node scripts/screen-candidates.mjs",
+    "playtest:list": "node scripts/generate-playtest-list.mjs",
+    "test:import-games": "node --test scripts/import-games.test.mjs",
+    "test:screen-games": "node --test scripts/screen-candidates.test.mjs",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"

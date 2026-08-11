@@ -61,6 +61,36 @@
 
 API key/secret 只保存在本地密码管理器；以后开发时由 Codex 指导放入 `.env.local`，现在不要发给我。
 
+### 3.1 GamePix JSON Feed 已确认可用
+
+2026-08-11 已使用 Publisher Dashboard 生成的真实 Feed 验证：
+
+`https://feeds.gamepix.com/v2/json?sid=I0IX7&pagination=12&page=1`
+
+- 请求成功返回 HTTP 200 和 JSON Feed 1.1；
+- `sid=I0IX7` 是 Publisher 归因参数，GamePix 后台明确要求不要删除或修改，否则会影响统计；
+- Feed 支持 JSON/XML、Quality 排序、每页数量和 Category；
+- 响应包含 `feed_url`、`next_url`、`first_page_url`、`last_page_url` 和 `items`；
+- 游戏字段包含 `id/title/namespace/description/category/orientation/quality_score/width/height/date_modified/date_published/banner_image/image/url`；
+- 每个 `url` 已包含 `sid=I0IX7` 的官方 `play.gamepix.com/.../embed` 地址；
+- 当前 All + Quality Feed 显示 1,117 页，每页 12 款，属于全目录而不是 multiplayer 专属目录。
+
+Feed 已能用于候选导入，但不得全量抓取和自动发布。当前第一页主要是单人 Match-3、2048 等游戏，与本站多人定位不匹配。应优先在 Dashboard 把 Category 调整为可用的 multiplayer/two-player 类别；如果后台没有对应类别，再小批分页抓取并用多人意图规则筛选。
+
+将完整 Feed URL 放入本地 `.env.local`：
+
+```text
+GAMEPIX_FEED_URL=https://feeds.gamepix.com/v2/json?sid=I0IX7&pagination=12&page=1
+```
+
+导入命令：
+
+```powershell
+npm run import:gamepix
+```
+
+输出只进入 `data/candidates/gamepix-import.json`。不删除 `sid`，不直接写入 `data/games.json`。
+
 ## 4. GameMonetize 手工冷启动（当前主线）
 
 账号已经建立，`gamesformany.com` 已添加，当前需要部署 ads.txt 并完成人工选品：
@@ -69,6 +99,34 @@ API key/secret 只保存在本地密码管理器；以后开发时由 Codex 指�
 - 游戏目录：https://gamemonetize.com/all-games.php
 
 不要根据 `2 Player` 标签一键全量导入。先筛 20 款候选，试玩后批准 10 款用于审核版 MVP；每款只使用 GameMonetize 官方详情页提供的 iframe。
+
+### 4.1 RSS/JSON Feed 已确认
+
+2026-08-11 已通过官方 RSS Builder 实测：Builder 和生成的 JSON feed 均可公开访问，不要求登录、token、account ID 或 Publisher ID。官方参数包括：
+
+- JSON：`format=json`
+- 2 Player：`category=2`
+- Multiplayer：`category=12`
+- Type：`type=html5`
+- Popularity：如 `popularity=newest`
+- Items：如 `amount=10`、`20`、`30`、`40`、`100` 或 All
+
+示例 Multiplayer feed：
+
+`https://gamemonetize.com/rssfeed.php?format=json&category=12&type=html5&popularity=newest&company=All&amount=10`
+
+实际响应是 JSON 数组，字段包含 `id`、`title`、`description`、`instructions`、`url`、`category`、`tags`、`thumb`、`width`、`height`。实测 `amount=10` 返回 11 条，因此导入程序不能依赖数量参数作为严格上限。
+
+Feed 只作为候选来源，不代表内容安全或适合本站。实测 Multiplayer feed 已出现未授权 IP 标签、聊天/上传、射击暴力和与目标定位不匹配的内容。程序必须先写入 `data/candidates/`，禁止直接写入 `data/games.json`。
+
+当前导入命令：
+
+```powershell
+$env:GAMEMONETIZE_FEED_URL='官方生成的 JSON feed URL'
+npm run import:games
+```
+
+生成结果：`data/candidates/gamemonetize-import.json`。所有记录默认 `approvalStatus=needs-review`、`licenseStatus=pending`、`safetyStatus=pending`，仍需逐款核对官方详情页和 Publisher 权限。
 
 ## 5. 建立首批 20 款候选清单（批准 10 款上线）
 

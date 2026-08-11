@@ -1,0 +1,99 @@
+{
+  "reviewedAt": "2026-08-11",
+  "scope": "GameMonetize priority playtest candidates",
+  "policy": "Supplier ad-revenue integration is required. User-approved candidates may be published after review.",
+  "results": [
+    {
+      "title": "Dominoes classic duel",
+      "decision": "candidate",
+      "playerModeObserved": "computer and online mode visible",
+      "adIntegrationStatus": "ad-observed",
+      "notes": "Loaded successfully. Google IMA advertisement frames were present. Online matchmaking still needs a second-player check."
+    },
+    {
+      "title": "Tic tac toe with AI and multiplayer",
+      "decision": "candidate",
+      "playerModeObserved": "local human vs human and human vs AI",
+      "adIntegrationStatus": "ad-observed",
+      "notes": "Loaded successfully with clear local two-player mode. No content or IP issue observed."
+    },
+    {
+      "title": "Turkish draughts",
+      "decision": "approved-published",
+      "playerModeObserved": "AI, two people on one device and online modes visible",
+      "adIntegrationStatus": "ad-observed",
+      "notes": "User confirmed English presentation, same-device multiplayer, and in-game ads on 2026-08-11."
+    },
+    {
+      "title": "Castle Wars: Legacy",
+      "decision": "approved-published",
+      "playerModeObserved": "online multiplayer claimed; login UI visible",
+      "adIntegrationStatus": "ad-observed",
+      "notes": "User confirmed guest play, multiplayer access, and in-game ads on 2026-08-11."
+    },
+    {
+      "title": "carrom pro",
+      "decision": "approved-published",
+      "playerModeObserved": "supplier claims pass-and-play; menu loaded",
+      "adIntegrationStatus": "ad-observed",
+      "notes": "User confirmed pass-and-play, no blocking account/download requirement, and in-game ads on 2026-08-11."
+    },
+    {
+      "title": "Jump Race",
+      "decision": "reject",
+      "playerModeObserved": "online leaderboard/game loaded",
+      "adIntegrationStatus": "sdk-detected",
+      "notes": "Visual design and character presentation are strongly child-directed for this site's positioning."
+    },
+    {
+      "title": "Would you Rather?",
+      "decision": "reject",
+      "playerModeObserved": "group prompt game",
+      "adIntegrationStatus": "not-reviewed",
+      "notes": "Supplier description explicitly includes dirty questions."
+    },
+    {
+      "title": "Weee...",
+      "decision": "reject",
+      "playerModeObserved": "unclear",
+      "adIntegrationStatus": "ad-observed",
+      "notes": "Actual pre-roll ad observed, but game metadata is extremely thin and the game exposes an external More Games link."
+    },
+    {
+      "title": "Air Hockey Glow: 2 Players",
+      "decision": "reject",
+      "playerModeObserved": "local two-player claimed",
+      "adIntegrationStatus": "ad-observed",
+      "notes": "Advertisement component loaded, but the embed exposed an unrelated external girls-category link."
+    },
+    {
+      "title": "Nightmare Runners",
+      "decision": "approved-published",
+      "playerModeObserved": "supplier claims local two-player and online/bots",
+      "adIntegrationStatus": "ad-observed",
+      "notes": "User confirmed loading, local multiplayer, suitable content, and in-game ads on 2026-08-11."
+    },
+    {
+      "title": "Gorilla Multiplayer",
+      "decision": "reject",
+      "playerModeObserved": "online multiplayer claimed",
+      "adIntegrationStatus": "unconfirmed",
+      "notes": "Strong child-directed visual presentation, possible Gorilla Tag-style brand risk and slow loading."
+    },
+    {
+      "title": "Gang Fall Party",
+      "decision": "approved-published",
+      "playerModeObserved": "supplier claims local two-player and online multiplayer",
+      "adIntegrationStatus": "ad-observed",
+      "notes": "User confirmed local and online multiplayer, acceptable cartoon violence, safe links, and in-game ads on 2026-08-11."
+    },
+    {
+      "title": "Shipnt.io",
+      "decision": "reject",
+      "playerModeObserved": "online co-op claimed",
+      "adIntegrationStatus": "not-reviewed",
+      "notes": "Supplier tags explicitly include kids, which conflicts with the site positioning."
+    }
+  ],
+  "userPlaytest": []
+}
