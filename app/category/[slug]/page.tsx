@@ -9,7 +9,10 @@ import type { GameCategory } from "@/lib/types";
 export function generateStaticParams() { return categories.map((category) => ({ slug: category.slug })); }
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const category = categories.find((item) => item.slug === params.slug);
-  return category ? pageMetadata(`${category.title} Games`, category.description, `/category/${category.slug}/`) : {};
+  if (!category) return {};
+  const metadata = pageMetadata(`${category.title} Games`, category.description, `/category/${category.slug}/`);
+  if (getGamesByCategory(category.slug).length < 2) metadata.robots = { index: false, follow: true };
+  return metadata;
 }
 export default function CategoryPage({ params }: { params: { slug: string } }) {
   const category = categories.find((item) => item.slug === params.slug);

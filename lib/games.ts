@@ -28,19 +28,31 @@ export function getGame(slug: string): Game | undefined {
 }
 
 export function getGamesByCategory(category: GameCategory): Game[] {
-  return allGames.filter((game) => game.category === category);
+  return getPublishableGames().filter((game) => game.category === category);
 }
 
 export function getGamesByTag(tag: string): Game[] {
-  return allGames.filter((game) => game.tags.includes(tag));
+  return getPublishableGames().filter((game) => game.tags.includes(tag));
 }
 
 export function getAllTags(): string[] {
-  return Array.from(new Set(allGames.flatMap((game) => game.tags))).sort();
+  return Array.from(new Set(getPublishableGames().flatMap((game) => game.tags))).sort();
+}
+
+export function getActiveCategories(): Category[] {
+  return categories.filter((category) => getGamesByCategory(category.slug).length > 0);
+}
+
+export function getIndexableCategories(): Category[] {
+  return categories.filter((category) => getGamesByCategory(category.slug).length >= 2);
+}
+
+export function getIndexableTags(): string[] {
+  return getAllTags().filter((tag) => getGamesByTag(tag).length >= 2);
 }
 
 export function getRelatedGames(game: Game, limit = 4): Game[] {
-  return allGames
+  return getPublishableGames()
     .filter((candidate) => candidate.slug !== game.slug)
     .sort((a, b) => {
       const aScore = a.tags.filter((tag) => game.tags.includes(tag)).length;

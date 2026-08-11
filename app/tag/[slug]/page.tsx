@@ -6,7 +6,12 @@ import { getAllTags, getGamesByTag } from "@/lib/games";
 import { pageMetadata } from "@/lib/metadata";
 
 export function generateStaticParams() { return getAllTags().map((slug) => ({ slug })); }
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata { return getAllTags().includes(params.slug) ? pageMetadata(`${params.slug.replaceAll("-", " ")} games`, `Browse reviewed ${params.slug.replaceAll("-", " ")} browser games.`, `/tag/${params.slug}/`) : {}; }
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  if (!getAllTags().includes(params.slug)) return {};
+  const metadata = pageMetadata(`${params.slug.replaceAll("-", " ")} games`, `Browse reviewed ${params.slug.replaceAll("-", " ")} browser games.`, `/tag/${params.slug}/`);
+  if (getGamesByTag(params.slug).length < 2) metadata.robots = { index: false, follow: true };
+  return metadata;
+}
 export default function TagPage({ params }: { params: { slug: string } }) {
   if (!getAllTags().includes(params.slug)) notFound();
   const games = getGamesByTag(params.slug);

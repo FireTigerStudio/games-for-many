@@ -1,10 +1,11 @@
 import { AdSlot } from "@/components/AdSlot";
 import { CategoryGrid } from "@/components/CategoryGrid";
 import { GameCard } from "@/components/GameCard";
-import { categories, getPublishableGames } from "@/lib/games";
+import { getActiveCategories, getPublishableGames } from "@/lib/games";
 
 export default function HomePage() {
   const games = getPublishableGames();
+  const categories = getActiveCategories();
   return (
     <div className="page-shell">
       <section className="rounded-3xl bg-gradient-to-br from-violet-800 to-indigo-950 px-6 py-14 text-white sm:px-10">
