@@ -30,7 +30,8 @@ export type Game = {
 };
 
 export type Category = {
-  slug: GameCategory;
+  slug: string;
   title: string;
   description: string;
+  longDescription?: string;
 };

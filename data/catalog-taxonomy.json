@@ -1,0 +1,955 @@
+{
+  "updatedAt": "2026-08-12",
+  "total": 62,
+  "games": [
+    {
+      "slug": "bounce-path-multiplayer",
+      "title": "Bounce Path Multiplayer",
+      "primaryGenre": "multiplayer",
+      "playerMode": "online",
+      "playerCount": "1+",
+      "collectionSignals": [
+        "multiplayer",
+        "puzzle",
+        "physics",
+        "mouse",
+        "touch"
+      ]
+    },
+    {
+      "slug": "ninja-parkour-multiplayer",
+      "title": "Ninja Parkour Multiplayer",
+      "primaryGenre": "multiplayer",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "multiplayer",
+        "parkour",
+        "platformer",
+        "racing",
+        "keyboard"
+      ]
+    },
+    {
+      "slug": "multiplayer-pong",
+      "title": "Multiplayer Pong",
+      "primaryGenre": "multiplayer",
+      "playerMode": "online",
+      "playerCount": "2",
+      "collectionSignals": [
+        "multiplayer",
+        "arcade",
+        "pong",
+        "ball",
+        "mouse"
+      ]
+    },
+    {
+      "slug": "darts-pro-multiplayer",
+      "title": "Darts Pro Multiplayer",
+      "primaryGenre": "sports",
+      "playerMode": "both",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "multiplayer",
+        "sports",
+        "darts",
+        "skill",
+        "mouse",
+        "touch"
+      ]
+    },
+    {
+      "slug": "master-checkers-multiplayer",
+      "title": "Master Checkers Multiplayer",
+      "primaryGenre": "2-player",
+      "playerMode": "both",
+      "playerCount": "2",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "board",
+        "checkers",
+        "strategy",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "tic-tac-toe-pro-multiplayer-challenge",
+      "title": "Tic Tac Toe Pro - Multiplayer Challenge",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "board",
+        "tic-tac-toe",
+        "strategy",
+        "casual"
+      ]
+    },
+    {
+      "slug": "nightmare-runners",
+      "title": "Nightmare Runners",
+      "primaryGenre": "2-player",
+      "playerMode": "both",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "running",
+        "obstacle-course",
+        "party",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "gang-fall-party",
+      "title": "Gang Fall Party",
+      "primaryGenre": "party",
+      "playerMode": "both",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "party",
+        "fighting",
+        "arena",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "castle-wars-legacy",
+      "title": "Castle Wars: Legacy",
+      "primaryGenre": "card",
+      "playerMode": "online",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "multiplayer",
+        "card",
+        "strategy",
+        "castle",
+        "online",
+        "turn-based"
+      ]
+    },
+    {
+      "slug": "carrom-pro",
+      "title": "Carrom Pro",
+      "primaryGenre": "2-player",
+      "playerMode": "local",
+      "playerCount": "1-2",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "board",
+        "carrom",
+        "sports",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "turkish-draughts",
+      "title": "Turkish Draughts",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "1-2",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "board",
+        "draughts",
+        "strategy",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "dominoes-classic-duel",
+      "title": "Dominoes classic duel",
+      "primaryGenre": "party",
+      "playerMode": "online",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "party",
+        "multiplayer",
+        "2-player",
+        "2-player-games",
+        "board",
+        "classic",
+        "two-player-games",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "tic-tac-toe-with-ai-and-multiplayer",
+      "title": "Tic tac toe with AI and multiplayer",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "2d",
+        "online"
+      ]
+    },
+    {
+      "slug": "music-night-battle-rhythm-game",
+      "title": "Music Night Battle: Rhythm Game",
+      "primaryGenre": "party",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "party",
+        "multiplayer",
+        "arcade",
+        "music",
+        "online"
+      ]
+    },
+    {
+      "slug": "greedy-snake-multiplayer-duel",
+      "title": "Greedy Snake Multiplayer Duel",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "battle",
+        "best-games",
+        "online"
+      ]
+    },
+    {
+      "slug": "battle-jitsu",
+      "title": "Battle Jitsu",
+      "primaryGenre": "card",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "battle",
+        "online"
+      ]
+    },
+    {
+      "slug": "mcatlants",
+      "title": "MCATLANTS",
+      "primaryGenre": "2-player",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "2d",
+        "adventure",
+        "animal",
+        "best-games",
+        "block",
+        "boy"
+      ]
+    },
+    {
+      "slug": "black-and-white-stickman",
+      "title": "Black and White Stickman",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "2-player-games",
+        "2d",
+        "3d",
+        "adventure",
+        "animal",
+        "arcade"
+      ]
+    },
+    {
+      "slug": "duo-water-and-fire",
+      "title": "Duo Water and Fire",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "2-player-games",
+        "2d",
+        "action",
+        "adventure",
+        "arcade",
+        "fire"
+      ]
+    },
+    {
+      "slug": "kingdom-of-toilets",
+      "title": "Kingdom of Toilets",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "2-player-games",
+        "2d",
+        "skibidi",
+        "skibidi-toilet",
+        "online"
+      ]
+    },
+    {
+      "slug": "table-pong",
+      "title": "Table Pong",
+      "primaryGenre": "sports",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "sports",
+        "multiplayer",
+        "2-player-games",
+        "ball",
+        "mobile",
+        "tennis",
+        "local-multiplayer",
+        "2-player"
+      ]
+    },
+    {
+      "slug": "fish-eat-getting-big",
+      "title": "Fish Eat Getting Big",
+      "primaryGenre": "io",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "io-games",
+        "2-player",
+        "2-player-games",
+        "animal",
+        "arena",
+        "fish"
+      ]
+    },
+    {
+      "slug": "lines-to-fills-online",
+      "title": "Lines to Fills Online",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "block",
+        "color",
+        "puzzle",
+        "online"
+      ]
+    },
+    {
+      "slug": "pingpong-dot",
+      "title": "Pingpong Dot",
+      "primaryGenre": "sports",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "sports",
+        "multiplayer",
+        "2-player",
+        "2-player-games",
+        "online"
+      ]
+    },
+    {
+      "slug": "sort-them-all-game",
+      "title": "SORT THEM ALL GAME",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "io-games",
+        "online"
+      ]
+    },
+    {
+      "slug": "checkers-dames",
+      "title": "CHECKERS - Dames",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "2-player-games",
+        "html5",
+        "mobile",
+        "online"
+      ]
+    },
+    {
+      "slug": "color-block",
+      "title": "Color Block",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "2d",
+        "online"
+      ]
+    },
+    {
+      "slug": "neon-water",
+      "title": "Neon Water",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "2d",
+        "action",
+        "online"
+      ]
+    },
+    {
+      "slug": "disco-sheep",
+      "title": "Disco Sheep",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "2-player-games",
+        "online"
+      ]
+    },
+    {
+      "slug": "viking-tomahawk",
+      "title": "Viking Tomahawk",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "io-games",
+        "2-player",
+        "avoid",
+        "killing",
+        "online"
+      ]
+    },
+    {
+      "slug": "brush-cat-challenge",
+      "title": "Brush Cat Challenge",
+      "primaryGenre": "multiplayer",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "multiplayer",
+        "animal",
+        "casual",
+        "cat",
+        "online"
+      ]
+    },
+    {
+      "slug": "brainrot-bridge-race-3d",
+      "title": "Brainrot Bridge Race 3D",
+      "primaryGenre": "party",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "party",
+        "multiplayer",
+        "battle",
+        "brainrot",
+        "racing",
+        "running",
+        "online"
+      ]
+    },
+    {
+      "slug": "whot-the-ultimate-nigerian-card-game",
+      "title": "WHOT The Ultimate Nigerian Card Game",
+      "primaryGenre": "card",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "1-player",
+        "2-player-games",
+        "2025-games",
+        "online"
+      ]
+    },
+    {
+      "slug": "clonium",
+      "title": "Clonium",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "1-player",
+        "2-player-games",
+        "2025-games",
+        "2d",
+        "ai-games",
+        "android"
+      ]
+    },
+    {
+      "slug": "paws-off-my-clues",
+      "title": "Paws Off My Clues!",
+      "primaryGenre": "multiplayer",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "multiplayer",
+        "cat",
+        "hidden",
+        "online"
+      ]
+    },
+    {
+      "slug": "tung-sahur-io",
+      "title": "Tung Sahur IO",
+      "primaryGenre": "io",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "airplane",
+        "avoid",
+        "battle",
+        "collecting",
+        "escape",
+        "fly"
+      ]
+    },
+    {
+      "slug": "sunny-fields",
+      "title": "Sunny Fields",
+      "primaryGenre": "card",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "arcade",
+        "balance",
+        "best-games",
+        "brain",
+        "build",
+        "builder"
+      ]
+    },
+    {
+      "slug": "color-path-io",
+      "title": "Color Path IO",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "io-games",
+        "3d",
+        "3d-games",
+        "color",
+        "running",
+        "unity3d"
+      ]
+    },
+    {
+      "slug": "billiard-champion",
+      "title": "Billiard Champion",
+      "primaryGenre": "sports",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "sports",
+        "multiplayer",
+        "billiard",
+        "simulation",
+        "online"
+      ]
+    },
+    {
+      "slug": "board-kings-board-dice",
+      "title": "Board Kings Board Dice",
+      "primaryGenre": "multiplayer",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "multiplayer",
+        "simulation",
+        "online"
+      ]
+    },
+    {
+      "slug": "ballon-race-3d",
+      "title": "Ballon Race 3D",
+      "primaryGenre": "multiplayer",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "multiplayer",
+        "fly",
+        "hypercasual",
+        "racing",
+        "running",
+        "online"
+      ]
+    },
+    {
+      "slug": "fish-eat-fish-2",
+      "title": "Fish Eat Fish 2",
+      "primaryGenre": "party",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "party",
+        "multiplayer",
+        "animal",
+        "fish",
+        "html5",
+        "local-multiplayer",
+        "2-player"
+      ]
+    },
+    {
+      "slug": "imposter-duck-online",
+      "title": "imposter Duck: Online",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "io-games",
+        "1-player",
+        "2d",
+        "action",
+        "adventure",
+        "arcade"
+      ]
+    },
+    {
+      "slug": "drunken-duel-2-players",
+      "title": "Drunken Duel 2 Players",
+      "primaryGenre": "party",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "party",
+        "multiplayer",
+        "shoot",
+        "online"
+      ]
+    },
+    {
+      "slug": "rocketcar-cup",
+      "title": "Rocketcar Cup",
+      "primaryGenre": "sports",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "sports",
+        "multiplayer",
+        "io",
+        "io-games",
+        "1-player",
+        "2-player",
+        "2-player-games",
+        "2d"
+      ]
+    },
+    {
+      "slug": "growwars-io",
+      "title": "GrowWars.io",
+      "primaryGenre": "io",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "io-games",
+        "1-player",
+        "2-player",
+        "2-player-games",
+        "action",
+        "arena"
+      ]
+    },
+    {
+      "slug": "aqua-dogy",
+      "title": "Aqua Dogy",
+      "primaryGenre": "2-player",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "1-player",
+        "2d",
+        "adventure",
+        "android",
+        "animal",
+        "arcade"
+      ]
+    },
+    {
+      "slug": "aquapark-balls-party",
+      "title": "Aquapark Balls Party",
+      "primaryGenre": "sports",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "sports",
+        "multiplayer",
+        "io",
+        "1-player",
+        "2-player",
+        "2-player-games",
+        "3d",
+        "3d-games"
+      ]
+    },
+    {
+      "slug": "nail-art-game",
+      "title": "Nail Art Game",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "1-player",
+        "online"
+      ]
+    },
+    {
+      "slug": "angela-tom-perfect-valentine",
+      "title": "Angela Tom Perfect Valentine",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "1-player",
+        "online"
+      ]
+    },
+    {
+      "slug": "backgammonia-online-backgammon-game",
+      "title": "Backgammonia - online backgammon game",
+      "primaryGenre": "2-player",
+      "playerMode": "both",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "1-player",
+        "2-player-games",
+        "board",
+        "classic",
+        "html5",
+        "mobile"
+      ]
+    },
+    {
+      "slug": "jungle-fight",
+      "title": "Jungle Fight",
+      "primaryGenre": "party",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "party",
+        "multiplayer",
+        "1-player",
+        "adventure",
+        "amazing",
+        "best-games",
+        "fighting",
+        "free-games-for-your-site"
+      ]
+    },
+    {
+      "slug": "salon-beauty-makeup",
+      "title": "Salon Beauty Makeup",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "1-player",
+        "online"
+      ]
+    },
+    {
+      "slug": "popaloon",
+      "title": "popaloon",
+      "primaryGenre": "2-player",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "action",
+        "cartoon",
+        "casual",
+        "defense",
+        "endless",
+        "first-person-shooter"
+      ]
+    },
+    {
+      "slug": "pga3-zombie",
+      "title": "PGA3 Zombie",
+      "primaryGenre": "multiplayer",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "multiplayer",
+        "mentolatux",
+        "pixel",
+        "shooting",
+        "unity",
+        "webgl",
+        "zombie",
+        "online"
+      ]
+    },
+    {
+      "slug": "iron-legion",
+      "title": "Iron Legion",
+      "primaryGenre": "party",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "party",
+        "multiplayer",
+        "3d",
+        "action",
+        "battle",
+        "driving",
+        "military",
+        "online"
+      ]
+    },
+    {
+      "slug": "speen",
+      "title": "Speen",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "io-games",
+        "casual",
+        "online"
+      ]
+    },
+    {
+      "slug": "quiz-runner-io",
+      "title": "Quiz Runner.io",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "io-games",
+        "arcade",
+        "brain",
+        "educational",
+        "html5-games",
+        "online"
+      ]
+    },
+    {
+      "slug": "pga-toons",
+      "title": "PGA Toons",
+      "primaryGenre": "party",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "party",
+        "multiplayer",
+        "fps",
+        "mentolatux",
+        "pixel",
+        "shooting",
+        "unity-games",
+        "webgl"
+      ]
+    },
+    {
+      "slug": "guardz-io",
+      "title": "Guardz IO",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "io-games",
+        "action",
+        "amazing",
+        "highscore",
+        "shooter",
+        "shooting"
+      ]
+    },
+    {
+      "slug": "snake-war-multiplayer",
+      "title": "Snake War Multiplayer",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "3d-games",
+        "action",
+        "arcade",
+        "best-games",
+        "mobile",
+        "slither"
+      ]
+    },
+    {
+      "slug": "survev-io",
+      "title": "Survev.io",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "2+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "battle",
+        "shoot-em-up",
+        "shooter",
+        "online"
+      ]
+    }
+  ]
+}

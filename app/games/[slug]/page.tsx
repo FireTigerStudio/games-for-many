@@ -39,7 +39,7 @@ export default function GamePage({ params }: { params: { slug: string } }) {
   return (
     <div className="page-shell">
       <SEOHead data={schema} />
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Games", href: "/category/2-player/" }, { label: game.title }]} />
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Games", href: game.gameplayType === "local" ? "/category/local-2-player/" : "/category/multiplayer/" }, { label: game.title }]} />
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_300px]">
         <article>
           <h1 className="text-4xl font-black tracking-tight text-slate-950">{game.title}</h1>

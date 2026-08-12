@@ -4,7 +4,8 @@ import { GameCard } from "@/components/GameCard";
 import { getActiveCategories, getPublishableGames } from "@/lib/games";
 
 export default function HomePage() {
-  const games = getPublishableGames();
+  const allGames = getPublishableGames();
+  const games = [...allGames.filter((game) => game.featured), ...allGames.filter((game) => !game.featured)].slice(0, 12);
   const categories = getActiveCategories();
   return (
     <div className="page-shell">
@@ -18,6 +19,7 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold text-slate-950" id="featured-heading">Editor picks</h2>
         <p className="mt-2 text-slate-600">Officially embedded HTML5 games selected for multiplayer fit and audience safety.</p>
         <div className="game-grid mt-6">{games.map((game) => <GameCard game={game} key={game.slug} />)}</div>
+        <p className="mt-6 text-sm text-slate-600">Browse the categories below to explore all {allGames.length} reviewed games.</p>
       </section>
       <section aria-labelledby="categories-heading" className="mt-14">
         <h2 className="text-3xl font-bold text-slate-950" id="categories-heading">Browse game categories</h2>
