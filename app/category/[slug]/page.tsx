@@ -26,6 +26,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
   const isLocal = category.slug === "local-2-player";
   const isOnlineTwoPlayer = category.slug === "online-2-player";
   const isMultiplayer = category.slug === "multiplayer";
+  const isParty = category.slug === "party";
   const faq = isLocal ? [
     { question: "Can two people play these games on one computer?", answer: "Yes. Every game in this collection has reviewed evidence of local multiplayer through a shared keyboard, shared screen, mouse or pass-and-play controls." },
     { question: "Do local two-player games need an account?", answer: "The local modes in this collection can be started on the shared device without creating a separate account for each player. Individual games may still show optional online features." },
@@ -44,7 +45,13 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
     { question: "Are all multiplayer games designed for more than two people?", answer: "No. Multiplayer is the broad collection and includes head-to-head games as well as larger rooms, teams, co-op modes and public arenas. Use the online two-player category when you specifically want a duel." },
     { question: "Do these games require a download?", answer: "No. The listed games launch through reviewed HTML5 browser embeds. A game may still have its own loading screen, matchmaking step or optional account features." }
   ] : [];
-  const schema = (isLocal || isOnlineTwoPlayer || isMultiplayer) ? { "@context": "https://schema.org", "@type": "CollectionPage", name: `${category.title} Games`, url: `${siteConfig.url}/category/${category.slug}/`, description: category.description, mainEntity: { "@type": "ItemList", numberOfItems: getGamesByCategory(category.slug).length, itemListElement: games.map((game, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteConfig.url}/games/${game.slug}/`, name: game.title })) } } : null;
+  const partyFaq = isParty ? [
+    { question: "What makes a browser game good for a party?", answer: "Party games should be quick to understand, easy to restart and entertaining for people watching as well as playing. Short races, simple duels and shared-screen action work especially well." },
+    { question: "Can party games be played on one computer?", answer: "Many games in this collection support shared-keyboard or shared-screen play. Others use online matches, so check the local or online label on each card and the controls on its game page." },
+    { question: "How many people can play these party games?", answer: "The collection includes two-player games, three-player shared-device games and larger online matches. Player counts and control arrangements are listed on individual game pages." },
+    { question: "Are party games always competitive?", answer: "No. Many are competitive races or duels, but cooperative games can also work for a party when players communicate, take turns or try to beat a shared challenge." }
+  ] : [];
+  const schema = (isLocal || isOnlineTwoPlayer || isMultiplayer || isParty) ? { "@context": "https://schema.org", "@type": "CollectionPage", name: `${category.title} Games`, url: `${siteConfig.url}/category/${category.slug}/`, description: category.description, mainEntity: { "@type": "ItemList", numberOfItems: getGamesByCategory(category.slug).length, itemListElement: games.map((game, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteConfig.url}/games/${game.slug}/`, name: game.title })) } } : null;
   return (
     <div className="page-shell">
       {schema && <SEOHead data={schema} />}
@@ -79,6 +86,15 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
         <h2>How this collection is reviewed</h2><p>Supplier categories are not accepted as proof by themselves. A game must show a real online player mode during review or describe one clearly in its verified gameplay information. AI practice can be included as an extra mode, but an AI-only game does not qualify. For two people sharing one device, browse <Link href="/category/local-2-player/">local two-player games</Link>.</p>
         <h2>Related guide</h2><p>See our <Link href="/blog/best-2-player-browser-games/">browser game testing guide</Link> for the control, player-mode, embedding and safety checks used across the catalog.</p>
         <h2>Frequently asked questions</h2>{multiplayerFaq.map((item) => <div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
+      </section>}
+      {isParty && <section className="prose-copy mt-14">
+        <h2>How to choose a party game</h2><p>Pick a game that matches where everyone is sitting and how quickly the group wants to start. Shared-keyboard games are best when players are together, while online races and arenas suit separate devices. Simple controls and short rounds make it easier to rotate players without a long tutorial.</p>
+        <h2>Quick games for two people</h2><p><Link href="/games/table-pong/">Table Pong</Link> and <Link href="/games/drunken-duel-2-players/">Drunken Duel 2 Players</Link> use compact controls and short head-to-head rounds. <Link href="/games/music-night-battle-rhythm-game/">Music Night Battle</Link> is a faster online option for players who prefer timing and score competition.</p>
+        <h2>Shared-screen games for three players</h2><p><Link href="/games/fish-eat-getting-big/">Fish Eat Getting Big</Link> and <Link href="/games/fish-eat-fish-2/">Fish Eat Fish 2</Link> document controls for up to three people on one device. Two players use separate keyboard layouts and the third uses the mouse, making them practical when an extra person wants to join.</p>
+        <h2>Races and knockout matches</h2><p><Link href="/games/nightmare-runners/">Nightmare Runners</Link>, <Link href="/games/gang-fall-party/">Gang Fall Party</Link>, <Link href="/games/aquapark-balls-party/">Aquapark Balls Party</Link> and <Link href="/games/brainrot-bridge-race-3d/">Brainrot Bridge Race 3D</Link> create more visible competition through obstacle courses, knockouts or races. These are useful when spectators want to follow the result without learning detailed rules.</p>
+        <h2>Local or online party play?</h2><p>Use the <Link href="/category/local-2-player/">local two-player collection</Link> when everyone is sharing one device. Choose <Link href="/category/multiplayer/">multiplayer games</Link> for public rooms and larger online matches, or <Link href="/category/online-2-player/">online two-player games</Link> for a remote duel.</p>
+        <h2>Related guide</h2><p>Our <Link href="/blog/best-2-player-browser-games/">two-player browser game testing guide</Link> explains how we verify controls, player modes, official embeds and audience safety before including a game.</p>
+        <h2>Frequently asked questions</h2>{partyFaq.map((item) => <div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
       </section>}
     </div>
   );

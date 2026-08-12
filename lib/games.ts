@@ -63,6 +63,18 @@ const verifiedMultiplayerSlugs = new Set([
   "survev-io"
 ]);
 
+const verifiedPartySlugs = new Set([
+  "nightmare-runners",
+  "gang-fall-party",
+  "music-night-battle-rhythm-game",
+  "brainrot-bridge-race-3d",
+  "fish-eat-getting-big",
+  "fish-eat-fish-2",
+  "drunken-duel-2-players",
+  "table-pong",
+  "aquapark-balls-party"
+]);
+
 export function getAllGames(): Game[] {
   return allGames;
 }
@@ -82,7 +94,7 @@ export function getGamesByCategory(category: string): Game[] {
     if (category === "local-2-player") return game.gameplayType === "local" || game.gameplayType === "both";
     if (category === "online-2-player") return verifiedOnlineTwoPlayerSlugs.has(game.slug);
     if (category === "multiplayer") return verifiedMultiplayerSlugs.has(game.slug);
-    if (category === "party") return game.category === "party" || game.tags.includes("party");
+    if (category === "party") return verifiedPartySlugs.has(game.slug);
     if (category === "board-card") return ["card"].includes(game.category) || game.tags.some((tag) => ["board", "card", "checkers", "draughts", "dominoes"].includes(tag));
     if (category === "sports-racing") return game.category === "sports" || game.tags.some((tag) => ["sports", "racing", "football", "soccer", "billiard", "pong", "tennis"].includes(tag));
     if (category === "io-arena") return game.category === "io" || game.tags.some((tag) => ["io", "io-games", "arena"].includes(tag));
