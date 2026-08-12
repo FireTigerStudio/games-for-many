@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-08-12",
-  "total": 62,
+  "total": 94,
   "games": [
     {
       "slug": "bounce-path-multiplayer",
@@ -949,6 +949,412 @@
         "shoot-em-up",
         "shooter",
         "online"
+      ]
+    },
+    {
+      "slug": "ultimate-flying-car",
+      "title": "Ultimate Flying Car",
+      "primaryGenre": "sports",
+      "playerMode": "local",
+      "playerCount": "1-2",
+      "collectionSignals": [
+        "sports",
+        "racing",
+        "multiplayer",
+        "2-player",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "drunken-boxing-2",
+      "title": "Drunken Boxing 2",
+      "primaryGenre": "2-player",
+      "playerMode": "local",
+      "playerCount": "1-2",
+      "collectionSignals": [
+        "2-player",
+        "fighting",
+        "multiplayer",
+        "local-multiplayer",
+        "arcade"
+      ]
+    },
+    {
+      "slug": "kobadoo-emojis",
+      "title": "Kobadoo Emojis",
+      "primaryGenre": "party",
+      "playerMode": "local",
+      "playerCount": "1+",
+      "collectionSignals": [
+        "party",
+        "memory",
+        "multiplayer",
+        "trivia",
+        "casual"
+      ]
+    },
+    {
+      "slug": "kobadoo-shapes",
+      "title": "Kobadoo Shapes",
+      "primaryGenre": "party",
+      "playerMode": "local",
+      "playerCount": "1+",
+      "collectionSignals": [
+        "party",
+        "memory",
+        "multiplayer",
+        "trivia",
+        "casual"
+      ]
+    },
+    {
+      "slug": "cerkio",
+      "title": "Cerkio",
+      "primaryGenre": "party",
+      "playerMode": "local",
+      "playerCount": "1+",
+      "collectionSignals": [
+        "party",
+        "ball",
+        "multiplayer",
+        "timing",
+        "casual"
+      ]
+    },
+    {
+      "slug": "multiplayer-forest-survive",
+      "title": "Multiplayer Forest Survive",
+      "primaryGenre": "multiplayer",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "multiplayer",
+        "survival",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "neon-king-a-local-multiplayer-platformer",
+      "title": "Neon King - A local multiplayer Platformer",
+      "primaryGenre": "2-player",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "pixel",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "chess-multiplayer-online",
+      "title": "Chess Multiplayer Online",
+      "primaryGenre": "card",
+      "playerMode": "online",
+      "playerCount": "1+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "chess",
+        "online"
+      ]
+    },
+    {
+      "slug": "ludo-game-multiplayer",
+      "title": "Ludo Game Multiplayer",
+      "primaryGenre": "card",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "board",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "duo-with-online-friends-multiplayer-card-game",
+      "title": "DUO With Friends - Multiplayer Card Game",
+      "primaryGenre": "card",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "bowling-hero-multiplayer",
+      "title": "Bowling Hero Multiplayer",
+      "primaryGenre": "sports",
+      "playerMode": "both",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "sports",
+        "multiplayer",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "reversi-multiplayer",
+      "title": "Reversi Multiplayer",
+      "primaryGenre": "card",
+      "playerMode": "both",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "board",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "straight-4-multiplayer",
+      "title": "Straight 4 Multiplayer",
+      "primaryGenre": "card",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "board",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "goose-game-multiplayer",
+      "title": "Goose Game Multiplayer",
+      "primaryGenre": "card",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "board",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "cellular-war-online-multiplayer",
+      "title": "Cellular War - Online Multiplayer",
+      "primaryGenre": "io",
+      "playerMode": "online",
+      "playerCount": "1+",
+      "collectionSignals": [
+        "io",
+        "multiplayer",
+        "online"
+      ]
+    },
+    {
+      "slug": "survival-on-raft-multiplayer",
+      "title": "Survival On Raft Multiplayer",
+      "primaryGenre": "multiplayer",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "multiplayer",
+        "survival",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "4-colors-multiplayer",
+      "title": "4 Colors Multiplayer",
+      "primaryGenre": "card",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "rock-paper-scissors-multiplayer",
+      "title": "Rock Paper Scissors Multiplayer",
+      "primaryGenre": "card",
+      "playerMode": "online",
+      "playerCount": "1+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "board",
+        "online"
+      ]
+    },
+    {
+      "slug": "battleship-war-multiplayer",
+      "title": "Battleship War Multiplayer",
+      "primaryGenre": "card",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "brain",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "rage-jump-multiplayer-physics-frenzy",
+      "title": "Rage Jump Multiplayer Physics Frenzy",
+      "primaryGenre": "multiplayer",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "multiplayer",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "snake-and-ladders-multiplayer",
+      "title": "Snakes and Ladders Multiplayer",
+      "primaryGenre": "card",
+      "playerMode": "online",
+      "playerCount": "1+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "snake",
+        "online"
+      ]
+    },
+    {
+      "slug": "domino-online-multiplayer",
+      "title": "Domino Online Multiplayer",
+      "primaryGenre": "card",
+      "playerMode": "online",
+      "playerCount": "1+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "board",
+        "online"
+      ]
+    },
+    {
+      "slug": "multiplayer-cooking-coop",
+      "title": "Multiplayer Cooking Coop",
+      "primaryGenre": "party",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "party",
+        "multiplayer",
+        "cooking",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "last-card-multiplayer",
+      "title": "Last Card Multiplayer",
+      "primaryGenre": "card",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "online-cats-multiplayer-park",
+      "title": "Online Cats Multiplayer Park",
+      "primaryGenre": "multiplayer",
+      "playerMode": "online",
+      "playerCount": "1+",
+      "collectionSignals": [
+        "multiplayer",
+        "adventure",
+        "online"
+      ]
+    },
+    {
+      "slug": "8-ball-pool-multiplayer",
+      "title": "8 Ball Pool Multiplayer",
+      "primaryGenre": "card",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "card",
+        "multiplayer",
+        "board",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "penalty-challenge-multiplayer",
+      "title": "Penalty Kick",
+      "primaryGenre": "sports",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "sports",
+        "multiplayer",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "worlds-4-a-multiplayer-platformer",
+      "title": "Worlds 4",
+      "primaryGenre": "multiplayer",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "multiplayer",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "the-quest-arena-multiplayer",
+      "title": "The Quest Arena",
+      "primaryGenre": "multiplayer",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "multiplayer",
+        "battle-royale",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "red-vs-blue-multiplayer",
+      "title": "Red VS Blue",
+      "primaryGenre": "2-player",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "2-player",
+        "multiplayer",
+        "two-player",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "where-is",
+      "title": "Where is - Multiplayer",
+      "primaryGenre": "party",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "party",
+        "multiplayer",
+        "puzzle",
+        "local-multiplayer"
+      ]
+    },
+    {
+      "slug": "vangers-cx",
+      "title": "Vangers CX multiplayer",
+      "primaryGenre": "multiplayer",
+      "playerMode": "local",
+      "playerCount": "1-2+",
+      "collectionSignals": [
+        "multiplayer",
+        "strategy",
+        "local-multiplayer"
       ]
     }
   ]

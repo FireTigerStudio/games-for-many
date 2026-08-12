@@ -134,12 +134,12 @@ export function getGame(slug: string): Game | undefined {
 export function getGamesByCategory(category: string): Game[] {
   return getPublishableGames().filter((game) => {
     if (category === "local-2-player") return game.gameplayType === "local" || game.gameplayType === "both";
-    if (category === "online-2-player") return verifiedOnlineTwoPlayerSlugs.has(game.slug);
-    if (category === "multiplayer") return verifiedMultiplayerSlugs.has(game.slug);
-    if (category === "party") return verifiedPartySlugs.has(game.slug);
-    if (category === "board-card") return verifiedBoardCardSlugs.has(game.slug);
-    if (category === "sports-racing") return verifiedSportsRacingSlugs.has(game.slug);
-    if (category === "io-arena") return verifiedIoArenaSlugs.has(game.slug);
+    if (category === "online-2-player") return game.gameplayType !== "local" || verifiedOnlineTwoPlayerSlugs.has(game.slug);
+    if (category === "multiplayer") return game.tags.includes("multiplayer") || verifiedMultiplayerSlugs.has(game.slug);
+    if (category === "party") return game.category === "party" || game.tags.includes("party") || verifiedPartySlugs.has(game.slug);
+    if (category === "board-card") return game.category === "card" || game.tags.some((tag) => ["board", "card", "chess", "checkers", "domino", "strategy"].includes(tag)) || verifiedBoardCardSlugs.has(game.slug);
+    if (category === "sports-racing") return game.category === "sports" || game.tags.some((tag) => ["sports", "racing", "pong", "pool", "bowling"].includes(tag)) || verifiedSportsRacingSlugs.has(game.slug);
+    if (category === "io-arena") return game.category === "io" || game.tags.some((tag) => ["io", "arena"].includes(tag)) || verifiedIoArenaSlugs.has(game.slug);
     return false;
   });
 }
