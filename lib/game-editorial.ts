@@ -84,6 +84,76 @@ export const gameEditorial: Record<string, GameEditorial> = {
     input: "Movement uses WASD and Arrow Keys; Q and P throw each player's sword. Touch controls are also listed by the supplier.", deviceSetup: "Desktop shared-keyboard play is verified; mobile touch controls are documented but not deeply reviewed.", invite: "No invitation is needed for local cooperation.",
     tips: ["Keep both characters close enough to respond when enemies appear.", "Collect required coins before pushing to the portal area.", "Assign each player a side of the keyboard before the first moving section."],
     pickedBecause: "It gives the local collection a true cooperative objective instead of another head-to-head duel.", limitations: "Progress depends on both players, so one missed item or separated character can slow the team."
+  },
+  "table-pong": {
+    summary: "A straightforward local table-tennis duel with separate keyboard controls for two people. Short rallies and familiar scoring make it easy to rotate players.",
+    objective: "Move your paddle into the ball's path, return each shot and make the opponent miss.", modes: "The reviewed setup is local two-player competition on one device.",
+    input: "One player uses WASD and the other uses the Arrow Keys. On-screen arrows are documented for mobile.", deviceSetup: "Desktop shared-keyboard play is verified; mobile controls are documented but not deeply reviewed.", invite: "No invitation is needed for local play.",
+    tips: ["Return toward the center after each shot.", "Use small corrections instead of holding one direction too long.", "Watch the ball immediately after contact to read its new angle."],
+    pickedBecause: "It has clear split controls and a game format most players understand immediately.", limitations: "The simple presentation offers less variety than larger sports games."
+  },
+  "fish-eat-getting-big": {
+    summary: "A shared-device growth game for up to three players. Each fish hunts smaller targets while avoiding anything large enough to eat it.",
+    objective: "Eat smaller fish to grow, survive encounters with larger fish and become the strongest fish in the ocean.", modes: "Local play for up to three players is documented.",
+    input: "Player 1 uses WASD, Player 2 uses the Arrow Keys, and Player 3 uses the mouse and left click.", deviceSetup: "Desktop keyboard-and-mouse sharing is verified.", invite: "No invitation is needed for local play.",
+    tips: ["Stay near smaller targets until your size clearly increases.", "Avoid crossing another player's route when a larger fish is nearby.", "Give the mouse player enough desk space before starting a three-player round."],
+    pickedBecause: "It supports three people on one device with clearly separated inputs.", limitations: "Three players must share a keyboard and mouse area, which can feel crowded on a small desk."
+  },
+  "fish-eat-fish-2": {
+    summary: "A local survival contest with one-, two- and three-player modes. Growth creates an easy-to-read advantage, so new players can understand the match quickly.",
+    objective: "Eat fish smaller than your own, grow over time and avoid becoming food for a larger rival.", modes: "Single-player, local two-player and local three-player modes are documented.",
+    input: "Player 1 uses WASD, Player 2 uses the Arrow Keys, and Player 3 uses the mouse and left click.", deviceSetup: "Desktop shared keyboard and mouse controls are verified.", invite: "No invitation is required for local multiplayer.",
+    tips: ["Do not chase a target into an area filled with larger fish.", "Use the edges to escape when the center becomes crowded.", "Track each player's size before challenging them directly."],
+    pickedBecause: "It offers flexible local player counts and a simple survival loop suited to quick group sessions.", limitations: "The core eat-and-grow loop is repetitive during longer sessions."
+  },
+  "growwars-io": {
+    summary: "A local arena duel where evolving heroes use movement, attacks and dashes on one shared keyboard. It is a more combat-focused choice for two players.",
+    objective: "Damage and defeat the opposing hero while using movement and dashes to control distance in the arena.", modes: "Single-player and local two-player arena modes are documented.",
+    input: "Player 1 uses WASD, F to attack and G to dash. Player 2 uses Arrow Keys, K to attack and L to dash.", deviceSetup: "Desktop shared-keyboard play is verified.", invite: "No invitation is needed for local play.",
+    tips: ["Use the dash to escape after attacking rather than only to approach.", "Keep enough distance to see the opponent's attack startup.", "Agree on keyboard hand positions before the round begins."],
+    pickedBecause: "It provides clearly divided two-player controls and a direct local arena format.", limitations: "The game centers on cartoon weapon combat and may not suit players looking for non-combat competition."
+  },
+  "aqua-dogy": {
+    summary: "A cooperative-looking water-park platform adventure built around two dog siblings. The simple jump controls make it approachable for a shared-device session.",
+    objective: "Guide both characters through the water park, collect the badges and use the black-hole goal to complete the route.", modes: "The reviewed gameplay supports two characters on one device.",
+    input: "The documented jump keys are W and Up Arrow; mobile touch control is also listed.", deviceSetup: "Desktop two-key sharing is documented; mobile support is listed but not deeply reviewed.", invite: "No invitation is needed for shared-device play.",
+    tips: ["Move both characters forward together so one is not left behind.", "Collect badges before committing to the final route.", "Use short jump presses near slide edges to avoid overshooting."],
+    pickedBecause: "It adds a low-complexity cooperative option to the local catalog.", limitations: "The available supplier instructions are brief, so some movement details must be learned inside the game."
+  },
+  "aquapark-balls-party": {
+    summary: "A local two-player race where groups of balls pass through number gates and compete to reach the finish pool first.",
+    objective: "Choose favorable gates, preserve a useful ball count and reach the finish before the other player.", modes: "Single-player and local two-player racing modes are documented.",
+    input: "Player 1 uses A and D; Player 2 uses the Left and Right Arrow Keys.", deviceSetup: "Desktop shared-keyboard controls are verified.", invite: "No invitation is needed for local competition.",
+    tips: ["Read the next gate before changing lanes.", "Avoid a risky shortcut if it removes too many balls.", "Make small steering inputs so the group stays aligned with the ramp."],
+    pickedBecause: "It uses only two keys per player, making local competition easy to start.", limitations: "The lane-based control is simple and may feel repetitive after several races."
+  },
+  "backgammonia-online-backgammon-game": {
+    summary: "A browser adaptation of backgammon with computer and two-player options. Shared pointer controls make it suitable for turn-based play on one device.",
+    objective: "Move all of your checkers around the board and bear them off before the opponent, using each dice roll legally.", modes: "Computer play and a two-player friend mode are documented; the title also presents itself as online backgammon.",
+    input: "Use the mouse or touch controls to select and move pieces.", deviceSetup: "Pointer and touch-style controls are documented for a shared board.", invite: "A specific online invitation flow has not been verified.",
+    tips: ["Use both dice values efficiently before committing to the first move.", "Avoid leaving a single exposed checker when a safer pair is available.", "Build blocking points before racing every checker toward home."],
+    pickedBecause: "It brings a classic deeper board game to local and computer play with simple shared controls.", limitations: "Backgammon rules and legal-move restrictions take longer to learn than simpler grid games."
+  },
+  "dominoes-classic-duel": {
+    summary: "A traditional dominoes duel with AI practice and online opponent play. It rewards planning around matching ends and tracking which values remain available.",
+    objective: "Build the chain by matching the number on an open end and aim to play all of your dominoes before the opponent.", modes: "Artificial-intelligence practice and online multiplayer against an opponent are documented.",
+    input: "Click or tap to select and place a legal domino.", deviceSetup: "Mouse and touch-style browser input are documented.", invite: "Online opponent play is verified; a private friend invitation method is not confirmed.",
+    tips: ["Keep several number values available instead of using all copies of one value early.", "Notice which open ends repeatedly force the opponent to pass.", "Use doubles when they improve your future choices, not simply because they are available."],
+    pickedBecause: "It offers a familiar board-game ruleset with both practice and live-opponent modes.", limitations: "The online flow may depend on available opponents, and private-room support is unconfirmed."
+  },
+  "music-night-battle-rhythm-game": {
+    summary: "A fast online rhythm duel where accurate arrow timing builds combos and determines the result. It suits players who prefer reaction and pattern recognition.",
+    objective: "Hit each directional prompt in time with the music, maintain combos and outperform the opponent.", modes: "Solo play and online multiplayer rhythm matches are documented.",
+    input: "Use the Up, Down, Left and Right Arrow Keys in time with the notes.", deviceSetup: "Desktop keyboard play is documented.", invite: "Online matches are verified; a private invitation option is not confirmed.",
+    tips: ["Watch the upcoming note lane rather than the judgment line alone.", "Recover with accurate single notes instead of rushing after a missed combo.", "Keep your fingers resting on all four arrow keys to reduce movement."],
+    pickedBecause: "It adds a non-traditional competitive genre and a clear skill-based online objective.", limitations: "Rhythm timing can be difficult with audio latency or an unfamiliar keyboard layout."
+  },
+  "battle-jitsu": {
+    summary: "A compact online card duel based on an elemental counter cycle. Matches emphasize anticipating the opponent rather than managing a large deck.",
+    objective: "Choose the element that defeats the opponent's choice: fire beats snow, snow beats water, and water beats fire.", modes: "Online multiplayer battles are documented.",
+    input: "Use the mouse to select an elemental card.", deviceSetup: "Desktop pointer input is documented.", invite: "Online multiplayer is verified; private friend matching is not confirmed.",
+    tips: ["Avoid repeating the same element after it succeeds.", "Track short opponent patterns instead of guessing each turn independently.", "Change your rhythm occasionally so your choices are harder to read."],
+    pickedBecause: "Its rules are easy to explain, but opponent prediction gives repeated duels some depth.", limitations: "The simple counter system offers less strategic variety than a full deck-building game."
   }
 };
 
