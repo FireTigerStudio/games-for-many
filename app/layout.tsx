@@ -12,7 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: { type: "website", siteName: siteConfig.name, title: siteConfig.name, description: siteConfig.description, url: siteConfig.url },
   twitter: { card: "summary_large_image", title: siteConfig.name, description: siteConfig.description },
-  verification: { other: { "msvalidate.01": "430AC269B1B809BD214A8DDB7D37DF2B" } },
+  verification: {
+    other: {
+      "msvalidate.01": "430AC269B1B809BD214A8DDB7D37DF2B",
+      "google-adsense-account": "ca-pub-8786029149560475",
+    },
+  },
   robots: siteConfig.allowIndexing ? { index: true, follow: true } : { index: false, follow: false },
 };
 
