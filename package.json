@@ -7,6 +7,7 @@
     "build": "next build",
     "import:games": "node scripts/import-games.mjs",
     "import:gamepix": "node scripts/import-games.mjs --source gamepix",
+    "audit:gamepix-multiplayer": "node scripts/match-gamepix-multiplayer-catalog.mjs && node scripts/review-gamepix-multiplayer-catalog.mjs",
     "screen:games": "node scripts/screen-candidates.mjs",
     "playtest:list": "node scripts/generate-playtest-list.mjs",
     "catalog:taxonomy": "node scripts/generate-catalog-taxonomy.mjs",

@@ -44,3 +44,16 @@ Official references:
 - https://partners.gamepix.com/publishers
 - https://games.gamepix.com/gameinfo/
 - https://company.gamepix.com/contact-us/
+
+## Multiplayer catalog coverage (2026-08-12)
+
+The Publisher Catalog search for `multiplayer` currently returns 52 titles. All 52 titles were matched against the official GamePix Feed after scanning 119 feed pages; no catalog title was missing from the feed. The matched audit file is `data/candidates/gamepix-multiplayer-catalog.json`.
+
+The first review pass produced:
+
+- 6 already published titles;
+- 12 rejected for firearm/zombie/war-heavy content, unclear combat positioning or recognizable third-party IP/meme risk;
+- 7 held as near-duplicate chess, tic-tac-toe, Ludo, Pong, domino or four-colors pages;
+- 27 remaining titles requiring a short hands-on mode and advertising check before publication.
+
+The owner does not need to copy catalog links manually. Re-run `scripts/match-gamepix-multiplayer-catalog.mjs` to match the captured catalog list to official Feed data, then `scripts/review-gamepix-multiplayer-catalog.mjs` to regenerate the audit and playtest queue. Neither script writes to production game data.
