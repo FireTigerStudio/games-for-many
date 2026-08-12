@@ -100,6 +100,23 @@ const verifiedSportsRacingSlugs = new Set([
   "aquapark-balls-party"
 ]);
 
+const verifiedIoArenaSlugs = new Set([
+  "gang-fall-party",
+  "greedy-snake-multiplayer-duel",
+  "fish-eat-getting-big",
+  "viking-tomahawk",
+  "tung-sahur-io",
+  "color-path-io",
+  "imposter-duck-online",
+  "rocketcar-cup",
+  "growwars-io",
+  "speen",
+  "quiz-runner-io",
+  "guardz-io",
+  "snake-war-multiplayer",
+  "survev-io"
+]);
+
 export function getAllGames(): Game[] {
   return allGames;
 }
@@ -122,7 +139,7 @@ export function getGamesByCategory(category: string): Game[] {
     if (category === "party") return verifiedPartySlugs.has(game.slug);
     if (category === "board-card") return verifiedBoardCardSlugs.has(game.slug);
     if (category === "sports-racing") return verifiedSportsRacingSlugs.has(game.slug);
-    if (category === "io-arena") return game.category === "io" || game.tags.some((tag) => ["io", "io-games", "arena"].includes(tag));
+    if (category === "io-arena") return verifiedIoArenaSlugs.has(game.slug);
     return false;
   });
 }

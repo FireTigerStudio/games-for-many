@@ -29,6 +29,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
   const isParty = category.slug === "party";
   const isBoardCard = category.slug === "board-card";
   const isSportsRacing = category.slug === "sports-racing";
+  const isIoArena = category.slug === "io-arena";
   const faq = isLocal ? [
     { question: "Can two people play these games on one computer?", answer: "Yes. Every game in this collection has reviewed evidence of local multiplayer through a shared keyboard, shared screen, mouse or pass-and-play controls." },
     { question: "Do local two-player games need an account?", answer: "The local modes in this collection can be started on the shared device without creating a separate account for each player. Individual games may still show optional online features." },
@@ -65,7 +66,13 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
     { question: "Do these games work with a keyboard?", answer: "Several games use keyboard controls, particularly local table tennis, soccer and parkour titles. Darts, billiards and carrom rely more on mouse, touch or aiming gestures. Check the controls before starting." },
     { question: "Can I practice sports games against AI?", answer: "AI availability varies. Some titles provide solo practice, but this category is organized by the sport or race mechanic rather than by AI support. Player mode details appear on each game page." }
   ] : [];
-  const schema = (isLocal || isOnlineTwoPlayer || isMultiplayer || isParty || isBoardCard || isSportsRacing) ? { "@context": "https://schema.org", "@type": "CollectionPage", name: `${category.title} Games`, url: `${siteConfig.url}/category/${category.slug}/`, description: category.description, mainEntity: { "@type": "ItemList", numberOfItems: getGamesByCategory(category.slug).length, itemListElement: games.map((game, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteConfig.url}/games/${game.slug}/`, name: game.title })) } } : null;
+  const ioArenaFaq = isIoArena ? [
+    { question: "What is an IO game?", answer: "IO games are lightweight browser games commonly built around quick online sessions, shared arenas, public opponents and simple controls. The name alone is not enough for inclusion here; the multiplayer or arena behavior must be verified." },
+    { question: "Are all IO games battle royale games?", answer: "No. This collection includes territory games, snake survival, social deduction, trivia races, team sports and direct arena duels as well as battle royale games." },
+    { question: "Can I play IO games with friends?", answer: "Some games expose friend, team or room options, while others place players into public matches. Check the individual page because a public multiplayer game does not automatically support private invitations." },
+    { question: "Do IO and arena games include weapons?", answer: "Some do, while others use racing, territory, trivia or cartoon-style contact. Games with shooting or weapons are reviewed for graphic violence before inclusion and are described clearly on their pages." }
+  ] : [];
+  const schema = (isLocal || isOnlineTwoPlayer || isMultiplayer || isParty || isBoardCard || isSportsRacing || isIoArena) ? { "@context": "https://schema.org", "@type": "CollectionPage", name: `${category.title} Games`, url: `${siteConfig.url}/category/${category.slug}/`, description: category.description, mainEntity: { "@type": "ItemList", numberOfItems: getGamesByCategory(category.slug).length, itemListElement: games.map((game, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteConfig.url}/games/${game.slug}/`, name: game.title })) } } : null;
   return (
     <div className="page-shell">
       {schema && <SEOHead data={schema} />}
@@ -127,6 +134,15 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
         <h2>Local or online competition?</h2><p>For people sharing one device, browse the full <Link href="/category/local-2-player/">local two-player collection</Link>. Remote opponents should start with <Link href="/category/online-2-player/">online two-player games</Link>, while public races and larger matches also appear under <Link href="/category/multiplayer/">multiplayer games</Link>.</p>
         <h2>Related guide</h2><p>Our <Link href="/blog/best-2-player-browser-games/">two-player browser game testing guide</Link> explains how player modes, controls, official embeds and audience safety are checked.</p>
         <h2>Frequently asked questions</h2>{sportsRacingFaq.map((item) => <div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
+      </section>}
+      {isIoArena && <section className="prose-copy mt-14">
+        <h2>How to choose an IO or arena game</h2><p>Start with the match format. Public survival games are easy to enter but unpredictable, territory games reward movement and map control, and direct arenas focus on short fights. Social deduction and trivia use the same online-lobby idea without relying on traditional combat.</p>
+        <h2>Survival and last-player-standing games</h2><p><Link href="/games/snake-war-multiplayer/">Snake War Multiplayer</Link> is built around growing, trapping rivals and surviving in a shared arena. <Link href="/games/survev-io/">Survev.io</Link> uses a shrinking battle-royale map, while <Link href="/games/tung-sahur-io/">Tung Sahur IO</Link> turns a large public session into an infection-style chase.</p>
+        <h2>Territory and movement arenas</h2><p><Link href="/games/color-path-io/">Color Path IO</Link> asks players to claim space by drawing a path. <Link href="/games/speen/">Speen</Link> combines momentum-based movement with territory painting and player duels, while <Link href="/games/greedy-snake-multiplayer-duel/">Greedy Snake Multiplayer Duel</Link> offers a simpler competitive snake format.</p>
+        <h2>Teams, trivia and social play</h2><p><Link href="/games/imposter-duck-online/">Imposter Duck: Online</Link> uses hidden roles and group decisions. <Link href="/games/quiz-runner-io/">Quiz Runner.io</Link> combines trivia with a race, and <Link href="/games/rocketcar-cup/">Rocketcar Cup</Link> turns a shared arena into an arcade soccer match.</p>
+        <h2>Direct arena battles</h2><p><Link href="/games/gang-fall-party/">Gang Fall Party</Link>, <Link href="/games/growwars-io/">GrowWars.io</Link>, <Link href="/games/viking-tomahawk/">Viking Tomahawk</Link> and <Link href="/games/guardz-io/">Guardz IO</Link> focus on knocking out or defeating opponents. Weapon and combat intensity varies, so use the individual page description before choosing.</p>
+        <h2>Public matches or planned games?</h2><p>For a specific remote opponent, start with <Link href="/category/online-2-player/">online two-player games</Link>. The broader <Link href="/category/multiplayer/">multiplayer collection</Link> includes team and co-op formats, while <Link href="/category/party/">party games</Link> are better for quick rounds and player rotation.</p>
+        <h2>Frequently asked questions</h2>{ioArenaFaq.map((item) => <div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
       </section>}
     </div>
   );
