@@ -25,6 +25,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
   const pageCount = getCategoryPageCount(category.slug);
   const isLocal = category.slug === "local-2-player";
   const isOnlineTwoPlayer = category.slug === "online-2-player";
+  const isMultiplayer = category.slug === "multiplayer";
   const faq = isLocal ? [
     { question: "Can two people play these games on one computer?", answer: "Yes. Every game in this collection has reviewed evidence of local multiplayer through a shared keyboard, shared screen, mouse or pass-and-play controls." },
     { question: "Do local two-player games need an account?", answer: "The local modes in this collection can be started on the shared device without creating a separate account for each player. Individual games may still show optional online features." },
@@ -37,7 +38,13 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
     { question: "Do online two-player games include AI opponents?", answer: "Some games also include an AI practice mode, but AI alone does not qualify a title for this category. Every listed game has a reviewed online mode against another player." },
     { question: "What is the difference between online two-player and multiplayer games?", answer: "Online two-player games focus on a duel or two-person match. The broader multiplayer category also includes larger rooms, team games and public arenas with three or more participants." }
   ] : [];
-  const schema = (isLocal || isOnlineTwoPlayer) ? { "@context": "https://schema.org", "@type": "CollectionPage", name: `${category.title} Games`, url: `${siteConfig.url}/category/${category.slug}/`, description: category.description, mainEntity: { "@type": "ItemList", numberOfItems: getGamesByCategory(category.slug).length, itemListElement: games.map((game, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteConfig.url}/games/${game.slug}/`, name: game.title })) } } : null;
+  const multiplayerFaq = isMultiplayer ? [
+    { question: "What counts as a multiplayer browser game here?", answer: "A game must include a reviewed mode involving real players online. AI-only games and single-player games with misleading multiplayer tags are not included in this collection." },
+    { question: "Can I play multiplayer games with a specific friend?", answer: "Some games offer a room, invitation or friend challenge, while others use public matchmaking. The available connection method is described on the individual game page when it has been verified." },
+    { question: "Are all multiplayer games designed for more than two people?", answer: "No. Multiplayer is the broad collection and includes head-to-head games as well as larger rooms, teams, co-op modes and public arenas. Use the online two-player category when you specifically want a duel." },
+    { question: "Do these games require a download?", answer: "No. The listed games launch through reviewed HTML5 browser embeds. A game may still have its own loading screen, matchmaking step or optional account features." }
+  ] : [];
+  const schema = (isLocal || isOnlineTwoPlayer || isMultiplayer) ? { "@context": "https://schema.org", "@type": "CollectionPage", name: `${category.title} Games`, url: `${siteConfig.url}/category/${category.slug}/`, description: category.description, mainEntity: { "@type": "ItemList", numberOfItems: getGamesByCategory(category.slug).length, itemListElement: games.map((game, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteConfig.url}/games/${game.slug}/`, name: game.title })) } } : null;
   return (
     <div className="page-shell">
       {schema && <SEOHead data={schema} />}
@@ -63,6 +70,15 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
         <h2>Online vs local two-player</h2><p>Online play is designed for separate devices or remote opponents. If both people are in the same room and want one shared screen, use the <Link href="/category/local-2-player/">local two-player collection</Link>. For rooms, teams and larger player counts, continue to the full <Link href="/category/multiplayer/">multiplayer collection</Link>.</p>
         <h2>Related guide</h2><p>Our <Link href="/blog/best-2-player-browser-games/">two-player browser game testing guide</Link> explains how player modes, controls, official embeds and safety are reviewed before a game is recommended.</p>
         <h2>Frequently asked questions</h2>{onlineFaq.map((item) => <div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
+      </section>}
+      {isMultiplayer && <section className="prose-copy mt-14">
+        <h2>How to choose a multiplayer browser game</h2><p>Decide whether you want a private duel, a public match or a larger arena before loading a game. Head-to-head titles are easier to organize with one friend, while public matchmaking starts faster when nobody else is available. Arena and co-op games may support more players but can take longer to fill or explain.</p>
+        <h2>Quick online matches</h2><p>For a direct contest, try <Link href="/games/multiplayer-pong/">Multiplayer Pong</Link>, <Link href="/games/battle-jitsu/">Battle Jitsu</Link> or <Link href="/games/music-night-battle-rhythm-game/">Music Night Battle</Link>. These games focus on one clear competitive mechanic rather than a large open lobby. The <Link href="/category/online-2-player/">online two-player collection</Link> contains more verified duel options.</p>
+        <h2>Public arenas and larger matches</h2><p><Link href="/games/tung-sahur-io/">Tung Sahur IO</Link>, <Link href="/games/guardz-io/">Guardz IO</Link>, <Link href="/games/snake-war-multiplayer/">Snake War Multiplayer</Link> and <Link href="/games/survev-io/">Survev.io</Link> are designed around public opponents and survival-style competition. These games are better when you want unpredictable matches rather than a fixed two-person session.</p>
+        <h2>Co-op, teams and social deduction</h2><p><Link href="/games/pga3-zombie/">PGA3 Zombie</Link> documents online cooperative play, while <Link href="/games/imposter-duck-online/">Imposter Duck: Online</Link> uses social deduction and changing player roles. Team or social modes can be more engaging for groups, but they also depend more heavily on active matchmaking and the behavior of other players.</p>
+        <h2>How this collection is reviewed</h2><p>Supplier categories are not accepted as proof by themselves. A game must show a real online player mode during review or describe one clearly in its verified gameplay information. AI practice can be included as an extra mode, but an AI-only game does not qualify. For two people sharing one device, browse <Link href="/category/local-2-player/">local two-player games</Link>.</p>
+        <h2>Related guide</h2><p>See our <Link href="/blog/best-2-player-browser-games/">browser game testing guide</Link> for the control, player-mode, embedding and safety checks used across the catalog.</p>
+        <h2>Frequently asked questions</h2>{multiplayerFaq.map((item) => <div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
       </section>}
     </div>
   );

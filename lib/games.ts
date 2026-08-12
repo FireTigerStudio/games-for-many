@@ -31,6 +31,38 @@ const verifiedOnlineTwoPlayerSlugs = new Set([
   "backgammonia-online-backgammon-game"
 ]);
 
+const verifiedMultiplayerSlugs = new Set([
+  "ninja-parkour-multiplayer",
+  "multiplayer-pong",
+  "master-checkers-multiplayer",
+  "tic-tac-toe-pro-multiplayer-challenge",
+  "nightmare-runners",
+  "gang-fall-party",
+  "castle-wars-legacy",
+  "turkish-draughts",
+  "dominoes-classic-duel",
+  "music-night-battle-rhythm-game",
+  "greedy-snake-multiplayer-duel",
+  "battle-jitsu",
+  "brainrot-bridge-race-3d",
+  "whot-the-ultimate-nigerian-card-game",
+  "tung-sahur-io",
+  "color-path-io",
+  "board-kings-board-dice",
+  "ballon-race-3d",
+  "imposter-duck-online",
+  "rocketcar-cup",
+  "backgammonia-online-backgammon-game",
+  "jungle-fight",
+  "pga3-zombie",
+  "iron-legion",
+  "quiz-runner-io",
+  "pga-toons",
+  "guardz-io",
+  "snake-war-multiplayer",
+  "survev-io"
+]);
+
 export function getAllGames(): Game[] {
   return allGames;
 }
@@ -49,7 +81,7 @@ export function getGamesByCategory(category: string): Game[] {
   return getPublishableGames().filter((game) => {
     if (category === "local-2-player") return game.gameplayType === "local" || game.gameplayType === "both";
     if (category === "online-2-player") return verifiedOnlineTwoPlayerSlugs.has(game.slug);
-    if (category === "multiplayer") return game.gameplayType !== "local";
+    if (category === "multiplayer") return verifiedMultiplayerSlugs.has(game.slug);
     if (category === "party") return game.category === "party" || game.tags.includes("party");
     if (category === "board-card") return ["card"].includes(game.category) || game.tags.some((tag) => ["board", "card", "checkers", "draughts", "dominoes"].includes(tag));
     if (category === "sports-racing") return game.category === "sports" || game.tags.some((tag) => ["sports", "racing", "football", "soccer", "billiard", "pong", "tennis"].includes(tag));
