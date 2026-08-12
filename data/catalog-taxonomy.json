@@ -153,7 +153,7 @@
       "slug": "turkish-draughts",
       "title": "Turkish Draughts",
       "primaryGenre": "2-player",
-      "playerMode": "online",
+      "playerMode": "both",
       "playerCount": "1-2",
       "collectionSignals": [
         "2-player",

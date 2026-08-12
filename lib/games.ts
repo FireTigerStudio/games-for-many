@@ -15,6 +15,22 @@ export const categories: Category[] = [
 
 const allGames = gamesData as Game[];
 
+const verifiedOnlineTwoPlayerSlugs = new Set([
+  "master-checkers-multiplayer",
+  "tic-tac-toe-pro-multiplayer-challenge",
+  "nightmare-runners",
+  "gang-fall-party",
+  "castle-wars-legacy",
+  "turkish-draughts",
+  "dominoes-classic-duel",
+  "music-night-battle-rhythm-game",
+  "greedy-snake-multiplayer-duel",
+  "battle-jitsu",
+  "whot-the-ultimate-nigerian-card-game",
+  "rocketcar-cup",
+  "backgammonia-online-backgammon-game"
+]);
+
 export function getAllGames(): Game[] {
   return allGames;
 }
@@ -32,7 +48,7 @@ export function getGame(slug: string): Game | undefined {
 export function getGamesByCategory(category: string): Game[] {
   return getPublishableGames().filter((game) => {
     if (category === "local-2-player") return game.gameplayType === "local" || game.gameplayType === "both";
-    if (category === "online-2-player") return game.gameplayType !== "local" && game.tags.some((tag) => ["2-player", "2-player-games", "two-player-games"].includes(tag));
+    if (category === "online-2-player") return verifiedOnlineTwoPlayerSlugs.has(game.slug);
     if (category === "multiplayer") return game.gameplayType !== "local";
     if (category === "party") return game.category === "party" || game.tags.includes("party");
     if (category === "board-card") return ["card"].includes(game.category) || game.tags.some((tag) => ["board", "card", "checkers", "draughts", "dominoes"].includes(tag));
