@@ -75,6 +75,18 @@ const verifiedPartySlugs = new Set([
   "aquapark-balls-party"
 ]);
 
+const verifiedBoardCardSlugs = new Set([
+  "master-checkers-multiplayer",
+  "tic-tac-toe-pro-multiplayer-challenge",
+  "castle-wars-legacy",
+  "carrom-pro",
+  "turkish-draughts",
+  "dominoes-classic-duel",
+  "battle-jitsu",
+  "whot-the-ultimate-nigerian-card-game",
+  "backgammonia-online-backgammon-game"
+]);
+
 export function getAllGames(): Game[] {
   return allGames;
 }
@@ -95,7 +107,7 @@ export function getGamesByCategory(category: string): Game[] {
     if (category === "online-2-player") return verifiedOnlineTwoPlayerSlugs.has(game.slug);
     if (category === "multiplayer") return verifiedMultiplayerSlugs.has(game.slug);
     if (category === "party") return verifiedPartySlugs.has(game.slug);
-    if (category === "board-card") return ["card"].includes(game.category) || game.tags.some((tag) => ["board", "card", "checkers", "draughts", "dominoes"].includes(tag));
+    if (category === "board-card") return verifiedBoardCardSlugs.has(game.slug);
     if (category === "sports-racing") return game.category === "sports" || game.tags.some((tag) => ["sports", "racing", "football", "soccer", "billiard", "pong", "tennis"].includes(tag));
     if (category === "io-arena") return game.category === "io" || game.tags.some((tag) => ["io", "io-games", "arena"].includes(tag));
     return false;

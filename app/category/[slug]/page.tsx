@@ -27,6 +27,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
   const isOnlineTwoPlayer = category.slug === "online-2-player";
   const isMultiplayer = category.slug === "multiplayer";
   const isParty = category.slug === "party";
+  const isBoardCard = category.slug === "board-card";
   const faq = isLocal ? [
     { question: "Can two people play these games on one computer?", answer: "Yes. Every game in this collection has reviewed evidence of local multiplayer through a shared keyboard, shared screen, mouse or pass-and-play controls." },
     { question: "Do local two-player games need an account?", answer: "The local modes in this collection can be started on the shared device without creating a separate account for each player. Individual games may still show optional online features." },
@@ -51,7 +52,13 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
     { question: "How many people can play these party games?", answer: "The collection includes two-player games, three-player shared-device games and larger online matches. Player counts and control arrangements are listed on individual game pages." },
     { question: "Are party games always competitive?", answer: "No. Many are competitive races or duels, but cooperative games can also work for a party when players communicate, take turns or try to beat a shared challenge." }
   ] : [];
-  const schema = (isLocal || isOnlineTwoPlayer || isMultiplayer || isParty) ? { "@context": "https://schema.org", "@type": "CollectionPage", name: `${category.title} Games`, url: `${siteConfig.url}/category/${category.slug}/`, description: category.description, mainEntity: { "@type": "ItemList", numberOfItems: getGamesByCategory(category.slug).length, itemListElement: games.map((game, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteConfig.url}/games/${game.slug}/`, name: game.title })) } } : null;
+  const boardCardFaq = isBoardCard ? [
+    { question: "Which board and card games can two people play together?", answer: "Every game in this collection has a reviewed two-player option. Some use local pass-and-play controls, some connect online opponents, and several support both." },
+    { question: "Can I practice against the computer first?", answer: "Several titles include AI practice, including checkers, Turkish draughts, dominoes and Castle Wars. AI availability is listed as an extra mode and is not treated as proof of multiplayer by itself." },
+    { question: "Are these games turn-based?", answer: "Most are turn-based or alternate actions between players. Carrom uses physics-based shots, while Battle Jitsu uses faster card choices, so the pace varies even within the collection." },
+    { question: "Do I need to know the rules before playing?", answer: "Simple games such as tic-tac-toe are immediately familiar. Checkers, Turkish draughts, backgammon, WHOT and Castle Wars have more specific rules, so review the controls and objective on the game page first." }
+  ] : [];
+  const schema = (isLocal || isOnlineTwoPlayer || isMultiplayer || isParty || isBoardCard) ? { "@context": "https://schema.org", "@type": "CollectionPage", name: `${category.title} Games`, url: `${siteConfig.url}/category/${category.slug}/`, description: category.description, mainEntity: { "@type": "ItemList", numberOfItems: getGamesByCategory(category.slug).length, itemListElement: games.map((game, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteConfig.url}/games/${game.slug}/`, name: game.title })) } } : null;
   return (
     <div className="page-shell">
       {schema && <SEOHead data={schema} />}
@@ -95,6 +102,15 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
         <h2>Local or online party play?</h2><p>Use the <Link href="/category/local-2-player/">local two-player collection</Link> when everyone is sharing one device. Choose <Link href="/category/multiplayer/">multiplayer games</Link> for public rooms and larger online matches, or <Link href="/category/online-2-player/">online two-player games</Link> for a remote duel.</p>
         <h2>Related guide</h2><p>Our <Link href="/blog/best-2-player-browser-games/">two-player browser game testing guide</Link> explains how we verify controls, player modes, official embeds and audience safety before including a game.</p>
         <h2>Frequently asked questions</h2>{partyFaq.map((item) => <div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
+      </section>}
+      {isBoardCard && <section className="prose-copy mt-14">
+        <h2>How to choose a board or card game</h2><p>Choose by pace, rules and where the other player is located. Familiar grid games are easiest for a quick session, while card games and backgammon reward learning a deeper ruleset. Local pass-and-play works well on one screen; online modes are better for remote opponents.</p>
+        <h2>Classic board games</h2><p><Link href="/games/master-checkers-multiplayer/">Master Checkers Multiplayer</Link>, <Link href="/games/turkish-draughts/">Turkish Draughts</Link>, <Link href="/games/dominoes-classic-duel/">Dominoes Classic Duel</Link> and <Link href="/games/backgammonia-online-backgammon-game/">Backgammonia</Link> adapt established tabletop rules for the browser. Their multiplayer modes range from shared-device turns to online opponents, and several also include AI practice.</p>
+        <h2>Card battles and matching rules</h2><p><Link href="/games/castle-wars-legacy/">Castle Wars: Legacy</Link> combines deck building, resources and tactical attacks. <Link href="/games/battle-jitsu/">Battle Jitsu</Link> uses a faster fire-water-ice counter system, while <Link href="/games/whot-the-ultimate-nigerian-card-game/">WHOT</Link> focuses on matching cards and emptying your hand before an opponent.</p>
+        <h2>Short strategy games</h2><p><Link href="/games/tic-tac-toe-pro-multiplayer-challenge/">Tic Tac Toe Pro</Link> is the quickest rules-light option. <Link href="/games/carrom-pro/">Carrom Pro</Link> replaces grid movement with aiming and collision physics, making it a useful choice when players want tabletop competition without a long sequence of turns.</p>
+        <h2>Local, online or AI?</h2><p>Use <Link href="/category/local-2-player/">local two-player games</Link> for one shared device and <Link href="/category/online-2-player/">online two-player games</Link> for remote opponents. AI is useful for learning rules or practicing, but this collection only includes games whose two-player mode was separately reviewed.</p>
+        <h2>Related guide</h2><p>Our <Link href="/blog/best-2-player-browser-games/">two-player browser game testing guide</Link> explains how controls, modes, official embeds and audience safety are checked before publication.</p>
+        <h2>Frequently asked questions</h2>{boardCardFaq.map((item) => <div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
       </section>}
     </div>
   );
