@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { GameCard } from "@/components/GameCard";
+import { GamePlayer } from "@/components/GamePlayer";
 import { SEOHead } from "@/components/SEOHead";
 import { getAllGames, getGame, getRelatedGames } from "@/lib/games";
 import { getGameEditorial } from "@/lib/game-editorial";
@@ -47,11 +48,7 @@ export default function GamePage({ params }: { params: { slug: string } }) {
         <article>
           <h1 className="text-4xl font-black tracking-tight text-slate-950">{game.title}</h1>
           <div className="mt-6 aspect-[3/2] overflow-hidden rounded-2xl bg-slate-900">
-            {canEmbed ? (
-              <iframe allow="autoplay; fullscreen; gamepad" allowFullScreen className="h-full w-full" loading="eager" referrerPolicy="strict-origin-when-cross-origin" src={game.iframeUrl!} title={`Play ${game.title}`} />
-            ) : (
-              <div className="flex h-full items-center justify-center p-8 text-center text-slate-300"><div><p className="text-xl font-semibold text-white">Game integration pending review</p><p className="mt-2 max-w-lg">This development page does not load a third-party game until its official embed permission and content safety are verified.</p></div></div>
-            )}
+            <GamePlayer canEmbed={Boolean(canEmbed)} slug={game.slug} title={game.title} />
           </div>
           <div className="prose-copy mt-8">
             {editorial && <><p className="text-lg leading-8 text-slate-700">{editorial.summary}</p><h2>Quick facts</h2><ul><li>Players: {game.playerCount}</li><li>Play type: {game.gameplayType}</li><li>Input: {editorial.input}</li><li>Device setup: {editorial.deviceSetup}</li><li>Friend connection: {editorial.invite}</li></ul></>}
