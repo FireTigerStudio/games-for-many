@@ -16,6 +16,11 @@ export function GamePlayer({ canEmbed, slug, title }: GamePlayerProps) {
   const [started, setStarted] = useState(false);
   const iframeUrl = started ? games.find((game) => game.slug === slug)?.iframeUrl : null;
 
+  function startGame() {
+    window.dispatchEvent(new CustomEvent("gfm-game-start", { detail: { game_slug: slug, game_title: title } }));
+    setStarted(true);
+  }
+
   if (!canEmbed) {
     return (
       <div className="flex h-full items-center justify-center p-8 text-center text-slate-300">
@@ -33,7 +38,7 @@ export function GamePlayer({ canEmbed, slug, title }: GamePlayerProps) {
         <div className="max-w-lg">
           <p className="text-2xl font-bold">Ready to play {title}?</p>
           <p className="mt-3 leading-7 text-slate-300">The official third-party game and its advertising services load only after you start.</p>
-          <button className="mt-6 rounded-full bg-violet-500 px-7 py-3 font-bold text-white shadow-lg transition hover:bg-violet-400 focus:outline-none focus:ring-4 focus:ring-violet-300" onClick={() => setStarted(true)} type="button">
+          <button className="mt-6 rounded-full bg-violet-500 px-7 py-3 font-bold text-white shadow-lg transition hover:bg-violet-400 focus:outline-none focus:ring-4 focus:ring-violet-300" onClick={startGame} type="button">
             Play game
           </button>
         </div>
