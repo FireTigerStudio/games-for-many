@@ -87,6 +87,19 @@ const verifiedBoardCardSlugs = new Set([
   "backgammonia-online-backgammon-game"
 ]);
 
+const verifiedSportsRacingSlugs = new Set([
+  "ninja-parkour-multiplayer",
+  "multiplayer-pong",
+  "darts-pro-multiplayer",
+  "carrom-pro",
+  "table-pong",
+  "brainrot-bridge-race-3d",
+  "billiard-champion",
+  "ballon-race-3d",
+  "rocketcar-cup",
+  "aquapark-balls-party"
+]);
+
 export function getAllGames(): Game[] {
   return allGames;
 }
@@ -108,7 +121,7 @@ export function getGamesByCategory(category: string): Game[] {
     if (category === "multiplayer") return verifiedMultiplayerSlugs.has(game.slug);
     if (category === "party") return verifiedPartySlugs.has(game.slug);
     if (category === "board-card") return verifiedBoardCardSlugs.has(game.slug);
-    if (category === "sports-racing") return game.category === "sports" || game.tags.some((tag) => ["sports", "racing", "football", "soccer", "billiard", "pong", "tennis"].includes(tag));
+    if (category === "sports-racing") return verifiedSportsRacingSlugs.has(game.slug);
     if (category === "io-arena") return game.category === "io" || game.tags.some((tag) => ["io", "io-games", "arena"].includes(tag));
     return false;
   });

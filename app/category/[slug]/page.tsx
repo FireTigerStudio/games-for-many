@@ -28,6 +28,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
   const isMultiplayer = category.slug === "multiplayer";
   const isParty = category.slug === "party";
   const isBoardCard = category.slug === "board-card";
+  const isSportsRacing = category.slug === "sports-racing";
   const faq = isLocal ? [
     { question: "Can two people play these games on one computer?", answer: "Yes. Every game in this collection has reviewed evidence of local multiplayer through a shared keyboard, shared screen, mouse or pass-and-play controls." },
     { question: "Do local two-player games need an account?", answer: "The local modes in this collection can be started on the shared device without creating a separate account for each player. Individual games may still show optional online features." },
@@ -58,7 +59,13 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
     { question: "Are these games turn-based?", answer: "Most are turn-based or alternate actions between players. Carrom uses physics-based shots, while Battle Jitsu uses faster card choices, so the pace varies even within the collection." },
     { question: "Do I need to know the rules before playing?", answer: "Simple games such as tic-tac-toe are immediately familiar. Checkers, Turkish draughts, backgammon, WHOT and Castle Wars have more specific rules, so review the controls and objective on the game page first." }
   ] : [];
-  const schema = (isLocal || isOnlineTwoPlayer || isMultiplayer || isParty || isBoardCard) ? { "@context": "https://schema.org", "@type": "CollectionPage", name: `${category.title} Games`, url: `${siteConfig.url}/category/${category.slug}/`, description: category.description, mainEntity: { "@type": "ItemList", numberOfItems: getGamesByCategory(category.slug).length, itemListElement: games.map((game, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteConfig.url}/games/${game.slug}/`, name: game.title })) } } : null;
+  const sportsRacingFaq = isSportsRacing ? [
+    { question: "Which sports and racing games support two players?", answer: "The collection includes verified local and online options. Table Pong, Carrom Pro and Aquapark Balls Party support shared-device play, while Multiplayer Pong and Rocketcar Cup include online competition." },
+    { question: "Are all racing games car games?", answer: "No. This collection uses racing for any game built around reaching a finish first, including parkour courses, bridge races, balloon races and water-park races as well as vehicle competition." },
+    { question: "Do these games work with a keyboard?", answer: "Several games use keyboard controls, particularly local table tennis, soccer and parkour titles. Darts, billiards and carrom rely more on mouse, touch or aiming gestures. Check the controls before starting." },
+    { question: "Can I practice sports games against AI?", answer: "AI availability varies. Some titles provide solo practice, but this category is organized by the sport or race mechanic rather than by AI support. Player mode details appear on each game page." }
+  ] : [];
+  const schema = (isLocal || isOnlineTwoPlayer || isMultiplayer || isParty || isBoardCard || isSportsRacing) ? { "@context": "https://schema.org", "@type": "CollectionPage", name: `${category.title} Games`, url: `${siteConfig.url}/category/${category.slug}/`, description: category.description, mainEntity: { "@type": "ItemList", numberOfItems: getGamesByCategory(category.slug).length, itemListElement: games.map((game, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteConfig.url}/games/${game.slug}/`, name: game.title })) } } : null;
   return (
     <div className="page-shell">
       {schema && <SEOHead data={schema} />}
@@ -111,6 +118,15 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
         <h2>Local, online or AI?</h2><p>Use <Link href="/category/local-2-player/">local two-player games</Link> for one shared device and <Link href="/category/online-2-player/">online two-player games</Link> for remote opponents. AI is useful for learning rules or practicing, but this collection only includes games whose two-player mode was separately reviewed.</p>
         <h2>Related guide</h2><p>Our <Link href="/blog/best-2-player-browser-games/">two-player browser game testing guide</Link> explains how controls, modes, official embeds and audience safety are checked before publication.</p>
         <h2>Frequently asked questions</h2>{boardCardFaq.map((item) => <div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
+      </section>}
+      {isSportsRacing && <section className="prose-copy mt-14">
+        <h2>How to choose a sports or racing game</h2><p>Choose between precision sports, direct head-to-head games and finish-line races. Aiming games reward patience and repeatable control, while paddle and soccer games demand quicker reactions. Racing games are easier to understand at a glance but may use very different movement systems.</p>
+        <h2>Ball, paddle and aiming games</h2><p><Link href="/games/multiplayer-pong/">Multiplayer Pong</Link> and <Link href="/games/table-pong/">Table Pong</Link> focus on paddle positioning and quick returns. <Link href="/games/darts-pro-multiplayer/">Darts Pro Multiplayer</Link>, <Link href="/games/billiard-champion/">Billiard Champion</Link> and <Link href="/games/carrom-pro/">Carrom Pro</Link> use slower aiming, angle and power decisions.</p>
+        <h2>Soccer and vehicle competition</h2><p><Link href="/games/rocketcar-cup/">Rocketcar Cup</Link> combines car movement with arcade soccer. Players need to manage acceleration, positioning, boosts and contact with the ball rather than following a traditional racing line.</p>
+        <h2>Obstacle and finish-line races</h2><p><Link href="/games/ninja-parkour-multiplayer/">Ninja Parkour Multiplayer</Link> rewards precise jumps, while <Link href="/games/brainrot-bridge-race-3d/">Brainrot Bridge Race 3D</Link>, <Link href="/games/ballon-race-3d/">Ballon Race 3D</Link> and <Link href="/games/aquapark-balls-party/">Aquapark Balls Party</Link> use collection, lane or obstacle mechanics on the way to a finish.</p>
+        <h2>Local or online competition?</h2><p>For people sharing one device, browse the full <Link href="/category/local-2-player/">local two-player collection</Link>. Remote opponents should start with <Link href="/category/online-2-player/">online two-player games</Link>, while public races and larger matches also appear under <Link href="/category/multiplayer/">multiplayer games</Link>.</p>
+        <h2>Related guide</h2><p>Our <Link href="/blog/best-2-player-browser-games/">two-player browser game testing guide</Link> explains how player modes, controls, official embeds and audience safety are checked.</p>
+        <h2>Frequently asked questions</h2>{sportsRacingFaq.map((item) => <div key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
       </section>}
     </div>
   );
