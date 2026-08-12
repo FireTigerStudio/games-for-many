@@ -5,7 +5,8 @@ import { fileURLToPath } from "node:url";
 const WORKSPACE_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const DEFAULT_INPUTS = [
   "data/candidates/gamemonetize-import.json",
-  "data/candidates/gamemonetize-2-player-import.json"
+  "data/candidates/gamemonetize-2-player-import.json",
+  "data/candidates/gamepix-import.json"
 ];
 const DEFAULT_OUTPUT = resolve(WORKSPACE_ROOT, "data/candidates/screening-report.json");
 

@@ -16,7 +16,7 @@ Therefore the launch gate is:
 
 ## Current result
 
-The GamePix Publisher account now exposes official embed URLs carrying publisher `sid=1`. Six reviewed games are in production data:
+The GamePix Publisher property is active for `gamesformany.com` with property ID `I0IX7`. Six reviewed games are in production data, and their official embed URLs retain `sid=I0IX7` for attribution:
 
 - Bounce Path Multiplayer
 - Ninja Parkour Multiplayer
