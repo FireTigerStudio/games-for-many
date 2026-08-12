@@ -3,5 +3,5 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://gamesformany.com",
   description: "Curated two-player and multiplayer browser games for casual gamers, teens and adults.",
   email: "hello@gamesformany.com",
-  allowIndexing: process.env.NEXT_PUBLIC_ALLOW_INDEXING !== "false"
+  allowIndexing: process.env.NEXT_PUBLIC_BLOCK_INDEXING !== "true"
 };
