@@ -154,6 +154,76 @@ export const gameEditorial: Record<string, GameEditorial> = {
     input: "Use the mouse to select an elemental card.", deviceSetup: "Desktop pointer input is documented.", invite: "Online multiplayer is verified; private friend matching is not confirmed.",
     tips: ["Avoid repeating the same element after it succeeds.", "Track short opponent patterns instead of guessing each turn independently.", "Change your rhythm occasionally so your choices are harder to read."],
     pickedBecause: "Its rules are easy to explain, but opponent prediction gives repeated duels some depth.", limitations: "The simple counter system offers less strategic variety than a full deck-building game."
+  },
+  "darts-pro-multiplayer": {
+    summary: "An online darts match built around steady aim and exact 501 scoring. It is a slower, precision-focused alternative to the site's action games.",
+    objective: "Reduce a starting score of 501 to exactly zero, finishing with a legal final throw rather than dropping below zero.", modes: "Online multiplayer darts is documented by the reviewed catalog entry.",
+    input: "Aim with the mouse or touch controls, then click or tap to throw.", deviceSetup: "Mouse and touchscreen input are documented for browser play.", invite: "Online competition is documented; a private friend invitation flow has not been verified.",
+    tips: ["Favor repeatable scoring areas before attempting narrow high-value targets.", "Plan the last few turns so a double finish remains available.", "Make small aim corrections and keep the release timing consistent."],
+    pickedBecause: "It adds a recognizable precision sport with a clearly stated scoring objective.", limitations: "Exact finishing rules can be confusing for a first-time darts player, and private-room support is unconfirmed."
+  },
+  "tic-tac-toe-pro-multiplayer-challenge": {
+    summary: "A lightweight online version of the familiar three-in-a-row game. Its short rounds work well for quick rematches and introductory strategy.",
+    objective: "Place three matching marks in a horizontal, vertical or diagonal line before the opponent does.", modes: "Online two-player competition is documented.",
+    input: "Click or tap an empty square to place a mark.", deviceSetup: "Mouse and touchscreen controls are documented.", invite: "Online play is documented, but a private friend invitation method has not been confirmed.",
+    tips: ["Take the center when it is available because it participates in four winning lines.", "Block an immediate threat before building a slower attack.", "Create two possible winning lines at once so one move cannot stop both."],
+    pickedBecause: "It offers instantly recognizable rules and very little setup before an online match.", limitations: "The small board limits long-term strategic variety, and the exact matchmaking flow may vary."
+  },
+  "tic-tac-toe-with-ai-and-multiplayer": {
+    summary: "A simple tic-tac-toe board with computer practice and a two-player option. It is designed for fast rounds on desktop or mobile browsers.",
+    objective: "Complete a row, column or diagonal of three marks while preventing the other side from doing the same.", modes: "Computer-opponent and two-player modes are documented; whether the two-player mode is remote or shared-device has not been independently confirmed.",
+    input: "Click or tap an open board square.", deviceSetup: "Mouse and touch input are documented.", invite: "No verified private invitation flow is available in the current review notes.",
+    tips: ["Check the opponent's last move for an immediate threat before placing your own mark.", "Use a corner to create diagonal and edge-line possibilities.", "When going second, protect the center or force the game toward a draw."],
+    pickedBecause: "The AI option gives players a way to practice before using the two-player mode.", limitations: "The connection method for the advertised multiplayer option still needs a deeper mode-by-mode review."
+  },
+  "greedy-snake-multiplayer-duel": {
+    summary: "A colorful Snake-style duel about growing longer while preserving room to turn. The familiar movement loop makes the basic goal easy to understand.",
+    objective: "Collect growth items, avoid collisions and survive longer or build a stronger snake than the opponent.", modes: "Multiplayer duel play and additional level-based modes are described by the supplier.",
+    input: "Mouse click or tap controls are listed; follow the prompts shown inside the selected mode.", deviceSetup: "Pointer and touch-style input are documented.", invite: "The exact opponent-matching and friend-invitation routes have not been verified.",
+    tips: ["Leave turning space around the snake's head instead of chasing every nearby item.", "Use the open outer area when the center becomes crowded.", "Plan an exit route before entering a narrow gap for food."],
+    pickedBecause: "It adds a recognizable growth-and-survival format to the multiplayer catalog.", limitations: "The supplier's control and matchmaking descriptions are brief, so some mode details must be learned in game."
+  },
+  "black-and-white-stickman": {
+    summary: "A two-character platform adventure where both stick figures must collect the required items and reach the portal. Coordination matters more than racing.",
+    objective: "Collect the star points and monster balls, keep both characters safe and guide them to the portal.", modes: "A shared-device two-character adventure is documented.",
+    input: "The documented jump keys are W and Up Arrow; mobile touch controls are also listed.", deviceSetup: "Desktop shared-keyboard and mobile touch play are documented.", invite: "No invitation is needed for the documented shared-device setup.",
+    tips: ["Move the two characters in stages so neither is stranded beyond an obstacle.", "Check the route for missed collectibles before approaching the portal.", "Use short jump inputs near platform edges to reduce overshooting."],
+    pickedBecause: "It provides a cooperative objective with minimal controls for two people on one device.", limitations: "The supplier instructions do not explain every movement interaction, so the opening section serves as a tutorial."
+  },
+  "duo-water-and-fire": {
+    summary: "A cooperative platform game where two elemental characters have different safe routes. Players must collect the key and bring both characters to the exit.",
+    objective: "Use each character's elemental ability to cross matching hazards, avoid green water and reach the door with the key.", modes: "The documented setup is a two-character shared-device adventure.",
+    input: "One character uses WASD and the other uses the Arrow Keys; double jump and mobile touch controls are listed.", deviceSetup: "Desktop shared-keyboard and mobile touch support are documented.", invite: "No invitation is needed for shared-device cooperation.",
+    tips: ["Match each character to water of the same color and never enter green water.", "Keep both players near the same section before triggering the next obstacle.", "Use double jump only when a normal jump cannot safely reach the platform."],
+    pickedBecause: "Its asymmetric hazard rules give both local players a clear cooperative responsibility.", limitations: "Both players need to coordinate progress, and touch controls have not been deeply reviewed."
+  },
+  "kingdom-of-toilets": {
+    summary: "A shared-keyboard escape platformer starring two robot characters in an underground obstacle course. The goal is to keep both moving toward safety.",
+    objective: "Guide both characters through the prison, avoid toxic water and reach the escape route.", modes: "Two-character shared-device play is documented.",
+    input: "Use WASD and the Arrow Keys for the two characters; double jump and mobile touch controls are listed.", deviceSetup: "Desktop shared-keyboard and mobile touch support are documented.", invite: "No invitation is needed for the documented local setup.",
+    tips: ["Pause before toxic-water sections and plan both characters' jumps.", "Use the double jump late enough to extend distance rather than immediately after takeoff.", "Advance one character at a time when a platform has limited landing space."],
+    pickedBecause: "It adds another clearly divided two-player control scheme with a cooperative escape objective.", limitations: "The theme is intentionally absurd, and the supplier provides only a brief explanation of level mechanics."
+  },
+  "viking-tomahawk": {
+    summary: "A compact axe-fighting game with computer and friend-opponent choices. Positioning and throw timing drive each short duel.",
+    objective: "Land tomahawk attacks on the opposing fighter while avoiding their return attacks.", modes: "Computer-opponent and friend-versus-friend modes are documented.",
+    input: "Mouse control is listed by the supplier; use the prompts inside the game to aim and attack.", deviceSetup: "Desktop mouse play is documented.", invite: "A specific remote invitation flow has not been verified, so the friend mode's connection setup remains unconfirmed.",
+    tips: ["Change position after an attack so the opponent cannot answer along the same line.", "Wait for a clear angle instead of throwing continuously.", "Use the computer mode first to learn the weapon's travel timing."],
+    pickedBecause: "It offers both practice and competitive choices in a short arena format.", limitations: "It contains cartoon weapon combat, and the supplier does not clearly describe how the friend mode connects."
+  },
+  "whot-the-ultimate-nigerian-card-game": {
+    summary: "A browser version of the Nigerian card game WHOT with AI practice and real-time multiplayer. Matching shapes or numbers creates an approachable but tactical hand-management game.",
+    objective: "Be the first player to empty a starting hand of six cards by making legal matches to the face-up card.", modes: "Solo play against AI and real-time multiplayer are documented.",
+    input: "Click or tap cards and game controls to play a legal match or draw.", deviceSetup: "Pointer and touch-style controls are documented.", invite: "Real-time multiplayer is documented; a private friend invitation flow has not been confirmed.",
+    tips: ["Keep cards from several shapes or numbers so more future plays remain possible.", "Save flexible or special cards for turns when a normal match is unavailable.", "Watch which prompts cause an opponent to draw and adapt the active shape when possible."],
+    pickedBecause: "It broadens the board-and-card collection with a culturally specific ruleset and an AI learning route.", limitations: "New players need to learn WHOT's special-card rules, and private-room support is unconfirmed."
+  },
+  "clonium": {
+    summary: "A turn-based territory game where overloaded cells burst into neighboring spaces and convert opposing pieces. Small moves can trigger large chain reactions.",
+    objective: "Capture the opponent's cells through controlled explosions and remain the last player with pieces on the board.", modes: "The catalog documents multiplayer-oriented turn-based play; the exact local or remote connection setup has not been independently confirmed.",
+    input: "Click or tap a cell you control to add a piece; full cells distribute pieces into adjacent cells.", deviceSetup: "Mouse and touch-style board input are documented.", invite: "A private invitation method has not been verified.",
+    tips: ["Build corner and edge cells carefully because they require fewer pieces to burst.", "Look beyond the first explosion and count which neighboring cells may also overload.", "Avoid feeding an opponent's nearly full cell unless the resulting chain favors you."],
+    pickedBecause: "Its chain-reaction system offers deeper spatial planning than a traditional line-making board game.", limitations: "The multiplayer connection method needs further review, and chain reactions can be difficult to predict at first."
   }
 };
 
