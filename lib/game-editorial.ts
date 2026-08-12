@@ -294,6 +294,76 @@ export const gameEditorial: Record<string, GameEditorial> = {
     input: "Use W to move forward and A or D to move sideways; double left-click movement is also listed.", deviceSetup: "Desktop keyboard and mouse input are documented.", invite: "Online competition is documented, while a private friend lobby has not been verified.",
     tips: ["Read all available answers before committing when the course allows time.", "Center the runner after a sideways move so the next choice remains reachable.", "Recover from one wrong answer instead of making a second rushed decision."],
     pickedBecause: "It blends knowledge and movement, adding a different skill mix to the online catalog.", limitations: "Question difficulty can vary, and private-lobby support is unconfirmed."
+  },
+  "tung-sahur-io": {
+    summary: "A large online infection match where players begin as escaping characters while infected opponents spread across the map.",
+    objective: "Survive as an uninfected runner or, after infection, catch the remaining runners before the round ends.", modes: "Online infection matches advertised for up to 100 players are documented.",
+    input: "Use WASD or Arrow Keys to move, the mouse to look and left click to jump or attack; mobile dual-drag controls are listed.", deviceSetup: "Desktop keyboard-and-mouse and mobile touch controls are documented.", invite: "Large online matches are documented; private friend-room support has not been verified.",
+    tips: ["Keep several escape routes visible instead of entering a dead end.", "Save sudden direction changes for when an infected player commits to a chase.", "After infection, approach runners from the side rather than following directly behind."],
+    pickedBecause: "It provides a large-player infection format with different objectives during the same round.", limitations: "The game uses viral meme imagery and school-character framing, and private matching is unconfirmed."
+  },
+  "billiard-champion": {
+    summary: "A browser billiards game focused on aim, shot strength and planning where the cue ball will finish after contact.",
+    objective: "Pot the required balls under the selected table rules while avoiding fouls and leaving difficult replies.", modes: "The catalog labels the game multiplayer, but the exact opponent and match setup has not been independently confirmed.",
+    input: "Use the on-screen mouse or touch controls to aim and set shot power.", deviceSetup: "Pointer and touch-style controls are documented.", invite: "No private invitation flow has been verified.",
+    tips: ["Plan the cue ball's stopping point before choosing shot power.", "Use moderate force for routine pots so the next position remains predictable.", "Choose a defensive leave when no high-percentage shot is available."],
+    pickedBecause: "It adds a precision table sport with a slower tactical pace.", limitations: "The supplier description is corrupted and does not clearly document multiplayer connection or the exact billiards rules."
+  },
+  "pga3-zombie": {
+    summary: "A voxel survival shooter where players defend against repeated zombie waves, improve equipment and use traps to hold each area.",
+    objective: "Survive escalating waves, maintain defenses and defeat stronger enemies without letting the team collapse.", modes: "Solo survival and online cooperation for up to four players are documented.",
+    input: "Use the mouse to aim and left click to shoot; follow the in-game keyboard prompts for movement, weapons and menus.", deviceSetup: "Desktop keyboard-and-mouse play is documented.", invite: "Four-player cooperation is documented, but a private friend invitation flow has not been confirmed.",
+    tips: ["Repair defenses during quiet moments rather than waiting for the next wave.", "Cover different approaches so the whole team does not aim at one target.", "Spend upgrades on a dependable weapon before spreading resources across several options."],
+    pickedBecause: "It offers a clear cooperative survival objective for a small online team.", limitations: "It contains voxel gun combat and zombie themes, and the supplier's control text is incomplete."
+  },
+  "iron-legion": {
+    summary: "A real-time online tank game with vehicle classes, terrain and team battles. Positioning and cooperation matter alongside accurate shooting.",
+    objective: "Complete combat objectives with the team, damage opposing vehicles and use the chosen tank's strengths effectively.", modes: "Real-time online team battles for up to 20 players are documented.",
+    input: "Use WASD or Arrow Keys to drive, the mouse to rotate the camera, left click to fire and right click to aim.", deviceSetup: "Desktop keyboard-and-mouse controls are documented.", invite: "Team matchmaking is documented; private squads or friend invitations have not been verified.",
+    tips: ["Use terrain as cover while reloading instead of remaining exposed.", "Stay close enough to teammates to focus fire without bunching into one target.", "Match the route to the vehicle class: scouts need mobility, while heavier tanks benefit from protected angles."],
+    pickedBecause: "It adds larger team battles and vehicle roles to the online catalog.", limitations: "The game centers on modern military tank combat and realistic damage mechanics."
+  },
+  "pga-toons": {
+    summary: "A bright voxel arena shooter that combines rooftop parkour, jump pads and jetpack movement with quick firefights.",
+    objective: "Use movement and weapon control to outscore opponents across the arena's vertical routes.", modes: "Online multiplayer arena shooting is documented.",
+    input: "Use the keyboard for movement, the mouse to aim and click to shoot; Tab opens the menu according to the supplier controls.", deviceSetup: "Desktop keyboard-and-mouse play is documented.", invite: "Online arena play is documented; private friend matching has not been verified.",
+    tips: ["Change elevation after firing so opponents cannot hold the same angle.", "Use jump pads with a destination in mind rather than entering the air without cover.", "Reload behind solid geometry instead of while crossing open rooftops."],
+    pickedBecause: "Its vertical movement distinguishes it from flatter multiplayer shooting arenas.", limitations: "It contains cartoon gun combat, and the supplier does not provide a complete control list or private-room details."
+  },
+  "guardz-io": {
+    summary: "A fast medieval IO arena where knights compete at close range. Survival depends on spacing attacks and avoiding crowded engagements.",
+    objective: "Defeat rival knights, improve the current run and survive as long as possible in the multiplayer arena.", modes: "Online multiplayer sword combat is documented.",
+    input: "Mouse click or tap controls are listed; use the prompts inside the game for movement and attacks.", deviceSetup: "Pointer and touch-style browser input are documented.", invite: "Public online play is documented; private friend-room support has not been confirmed.",
+    tips: ["Approach from an angle so a missed attack does not leave a direct counter line.", "Avoid the center when several fights overlap.", "Disengage briefly after taking damage instead of immediately trading again."],
+    pickedBecause: "It offers short, accessible IO rounds with a clearly competitive arena goal.", limitations: "The game contains cartoon sword combat, and its supplier description leaves control and matchmaking details sparse."
+  },
+  "snake-war-multiplayer": {
+    summary: "An online snake-survival arena where glowing orbs increase length and defeated rivals leave additional resources behind.",
+    objective: "Grow the snake, avoid collisions and outlast or trap other snakes in the arena.", modes: "Online multiplayer survival play is documented.",
+    input: "Mouse click or tap controls are listed; follow the steering prompts shown inside the game.", deviceSetup: "Pointer and mobile-style touch input are documented.", invite: "Public multiplayer is documented; a private friend invitation method has not been confirmed.",
+    tips: ["Collect safely at the edge until the snake is long enough to pressure rivals.", "Do not cross in front of a larger snake without a clear exit.", "Circle dropped orbs carefully because other players will converge on the same reward."],
+    pickedBecause: "It provides the familiar competitive snake loop with clear growth and survival feedback.", limitations: "Crowded arenas can end a run suddenly, and friend-specific matchmaking is unconfirmed."
+  },
+  "survev-io": {
+    summary: "A top-down online battle royale where players begin without equipment, search buildings and stay ahead of a shrinking safe zone.",
+    objective: "Find weapons and supplies, remain inside the safe area and be the last surviving player or team.", modes: "Online battle-royale multiplayer is documented.",
+    input: "Use WASD to move, the mouse to aim, left click to attack, number keys or the wheel to change weapons and R to reload.", deviceSetup: "Desktop keyboard-and-mouse controls are documented.", invite: "Online matches are documented; team invitations or private rooms have not been verified.",
+    tips: ["Loot quickly near the starting area and move before the safe-zone route becomes urgent.", "Keep a close-range and a longer-range option when inventory allows.", "Use cover to reload and avoid crossing open ground without checking nearby movement."],
+    pickedBecause: "It adds a complete last-player-standing loop with looting, positioning and a changing map boundary.", limitations: "It includes gun combat and elimination, and its many keyboard controls take time to learn."
+  },
+  "sunny-fields": {
+    summary: "A farming progression game that mixes card matching, product packing and building upgrades. Competition comes through production leaderboards rather than direct live battles.",
+    objective: "Earn coins from matching and packing, expand the farm and produce enough value to climb the leaderboard.", modes: "Solo farm progression with leaderboard competition is documented; real-time multiplayer is not confirmed.",
+    input: "Click or tap to match cards, pack products, buy animals and choose upgrades.", deviceSetup: "Mouse and touch-style controls are documented.", invite: "No direct friend invitation or live opponent mode has been verified.",
+    tips: ["Upgrade production that repeatedly feeds the packing stage before buying every available item.", "Arrange milk and eggs to reduce wasted box space.", "Compare upgrade cost with the extra income it produces before spending all coins."],
+    pickedBecause: "It offers asynchronous leaderboard competition and a non-combat progression loop.", limitations: "This is not verified as real-time multiplayer, so players seeking a live opponent should choose another game."
+  },
+  "popaloon": {
+    summary: "A cartoon balloon-defense game where different weapons change the timing and accuracy needed to stop targets escaping the screen.",
+    objective: "Pop incoming balloons before they escape and reduce the player's health, adapting to each weapon's strengths.", modes: "The catalog carries two-player and multiplayer labels, but a specific competitive or cooperative mode has not been independently confirmed.",
+    input: "Click or tap to aim and fire at balloons.", deviceSetup: "Mouse and touchscreen input are documented.", invite: "No friend invitation or opponent connection flow has been verified.",
+    tips: ["Prioritize balloons closest to leaving the screen.", "Learn one weapon's timing before switching frequently.", "Aim for controlled shots when targets overlap instead of firing at empty space."],
+    pickedBecause: "It provides a light cartoon shooting challenge with varied weapon behavior.", limitations: "Despite multiplayer catalog tags, the reviewed data does not establish a true two-player mode; the game also uses mild cartoon weapon imagery."
   }
 };
 
