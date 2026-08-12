@@ -5,7 +5,10 @@ const nextConfig = {
   output: "export",
   images: {
     unoptimized: true,
-    remotePatterns: [{ protocol: "https", hostname: "img.gamepix.com" }],
+    remotePatterns: [
+      { protocol: "https", hostname: "img.gamepix.com" },
+      { protocol: "https", hostname: "img.gamemonetize.com" },
+    ],
   },
   trailingSlash: true,
   pageExtensions: ["ts", "tsx", "md", "mdx"],
