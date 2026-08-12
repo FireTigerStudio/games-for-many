@@ -1,0 +1,407 @@
+{
+  "multiplayer-forest-survive": {
+    "summary": "Choose a mode and follow the in-game objective. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Choose a mode and follow the in-game objective.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Multiplayer Forest Survive adds a reviewed survival option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "neon-king-a-local-multiplayer-platformer": {
+    "summary": "Neon King invites you to vibrant pixelated battles in an electrifying retro universe. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Neon King invites you to vibrant pixelated battles in an electrifying retro universe.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Neon King - A local multiplayer Platformer adds a reviewed pixel option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "chess-multiplayer-online": {
+    "summary": "Choose a mode and follow the in-game objective. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Choose a mode and follow the in-game objective.",
+    "modes": "Online multiplayer play is available alongside any solo or AI options shown in the game.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "Use a connected browser and follow the lobby or matchmaking prompts.",
+    "invite": "Use the in-game online, friend or matchmaking option when available; no open chat is documented in our catalog data.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Chess Multiplayer Online adds a reviewed chess option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "ludo-game-multiplayer": {
+    "summary": "Challenge friends in Ludo Game Multiplayer, where luck and strategy unite! This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Challenge friends in Ludo Game Multiplayer, where luck and strategy unite!",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Ludo Game Multiplayer adds a reviewed board option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "duo-with-online-friends-multiplayer-card-game": {
+    "summary": "Unleash strategic fun with DUO With Friends, where traditional card play is reimagined for multiplayer excitement. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Unleash strategic fun with DUO With Friends, where traditional card play is reimagined for multiplayer excitement.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "DUO With Friends - Multiplayer Card Game adds a reviewed card option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "bowling-hero-multiplayer": {
+    "summary": "Unleash your inner Bowling Hero in this dynamic multiplayer game. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Unleash your inner Bowling Hero in this dynamic multiplayer game.",
+    "modes": "Local/shared-device and online multiplayer options are available.",
+    "input": "Use the mouse, touch controls or keyboard prompts shown inside the game to aim, move or take each turn.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "Use the in-game online, friend or matchmaking option when available; no open chat is documented in our catalog data.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Bowling Hero Multiplayer adds a reviewed sports option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "reversi-multiplayer": {
+    "summary": "Dive into Reversi Multiplayer, where strategic depth meets competitive excitement. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Dive into Reversi Multiplayer, where strategic depth meets competitive excitement.",
+    "modes": "Local/shared-device and online multiplayer options are available.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "Use the in-game online, friend or matchmaking option when available; no open chat is documented in our catalog data.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Reversi Multiplayer adds a reviewed board option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "straight-4-multiplayer": {
+    "summary": "Enter the strategic world of Straight 4 Multiplayer, where you challenge an opponent to connect four discs in a row. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Enter the strategic world of Straight 4 Multiplayer, where you challenge an opponent to connect four discs in a row.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Straight 4 Multiplayer adds a reviewed board option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "goose-game-multiplayer": {
+    "summary": "Dive into the hilarity with Goose Game Multiplayer, where classic board game fun meets unexpected twists. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Dive into the hilarity with Goose Game Multiplayer, where classic board game fun meets unexpected twists.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Goose Game Multiplayer adds a reviewed board option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "cellular-war-online-multiplayer": {
+    "summary": "Join the microscopic frenzy in Cellular War, where you control a cell battling for dominance in a vibrant arena. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Join the microscopic frenzy in Cellular War, where you control a cell battling for dominance in a vibrant arena.",
+    "modes": "Online multiplayer play is available alongside any solo or AI options shown in the game.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "Use a connected browser and follow the lobby or matchmaking prompts.",
+    "invite": "Use the in-game online, friend or matchmaking option when available; no open chat is documented in our catalog data.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Cellular War - Online Multiplayer adds a reviewed io option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "survival-on-raft-multiplayer": {
+    "summary": "Embark on a thrilling survival journey in Raft Multiplayer, where every scrap counts. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Embark on a thrilling survival journey in Raft Multiplayer, where every scrap counts.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Survival On Raft Multiplayer adds a reviewed survival option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "4-colors-multiplayer": {
+    "summary": "Dive into the fast-paced card game action of 4 Colors Multiplayer! This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Dive into the fast-paced card game action of 4 Colors Multiplayer!",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "4 Colors Multiplayer adds a reviewed card option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "rock-paper-scissors-multiplayer": {
+    "summary": "Dive into the timeless fun of Rock Paper Scissors, now reimagined for multiplayer delight. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Dive into the timeless fun of Rock Paper Scissors, now reimagined for multiplayer delight.",
+    "modes": "Online multiplayer play is available alongside any solo or AI options shown in the game.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "Use a connected browser and follow the lobby or matchmaking prompts.",
+    "invite": "Use the in-game online, friend or matchmaking option when available; no open chat is documented in our catalog data.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Rock Paper Scissors Multiplayer adds a reviewed board option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "battleship-war-multiplayer": {
+    "summary": "Command your fleet in Battleship War Multiplayer, where tactical brilliance meets maritime chaos. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Command your fleet in Battleship War Multiplayer, where tactical brilliance meets maritime chaos.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Battleship War Multiplayer adds a reviewed brain option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "rage-jump-multiplayer-physics-frenzy": {
+    "summary": "Dive into the chaotic fun of Rage Jump, where vibrant pixel-art and unpredictable physics collide. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Dive into the chaotic fun of Rage Jump, where vibrant pixel-art and unpredictable physics collide.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Rage Jump Multiplayer Physics Frenzy adds a reviewed multiplayer option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "snake-and-ladders-multiplayer": {
+    "summary": "Race your friends to the top in Snakes and Ladders Multiplayer! This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Race your friends to the top in Snakes and Ladders Multiplayer!",
+    "modes": "Online multiplayer play is available alongside any solo or AI options shown in the game.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "Use a connected browser and follow the lobby or matchmaking prompts.",
+    "invite": "Use the in-game online, friend or matchmaking option when available; no open chat is documented in our catalog data.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Snakes and Ladders Multiplayer adds a reviewed snake option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "domino-online-multiplayer": {
+    "summary": "Dive into strategic battles with Domino Online Multiplayer! This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Dive into strategic battles with Domino Online Multiplayer!",
+    "modes": "Online multiplayer play is available alongside any solo or AI options shown in the game.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "Use a connected browser and follow the lobby or matchmaking prompts.",
+    "invite": "Use the in-game online, friend or matchmaking option when available; no open chat is documented in our catalog data.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Domino Online Multiplayer adds a reviewed board option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "multiplayer-cooking-coop": {
+    "summary": "Dive into a culinary frenzy where quick reflexes and clever strategies determine your kitchen triumph! This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Dive into a culinary frenzy where quick reflexes and clever strategies determine your kitchen triumph!",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Multiplayer Cooking Coop adds a reviewed cooking option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "last-card-multiplayer": {
+    "summary": "Choose a mode and follow the in-game objective. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Choose a mode and follow the in-game objective.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Last Card Multiplayer adds a reviewed card option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "online-cats-multiplayer-park": {
+    "summary": "Dive into feline frenzy with Online Cats - Multiplayer Park! This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Dive into feline frenzy with Online Cats - Multiplayer Park!",
+    "modes": "Online multiplayer play is available alongside any solo or AI options shown in the game.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "Use a connected browser and follow the lobby or matchmaking prompts.",
+    "invite": "Use the in-game online, friend or matchmaking option when available; no open chat is documented in our catalog data.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Online Cats Multiplayer Park adds a reviewed adventure option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "8-ball-pool-multiplayer": {
+    "summary": "Experience the thrill of competitive pool in 8 Ball Pool Multiplayer. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Experience the thrill of competitive pool in 8 Ball Pool Multiplayer.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the mouse or touch controls to select pieces, cards or board positions, and follow the legal-move prompts shown in the game.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "8 Ball Pool Multiplayer adds a reviewed board option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "penalty-challenge-multiplayer": {
+    "summary": "In Penalty Kick, experience the thrill of intense football duels. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "In Penalty Kick, experience the thrill of intense football duels.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the mouse, touch controls or keyboard prompts shown inside the game to aim, move or take each turn.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Penalty Kick adds a reviewed sports option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "worlds-4-a-multiplayer-platformer": {
+    "summary": "Embark on an epic adventure in Worlds 4, navigating diverse landscapes from icy tundras to sweet candy realms. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Embark on an epic adventure in Worlds 4, navigating diverse landscapes from icy tundras to sweet candy realms.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Worlds 4 adds a reviewed multiplayer option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "the-quest-arena-multiplayer": {
+    "summary": "Embark on a perilous multiplayer journey in The Quest Arena, where four heroes face relentless foes and powerful bosses. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Embark on a perilous multiplayer journey in The Quest Arena, where four heroes face relentless foes and powerful bosses.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "The Quest Arena adds a reviewed battle-royale option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "red-vs-blue-multiplayer": {
+    "summary": "Dive into the chaotic fun of Red Vs Blue Multiplayer, where two players sprint through an endless isometric world on a single keyboard. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Dive into the chaotic fun of Red Vs Blue Multiplayer, where two players sprint through an endless isometric world on a single keyboard.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Red VS Blue adds a reviewed two-player option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "where-is": {
+    "summary": "Challenge your memory and speed in \"Where is - Multiplayer,\" a thrilling geography trivia duel. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Challenge your memory and speed in \"Where is - Multiplayer,\" a thrilling geography trivia duel.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Where is - Multiplayer adds a reviewed puzzle option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  },
+  "vangers-cx": {
+    "summary": "Plunge into the retro world of Vangers CX multiplayer, where survival and adventure unite. This reviewed GamePix edition supports multiplayer play without a separate download.",
+    "objective": "Plunge into the retro world of Vangers CX multiplayer, where survival and adventure unite.",
+    "modes": "Solo and shared-device multiplayer options are available.",
+    "input": "Use the keyboard, mouse or touch controls displayed inside the game. Check the mode screen for separate player controls or online connection options.",
+    "deviceSetup": "For local play, share the device and check the mode screen before starting.",
+    "invite": "No online invitation is required for the shared-device mode.",
+    "tips": [
+      "Open the mode menu before starting so every player understands the setup.",
+      "Use an early round to learn the controls before playing competitively.",
+      "If a match offers both AI and multiplayer choices, practice against the AI first."
+    ],
+    "pickedBecause": "Vangers CX multiplayer adds a reviewed strategy option to the site's multiplayer catalog and uses an official attributed GamePix embed.",
+    "limitations": "Exact control keys and friend-connection steps can vary by mode, so follow the prompts displayed inside the current game version."
+  }
+}

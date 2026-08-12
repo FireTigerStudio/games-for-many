@@ -382,4 +382,7 @@ export const gameEditorial: Record<string, GameEditorial> = {
   }
 };
 
-export function getGameEditorial(slug: string): GameEditorial | undefined { return gameEditorial[slug]; }
+export function getGameEditorial(slug: string): GameEditorial | undefined {
+  return gameEditorial[slug] ?? (gamePixBatch as Record<string, GameEditorial>)[slug];
+}
+import gamePixBatch from "@/data/game-editorial-gamepix-batch.json";
