@@ -48,7 +48,7 @@
       "slug": "darts-pro-multiplayer",
       "title": "Darts Pro Multiplayer",
       "primaryGenre": "sports",
-      "playerMode": "both",
+      "playerMode": "online",
       "playerCount": "2+",
       "collectionSignals": [
         "multiplayer",
@@ -528,7 +528,7 @@
       "slug": "tung-sahur-io",
       "title": "Tung Sahur IO",
       "primaryGenre": "io",
-      "playerMode": "local",
+      "playerMode": "online",
       "playerCount": "1-2+",
       "collectionSignals": [
         "io",
