@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { GameCard } from "@/components/GameCard";
 import { SEOHead } from "@/components/SEOHead";
 import { getAllGames, getGame, getRelatedGames } from "@/lib/games";
+import { getGameEditorial } from "@/lib/game-editorial";
 import { pageMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 
@@ -25,6 +26,7 @@ export default function GamePage({ params }: { params: { slug: string } }) {
   if (!game) notFound();
   const canEmbed = game.iframeUrl && game.licenseStatus === "verified" && game.safetyStatus === "approved";
   const related = getRelatedGames(game);
+  const editorial = getGameEditorial(game.slug);
   const schema = {
     "@context": "https://schema.org",
     "@type": "VideoGame",
@@ -35,6 +37,7 @@ export default function GamePage({ params }: { params: { slug: string } }) {
     genre: [game.category, ...game.tags],
     playMode: "MultiPlayer",
     author: { "@type": "Organization", name: game.developer },
+    dateModified: game.reviewedAt,
   };
   return (
     <div className="page-shell">
@@ -51,9 +54,12 @@ export default function GamePage({ params }: { params: { slug: string } }) {
             )}
           </div>
           <div className="prose-copy mt-8">
+            {editorial && <><p className="text-lg leading-8 text-slate-700">{editorial.summary}</p><h2>Quick facts</h2><ul><li>Players: {game.playerCount}</li><li>Play type: {game.gameplayType}</li><li>Input: {editorial.input}</li><li>Device setup: {editorial.deviceSetup}</li><li>Friend connection: {editorial.invite}</li></ul></>}
             <h2>About {game.title}</h2><p>{game.description}</p>
-            <h2>How to play</h2><p>{game.controls}</p>
-            <h2>Game details</h2><ul><li>Players: {game.playerCount}</li><li>Play type: {game.gameplayType}</li><li>Developer: {game.developer}</li><li>Official source: {game.sourcePlatform}</li></ul>
+            <h2>How to play {game.title}</h2><p>{editorial?.objective ?? game.controls}</p>
+            <h2>Controls</h2><p>{editorial?.input ?? game.controls}</p>
+            {editorial && <><h2>Game modes</h2><p>{editorial.modes}</p><h2>Tips for playing</h2><ul>{editorial.tips.map((tip) => <li key={tip}>{tip}</li>)}</ul><h2>Why we picked this game</h2><p>{editorial.pickedBecause}</p><h2>What to know before playing</h2><p>{editorial.limitations}</p></>}
+            <h2>Game details</h2><ul><li>Players: {game.playerCount}</li><li>Play type: {game.gameplayType}</li><li>Developer: {game.developer}</li><li>Official source: {game.sourcePlatform}</li><li>Last reviewed: {game.reviewedAt}</li></ul>
           </div>
         </article>
         <aside><AdSlot slot="game-sidebar" /><div className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 text-sm leading-6 text-slate-600"><strong className="text-slate-950">Safety note</strong><p className="mt-2">We list only reviewed official embeds and avoid adult, gambling, graphic violence and unauthorized IP content.</p></div></aside>
