@@ -224,6 +224,76 @@ export const gameEditorial: Record<string, GameEditorial> = {
     input: "Click or tap a cell you control to add a piece; full cells distribute pieces into adjacent cells.", deviceSetup: "Mouse and touch-style board input are documented.", invite: "A private invitation method has not been verified.",
     tips: ["Build corner and edge cells carefully because they require fewer pieces to burst.", "Look beyond the first explosion and count which neighboring cells may also overload.", "Avoid feeding an opponent's nearly full cell unless the resulting chain favors you."],
     pickedBecause: "Its chain-reaction system offers deeper spatial planning than a traditional line-making board game.", limitations: "The multiplayer connection method needs further review, and chain reactions can be difficult to predict at first."
+  },
+  "brainrot-bridge-race-3d": {
+    summary: "A colorful multiplayer obstacle race where collecting bananas helps build the route ahead. Speed matters, but choosing a clean line through each section matters too.",
+    objective: "Collect enough bananas to advance across the course and reach the finish before competing runners.", modes: "Multiplayer racing against other runners is documented.",
+    input: "Mouse click or tap controls are listed; follow the movement prompts shown in the game.", deviceSetup: "Pointer and touch-style browser input are documented.", invite: "Opponent racing is documented, but a private friend invitation flow has not been verified.",
+    tips: ["Collect along a direct route instead of crossing the course for every banana.", "Watch the next obstacle while gathering so you approach it from a useful angle.", "Protect a safe lead rather than taking a crowded shortcut near the finish."],
+    pickedBecause: "It adds an easy-to-read party race with collection and route-choice decisions.", limitations: "The meme-inspired presentation may not appeal to everyone, and private-room support is unconfirmed."
+  },
+  "color-path-io": {
+    summary: "A territory-running arena where every movement extends a colored trail. Players balance expansion against the risk of leaving a path exposed.",
+    objective: "Loop back to claimed territory to capture new space and finish with more area than competing players.", modes: "Online IO-style multiplayer territory play is documented.",
+    input: "Click, tap or use the movement method shown inside the game to steer the runner.", deviceSetup: "Mouse and touch-style controls are listed.", invite: "Public multiplayer is documented; private friend matching has not been confirmed.",
+    tips: ["Start with short loops until there is enough safe territory behind you.", "Turn back early when another trail approaches your exposed path.", "Expand into quiet edges rather than contesting the busiest center immediately."],
+    pickedBecause: "Its visible territory gives multiplayer progress a clear objective beyond simple survival.", limitations: "Long expansion routes can be lost quickly, and the supplier does not document a private-room option."
+  },
+  "board-kings-board-dice": {
+    summary: "A multiplayer board-building game driven by dice rolls, upgrades and visits to rival boards. Progress comes from deciding where earned resources have the most value.",
+    objective: "Roll to move, earn resources, improve the board and compete by developing a stronger empire than other players.", modes: "Online multiplayer board progression is documented.",
+    input: "Click or tap to roll, select upgrades and use board actions.", deviceSetup: "Mouse and touchscreen-style controls are documented.", invite: "Multiplayer interaction is documented; a direct private invitation method has not been verified.",
+    tips: ["Prioritize upgrades that improve repeated income before expensive cosmetic choices.", "Keep some resources available when an upcoming space may require a decision.", "Review the board before rolling so you know which outcomes are most valuable."],
+    pickedBecause: "It provides a persistent board-game format distinct from the site's short head-to-head matches.", limitations: "Progression is more complex than a traditional board game, and friend-specific matching is unconfirmed."
+  },
+  "ballon-race-3d": {
+    summary: "A whimsical 3D multiplayer race where collected balloons lift runners off the ground. Efficient collection creates both height and forward speed.",
+    objective: "Gather balloons, gain enough lift to clear the course and reach the finish before the other racers.", modes: "Multiplayer racing against other runners is documented.",
+    input: "Mouse click or tap controls are listed; use the in-game steering prompts during the race.", deviceSetup: "Pointer and touch-style input are documented.", invite: "Racing against other players is documented, but private friend invitations are not confirmed.",
+    tips: ["Follow dense balloon lines instead of zigzagging for isolated pickups.", "Build lift before approaching sections that require a longer flight.", "Make small steering corrections in the air to preserve forward momentum."],
+    pickedBecause: "The balloon collection mechanic makes its racing strategy visually clear and different from ground-only runners.", limitations: "The title is spelled 'Ballon' in the supplier listing, and the exact matchmaking options are not documented."
+  },
+  "imposter-duck-online": {
+    summary: "An online social-deduction game set on a space station, with crew members completing missions while hidden imposters disrupt the group.",
+    objective: "As crew, complete tasks and identify suspicious ducks; as an imposter, interfere without being discovered.", modes: "Cross-platform online multiplayer with hidden-role matches is documented.",
+    input: "Use WASD or Arrow Keys on desktop; a touch joystick is documented for mobile.", deviceSetup: "Desktop keyboard and mobile touch controls are documented.", invite: "Online multiplayer is verified; a specific private-room or friend-code flow has not been confirmed.",
+    tips: ["Learn task locations early so unusual movement is easier to notice.", "Stay near enough to observe others without following one player blindly.", "Base accusations on routes and events rather than one unexplained pause."],
+    pickedBecause: "It adds team deduction and cross-platform play instead of another reflex-only arena.", limitations: "Social-deduction matches involve deception and depend heavily on the behavior and availability of other players."
+  },
+  "drunken-duel-2-players": {
+    summary: "A physics-based western duel controlled with a single action button. Unstable ragdoll movement makes each short round unpredictable.",
+    objective: "Time shots to hit the opposing duelist and win the required number of rounds first.", modes: "One-player and two-player modes are documented.",
+    input: "The game uses left-click input; follow the on-screen side assignment in two-player mode.", deviceSetup: "Desktop pointer play is documented.", invite: "No remote invitation flow is verified; the two-player option should be treated as shared-device unless the game shows otherwise.",
+    tips: ["Wait for the weapon to rotate toward the opponent before firing.", "Use the first round to learn how recoil changes the character's position.", "Avoid rapid clicking when one well-timed shot can preserve ammunition and balance."],
+    pickedBecause: "Its one-button rules make it easy to hand between players for quick party rounds.", limitations: "The game contains cartoon gun duels, and the exact two-player device arrangement is only briefly documented."
+  },
+  "rocketcar-cup": {
+    summary: "A fast 2D car-soccer game with boosts, hard hits and aerial movement. Matches reward rotation between attacking the ball and protecting the goal.",
+    objective: "Drive the ball into the opposing goal while defending your own side in one-on-one or team matches.", modes: "Online one-on-one and team competition are documented.",
+    input: "Use WASD or Arrow Keys to drive, Shift for boost and Q for a hard hit; virtual joystick controls are also listed.", deviceSetup: "Desktop keyboard and mobile virtual controls are documented.", invite: "Online matches are documented, but a private friend invitation route has not been verified.",
+    tips: ["Stay behind the ball when defending so a missed challenge does not expose the goal.", "Save some boost for recovery after an attack.", "Use hard hits when the car is aligned with open space rather than striking from every angle."],
+    pickedBecause: "It brings a recognizable competitive sport format with both solo-duel and team possibilities.", limitations: "Aerial control takes practice, and private-room support is unconfirmed."
+  },
+  "jungle-fight": {
+    summary: "A lane-based animal battle where players deploy different units to pressure the opposing side. Timing and lane choice are more important than direct character control.",
+    objective: "Use animal abilities to break through the opposing forces and reduce the opponent's health to zero.", modes: "Competitive player-versus-player strategy is described by the supplier.",
+    input: "Select an available animal skill, then click or tap a lane to deploy it.", deviceSetup: "Mouse and touch-style controls are documented.", invite: "The current review confirms competitive play but not a private invitation method.",
+    tips: ["Do not stack every unit in one lane when the opponent can counter it cheaply.", "Hold a flexible skill until the opponent reveals where pressure is building.", "Deploy durable units before fragile damage dealers when pushing the same lane."],
+    pickedBecause: "It adds a tactical lane game with readable unit deployment instead of reflex-heavy movement.", limitations: "The supplier does not fully document matchmaking, unit statistics or friend-room support."
+  },
+  "speen": {
+    summary: "A momentum-based IO game where two connected circles swap pivot roles to swing through pickups and opponents. Mastering the single action creates most of the skill ceiling.",
+    objective: "Fill both meters, use charged movement to defeat hazards and rivals, then expand territory in the shared multiplayer world.", modes: "Progression challenges, boss encounters and a shared multiplayer territory mode are documented.",
+    input: "Click or tap to swap which circle is planted and which circle swings.", deviceSetup: "Mouse and touch input are documented.", invite: "A shared multiplayer world is documented; direct friend invitation has not been confirmed.",
+    tips: ["Swap pivots near the end of an arc to carry momentum forward.", "Approach green and pink pickups with the correct circle role already prepared.", "Enter rival territory with enough meter to escape after a challenge."],
+    pickedBecause: "Its one-action momentum system gives the IO collection a distinctive movement mechanic.", limitations: "The pivot physics require practice, and the shared-world connection options are only briefly described."
+  },
+  "quiz-runner-io": {
+    summary: "An online race that combines directional movement with trivia decisions. Fast answers help, but staying on a controlled route is equally important.",
+    objective: "Answer questions correctly, keep moving through the course and finish ahead of competing players on the leaderboard.", modes: "Online multiplayer quiz racing is documented.",
+    input: "Use W to move forward and A or D to move sideways; double left-click movement is also listed.", deviceSetup: "Desktop keyboard and mouse input are documented.", invite: "Online competition is documented, while a private friend lobby has not been verified.",
+    tips: ["Read all available answers before committing when the course allows time.", "Center the runner after a sideways move so the next choice remains reachable.", "Recover from one wrong answer instead of making a second rushed decision."],
+    pickedBecause: "It blends knowledge and movement, adding a different skill mix to the online catalog.", limitations: "Question difficulty can vary, and private-lobby support is unconfirmed."
   }
 };
 
