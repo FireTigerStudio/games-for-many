@@ -23,5 +23,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body><Analytics /><SiteHeader /><main>{children}</main><SiteFooter /><CookieConsent /></body></html>;
+  return <html lang="en"><head>
+    <script dangerouslySetInnerHTML={{ __html: `
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+      window.gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied'
+      });
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-1FXG6YDPHK');
+    ` }} />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FXG6YDPHK" />
+  </head><body><Analytics /><SiteHeader /><main>{children}</main><SiteFooter /><CookieConsent /></body></html>;
 }

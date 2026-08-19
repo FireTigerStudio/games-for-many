@@ -1,10 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 
 const CONSENT_KEY = "gfm-cookie-consent";
-const GA_ID = "G-1FXG6YDPHK";
 const CLARITY_ID = "y15ydkah2h";
 
 type ClarityFunction = ((...args: unknown[]) => void) & { q?: unknown[][] };
@@ -18,13 +16,20 @@ declare global {
 }
 
 export function Analytics() {
-  const pathname = usePathname();
   const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
     const updateConsent = (event?: Event) => {
       const value = event instanceof CustomEvent ? event.detail : localStorage.getItem(CONSENT_KEY);
+      const state = value === "accepted" ? "granted" : "denied";
       setEnabled(value === "accepted");
+
+      window.gtag("consent", "update", {
+        ad_storage: state,
+        ad_user_data: state,
+        ad_personalization: state,
+        analytics_storage: state,
+      });
     };
 
     updateConsent();
@@ -34,18 +39,6 @@ export function Analytics() {
 
   useEffect(() => {
     if (!enabled) return;
-
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = window.gtag || function gtag(...args: unknown[]) { window.dataLayer.push(args); };
-    window.gtag("js", new Date());
-    window.gtag("config", GA_ID);
-
-    if (!document.querySelector(`script[src*="googletagmanager.com/gtag/js?id=${GA_ID}"]`)) {
-      const gaScript = document.createElement("script");
-      gaScript.async = true;
-      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-      document.head.appendChild(gaScript);
-    }
 
     if (!window.clarity) {
       const clarityQueue: ClarityFunction = (...args: unknown[]) => {
@@ -64,19 +57,13 @@ export function Analytics() {
   }, [enabled]);
 
   useEffect(() => {
-    if (!enabled || !window.gtag) return;
-    window.gtag("event", "page_view", { page_path: pathname });
-  }, [enabled, pathname]);
-
-  useEffect(() => {
-    if (!enabled) return;
     const trackGameStart = (event: Event) => {
-      if (!(event instanceof CustomEvent) || !window.gtag) return;
+      if (!(event instanceof CustomEvent)) return;
       window.gtag("event", "game_start", event.detail);
     };
     window.addEventListener("gfm-game-start", trackGameStart);
     return () => window.removeEventListener("gfm-game-start", trackGameStart);
-  }, [enabled]);
+  }, []);
 
   return null;
 }
