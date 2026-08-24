@@ -13,7 +13,7 @@ import { siteConfig } from "@/lib/site";
 const priorityGameMetadata: Record<string, { title: string; description: string }> = {
   "iron-legion": {
     title: "Iron Legion Tank Game - Play Online",
-    description: "Play Iron Legion, a real-time online tank game with vehicle classes, detailed terrain and team battles for up to 20 players.",
+    description: "Play Iron Legion, a real-time online tank game with classic vehicle classes, detailed terrain, control-point objectives and team battles.",
   },
   "whot-the-ultimate-nigerian-card-game": {
     title: "WHOT Online Card Game - Play Multiplayer",

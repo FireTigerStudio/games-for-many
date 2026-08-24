@@ -247,3 +247,20 @@
 - 外链执行名单：`docs/07-first-backlink-outreach-batch.md`
 - **本文件**：截至 2026-08-24 的真实数据基线、代码进度和下一步执行顺序
 
+## 12. 2026-08-24 第一轮内容与 AdSense 跟进
+
+本轮内容批次：
+
+- Iron Legion 保持已部署 title 不变；正文改为控制点目标、十余种坦克、PvE/PvP、完整控制、优点和限制。
+- 公开来源对在线人数存在 10 人和 20 人两种说法；页面不再在搜索摘要中宣传 20 人，正文采用更新较近的 10 人公开信息，并保留私人邀请未验证说明。
+- Multiplayer 分类新增指向 Iron Legion 的上下文内链。
+- Best 2 Player Browser Games 对比表和正文新增 Duo Water and Fire、WHOT、Darts Pro Multiplayer，并明确同机/在线、输入方式、适合场景和邀请限制。
+- 该批次属于多来源资料核验，不记作亲手完成的游戏内试玩。真实启动、匹配和移动端体验仍需浏览器试玩复核。
+
+AdSense 截图结论：
+
+- `gamesformany.com` 已完成网站连接，但截图未显示 `Ready` 审批状态。
+- `Tell us about you` 付款资料仍为 Required；AdSense 官方说明，未完成必要账户设置时，网站审核可能不会启动。
+- 广告预览为 Optional，目前不是阻塞项。
+- 下一步由站长在 `Payments > Payments info > Manage settings` 核对账户类型是 Individual 还是 Organization，并使用能够完成身份/税务核验和接收国际平信的真实姓名或公司地址。
+- 再进入 `Sites` 查看 `Requires review`、`Getting ready`、`Needs attention` 或 `Ready` 的准确状态并保存截图。

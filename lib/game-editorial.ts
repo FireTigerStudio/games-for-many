@@ -317,11 +317,11 @@ export const gameEditorial: Record<string, GameEditorial> = {
     pickedBecause: "It offers a clear cooperative survival objective for a small online team.", limitations: "It contains voxel gun combat and zombie themes, and the supplier's control text is incomplete."
   },
   "iron-legion": {
-    summary: "A real-time online tank game with vehicle classes, terrain and team battles. Positioning and cooperation matter alongside accurate shooting.",
-    objective: "Complete combat objectives with the team, damage opposing vehicles and use the chosen tank's strengths effectively.", modes: "Real-time online team battles for up to 20 players are documented.",
-    input: "Use WASD or Arrow Keys to drive, the mouse to rotate the camera, left click to fire and right click to aim.", deviceSetup: "Desktop keyboard-and-mouse controls are documented.", invite: "Team matchmaking is documented; private squads or friend invitations have not been verified.",
-    tips: ["Use terrain as cover while reloading instead of remaining exposed.", "Stay close enough to teammates to focus fire without bunching into one target.", "Match the route to the vehicle class: scouts need mobility, while heavier tanks benefit from protected angles."],
-    pickedBecause: "It adds larger team battles and vehicle roles to the online catalog.", limitations: "The game centers on modern military tank combat and realistic damage mechanics."
+    summary: "A 3D tank combat game built around capturing control points, choosing a suitable vehicle and contributing to a team battle. More than ten classic tank models range from lighter reconnaissance vehicles to heavier assault options.",
+    objective: "Capture and hold strategic points with the team while landing hits, destroying opposing vehicles and keeping the chosen tank in useful positions.", modes: "Offline PvE practice against AI and real-time online PvP team battles are documented. A current public game listing describes online matches for up to 10 players.",
+    input: "Drive with WASD or the Arrow Keys, aim with the mouse, fire with the left mouse button, use the right mouse button for a precise sight, open player statistics with Tab and pause with P.", deviceSetup: "Desktop keyboard-and-mouse play is the best-documented setup. Browser support is also listed for mobile and tablet, but touch play has not received the same depth of review.", invite: "Online team matching is documented; private squads, room codes and direct friend invitations have not been verified.",
+    tips: ["Capture points with nearby teammates instead of remaining alone in an exposed objective area.", "Use hills, buildings and terrain as cover while the gun is not ready to fire.", "Choose routes that fit the vehicle: lighter tanks can scout and reposition, while heavier tanks benefit from protected firing angles."],
+    pickedBecause: "It combines recognizable tank classes with control-point objectives, vehicle upgrades and a choice between AI practice and live team competition.", limitations: "The game centers on modern military combat, the embed can take longer to start than a lightweight 2D game, and a private friend-join route is not confirmed."
   },
   "pga-toons": {
     summary: "A bright voxel arena shooter that combines rooftop parkour, jump pads and jetpack movement with quick firefights.",
