@@ -12,8 +12,8 @@ The launch path is a private GitHub repository connected to Cloudflare Pages. Ne
 | Output directory | `out` |
 | Node.js | 20+ |
 | Production domain | `gamesformany.com` |
-| Indexing before real content | `NEXT_PUBLIC_ALLOW_INDEXING=false` |
-| Indexing after launch review | `NEXT_PUBLIC_ALLOW_INDEXING=true` |
+| Private preview indexing block | `NEXT_PUBLIC_BLOCK_INDEXING=true` |
+| Production indexing | `NEXT_PUBLIC_BLOCK_INDEXING=false` |
 
 ## Next.js 14 security tradeoff
 

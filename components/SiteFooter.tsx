@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
+import { CookieSettingsButton } from "@/components/CookieSettingsButton";
 
 export function SiteFooter() {
   return (
@@ -9,7 +10,7 @@ export function SiteFooter() {
         <div className="flex flex-wrap items-center justify-between gap-4 text-sm">
           <p>© {new Date().getFullYear()} Games for Many</p>
           <nav aria-label="Legal" className="flex flex-wrap gap-4">
-            <Link href="/about/">About</Link><Link href="/contact/">Contact</Link><Link href="/privacy/">Privacy</Link><Link href="/terms/">Terms</Link><Link href="/cookies/">Cookies</Link>
+            <Link href="/about/">About</Link><Link href="/contact/">Contact</Link><Link href="/privacy/">Privacy</Link><Link href="/terms/">Terms</Link><Link href="/cookies/">Cookies</Link><CookieSettingsButton />
           </nav>
         </div>
       </div>

@@ -4,17 +4,33 @@ import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { GameCard } from "@/components/GameCard";
 import { SEOHead } from "@/components/SEOHead";
-import { categories, getCategory, getCategoryPage, getCategoryPageCount, getGamesByCategory } from "@/lib/games";
+import { categories, getCategory, getCategoryPage, getCategoryPageCount, getGamesByCategory, MIN_INDEXABLE_CATEGORY_GAMES } from "@/lib/games";
 import { pageMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
+
+const coreCategoryMetadata: Record<string, { title: string; description: string }> = {
+  "local-2-player": {
+    title: "Free Local 2 Player Games on One Computer",
+    description: "Play reviewed local two-player browser games on one computer with a shared keyboard, screen, mouse or pass-and-play controls.",
+  },
+  "online-2-player": {
+    title: "Free Online 2 Player Browser Games",
+    description: "Play reviewed online two-player browser games from separate devices with a friend, room or matched opponent where verified.",
+  },
+  multiplayer: {
+    title: "Free Multiplayer Browser Games",
+    description: "Join reviewed multiplayer browser games with real players in public matches, teams, rooms and online arenas.",
+  },
+};
 
 export function generateStaticParams() { return categories.map((category) => ({ slug: category.slug })); }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const category = getCategory(params.slug);
   if (!category) return {};
-  const metadata = pageMetadata(`Free ${category.title} Games Online`, category.description, `/category/${category.slug}/`);
-  if (getGamesByCategory(category.slug).length < 8) metadata.robots = { index: false, follow: true };
+  const seo = coreCategoryMetadata[category.slug];
+  const metadata = pageMetadata(seo?.title ?? `Free ${category.title} Games Online`, seo?.description ?? category.description, `/category/${category.slug}/`);
+  if (getGamesByCategory(category.slug).length < MIN_INDEXABLE_CATEGORY_GAMES) metadata.robots = { index: false, follow: true };
   return metadata;
 }
 

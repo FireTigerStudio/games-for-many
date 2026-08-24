@@ -10,12 +10,32 @@ import { getGameEditorial } from "@/lib/game-editorial";
 import { pageMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 
+const priorityGameMetadata: Record<string, { title: string; description: string }> = {
+  "iron-legion": {
+    title: "Iron Legion Tank Game - Play Online",
+    description: "Play Iron Legion, a real-time online tank game with vehicle classes, detailed terrain and team battles for up to 20 players.",
+  },
+  "whot-the-ultimate-nigerian-card-game": {
+    title: "WHOT Online Card Game - Play Multiplayer",
+    description: "Play the Nigerian card game WHOT online with AI practice and real-time multiplayer. Match shapes or numbers and empty your hand first.",
+  },
+  "darts-pro-multiplayer": {
+    title: "Darts Pro Multiplayer - Play Online Darts",
+    description: "Play an online multiplayer darts match, aim consistently and reduce a starting score of 501 to exactly zero.",
+  },
+  "duo-water-and-fire": {
+    title: "Duo Water and Fire - 2 Player Game",
+    description: "Play a local two-player platform game on one device. Use separate controls, collect the key and bring both elemental characters to the exit.",
+  },
+};
+
 export function generateStaticParams() { return getAllGames().map((game) => ({ slug: game.slug })); }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const game = getGame(params.slug);
   if (!game) return {};
-  const metadata = pageMetadata(`${game.title} - Play Online`, game.description, `/games/${game.slug}/`);
+  const seo = priorityGameMetadata[game.slug];
+  const metadata = pageMetadata(seo?.title ?? `${game.title} - Play Online`, seo?.description ?? game.description, `/games/${game.slug}/`);
   if (game.licenseStatus !== "verified" || game.safetyStatus !== "approved" || !game.iframeUrl) {
     metadata.robots = { index: false, follow: false };
   }

@@ -9,6 +9,9 @@ export function CookieConsent() {
 
   useEffect(() => {
     setVisible(localStorage.getItem(CONSENT_KEY) === null);
+    const openSettings = () => setVisible(true);
+    window.addEventListener("gfm-open-cookie-settings", openSettings);
+    return () => window.removeEventListener("gfm-open-cookie-settings", openSettings);
   }, []);
 
   function choose(value: "accepted" | "rejected") {
@@ -20,7 +23,7 @@ export function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <aside aria-label="Cookie choices" className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-5 shadow-2xl">
+    <aside aria-label="Cookie choices" aria-modal="true" className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-5 shadow-2xl" role="dialog">
       <p className="font-semibold text-slate-950">Your privacy choices</p>
       <p className="mt-2 text-sm leading-6 text-slate-600">We use essential storage to remember this choice. Optional analytics and advertising cookies stay off unless you accept them.</p>
       <div className="mt-4 flex flex-wrap gap-3">

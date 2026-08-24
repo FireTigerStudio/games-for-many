@@ -509,7 +509,7 @@
         "developer":  "GameMonetize partner developer",
         "sourcePlatform":  "GameMonetize",
         "playerCount":  "2+",
-        "gameplayType":  "online",
+        "gameplayType":  "local",
         "licenseStatus":  "verified",
         "safetyStatus":  "approved",
         "adIntegrationStatus":  "ad-observed",

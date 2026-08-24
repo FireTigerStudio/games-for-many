@@ -3,7 +3,13 @@
 import { useEffect, useState } from "react";
 
 const CONSENT_KEY = "gfm-cookie-consent";
-const CLARITY_ID = "y15ydkah2h";
+const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || "y15ydkah2h";
+
+const GAME_EVENTS = [
+  ["gfm-game-start", "game_start"],
+  ["gfm-game-iframe-loaded", "game_iframe_loaded"],
+  ["gfm-game-load-timeout", "game_load_timeout"],
+] as const;
 
 type ClarityFunction = ((...args: unknown[]) => void) & { q?: unknown[][] };
 
@@ -30,6 +36,13 @@ export function Analytics() {
         ad_personalization: state,
         analytics_storage: state,
       });
+
+      if (window.clarity) {
+        window.clarity("consentv2", {
+          ad_Storage: state,
+          analytics_Storage: state,
+        });
+      }
     };
 
     updateConsent();
@@ -54,16 +67,27 @@ export function Analytics() {
       clarityScript.src = `https://www.clarity.ms/tag/${CLARITY_ID}`;
       document.head.appendChild(clarityScript);
     }
+
+    window.clarity("consentv2", {
+      ad_Storage: "granted",
+      analytics_Storage: "granted",
+    });
   }, [enabled]);
 
   useEffect(() => {
-    const trackGameStart = (event: Event) => {
-      if (!(event instanceof CustomEvent)) return;
-      window.gtag("event", "game_start", event.detail);
-    };
-    window.addEventListener("gfm-game-start", trackGameStart);
-    return () => window.removeEventListener("gfm-game-start", trackGameStart);
-  }, []);
+    if (!enabled) return;
+
+    const listeners = GAME_EVENTS.map(([domEvent, analyticsEvent]) => {
+      const listener = (event: Event) => {
+        if (!(event instanceof CustomEvent)) return;
+        window.gtag("event", analyticsEvent, event.detail);
+      };
+      window.addEventListener(domEvent, listener);
+      return [domEvent, listener] as const;
+    });
+
+    return () => listeners.forEach(([eventName, listener]) => window.removeEventListener(eventName, listener));
+  }, [enabled]);
 
   return null;
 }

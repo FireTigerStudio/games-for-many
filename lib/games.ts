@@ -2,6 +2,7 @@ import gamesData from "@/data/games.json";
 import type { Category, Game } from "@/lib/types";
 
 export const GAMES_PER_PAGE = 24;
+export const MIN_INDEXABLE_CATEGORY_GAMES = 8;
 
 export const categories: Category[] = [
   { slug: "local-2-player", title: "Local 2 Player", description: "Share one computer, keyboard or screen for cooperative and competitive games.", longDescription: "Local two-player games let two people play together on the same device. Some games split the keyboard so both players move at once, while board and card games may use pass-and-play turns. Check each game's controls before starting: simultaneous action games usually need separate key groups, while turn-based games can share a mouse or touchscreen." },
@@ -170,7 +171,7 @@ export function getActiveCategories(): Category[] {
 }
 
 export function getIndexableCategories(): Category[] {
-  return categories.filter((category) => getGamesByCategory(category.slug).length >= 2);
+  return categories.filter((category) => getGamesByCategory(category.slug).length >= MIN_INDEXABLE_CATEGORY_GAMES);
 }
 
 export function getIndexableTags(): string[] {

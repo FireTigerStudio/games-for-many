@@ -31,7 +31,7 @@ Until then, the game page shows a local placeholder and is marked `noindex`.
 
 ## Indexing gate
 
-`NEXT_PUBLIC_ALLOW_INDEXING` defaults to `false`. Keep it false for the placeholder deployment. Set it to `true` in Cloudflare only after real games and launch content have passed review.
+`NEXT_PUBLIC_BLOCK_INDEXING` defaults to `false`, so production remains indexable. Set it to `true` only for a private preview that search engines must not index.
 
 ## Cloudflare Pages
 

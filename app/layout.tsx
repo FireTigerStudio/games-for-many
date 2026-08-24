@@ -27,11 +27,15 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <script dangerouslySetInnerHTML={{ __html: `
       window.dataLayer = window.dataLayer || [];
       window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+      var gfmConsent = 'denied';
+      try {
+        gfmConsent = window.localStorage.getItem('gfm-cookie-consent') === 'accepted' ? 'granted' : 'denied';
+      } catch (error) {}
       window.gtag('consent', 'default', {
-        ad_storage: 'denied',
-        ad_user_data: 'denied',
-        ad_personalization: 'denied',
-        analytics_storage: 'denied'
+        ad_storage: gfmConsent,
+        ad_user_data: gfmConsent,
+        ad_personalization: gfmConsent,
+        analytics_storage: gfmConsent
       });
       window.gtag('js', new Date());
       window.gtag('config', 'G-1FXG6YDPHK');

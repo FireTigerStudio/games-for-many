@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import gamesData from "@/data/games.json";
 import type { Game } from "@/lib/types";
 
@@ -11,14 +11,56 @@ type GamePlayerProps = {
 };
 
 const games = gamesData as Game[];
+const LOAD_TIMEOUT_MS = 15_000;
 
 export function GamePlayer({ canEmbed, slug, title }: GamePlayerProps) {
   const [started, setStarted] = useState(false);
-  const iframeUrl = started ? games.find((game) => game.slug === slug)?.iframeUrl : null;
+  const game = games.find((item) => item.slug === slug);
+  const iframeUrl = started ? game?.iframeUrl : null;
+  const loadStartedAt = useRef<number | null>(null);
+  const loadEventSent = useRef(false);
+  const timeoutId = useRef<number | null>(null);
+
+  const dispatchGameEvent = useCallback((name: string, detail: Record<string, unknown> = {}) => {
+    window.dispatchEvent(new CustomEvent(name, {
+      detail: {
+        game_slug: slug,
+        game_title: title,
+        provider: game?.sourcePlatform,
+        ...detail,
+      },
+    }));
+  }, [game?.sourcePlatform, slug, title]);
+
+  useEffect(() => {
+    if (!iframeUrl || loadEventSent.current) return;
+
+    timeoutId.current = window.setTimeout(() => {
+      timeoutId.current = null;
+      dispatchGameEvent("gfm-game-load-timeout", { timeout_ms: LOAD_TIMEOUT_MS });
+    }, LOAD_TIMEOUT_MS);
+
+    return () => {
+      if (timeoutId.current !== null) window.clearTimeout(timeoutId.current);
+      timeoutId.current = null;
+    };
+  }, [dispatchGameEvent, iframeUrl]);
 
   function startGame() {
-    window.dispatchEvent(new CustomEvent("gfm-game-start", { detail: { game_slug: slug, game_title: title } }));
+    loadEventSent.current = false;
+    loadStartedAt.current = performance.now();
+    dispatchGameEvent("gfm-game-start");
     setStarted(true);
+  }
+
+  function handleIframeLoad() {
+    if (loadEventSent.current) return;
+    loadEventSent.current = true;
+    if (timeoutId.current !== null) window.clearTimeout(timeoutId.current);
+    timeoutId.current = null;
+    dispatchGameEvent("gfm-game-iframe-loaded", {
+      load_time_ms: loadStartedAt.current === null ? undefined : Math.round(performance.now() - loadStartedAt.current),
+    });
   }
 
   if (!canEmbed) {
@@ -46,5 +88,5 @@ export function GamePlayer({ canEmbed, slug, title }: GamePlayerProps) {
     );
   }
 
-  return <iframe allow="autoplay; fullscreen; gamepad" allowFullScreen className="h-full w-full" referrerPolicy="strict-origin-when-cross-origin" src={iframeUrl} title={`Play ${title}`} />;
+  return <iframe allow="autoplay; fullscreen; gamepad" allowFullScreen className="h-full w-full" onLoad={handleIframeLoad} referrerPolicy="strict-origin-when-cross-origin" src={iframeUrl} title={`Play ${title}`} />;
 }
