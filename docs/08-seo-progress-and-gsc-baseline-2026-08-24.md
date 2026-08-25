@@ -2,7 +2,7 @@
 
 > 目的：把本轮审计结果沉淀在仓库中。以后拿到新的 GSC/GA4/Clarity 数据时，以本文件为基线做增量对比，不重新从零分析。
 >
-> 状态说明：本文记录的代码优化目前只在本地工作区，尚未 commit、push 或部署；线上网站尚未因此发生变化。
+> 状态说明（2026-08-25 复核）：本文记录的 SEO/追踪与优先页面内容改动已分别由提交 `7620c99`、`1d3d722` 进入 `main`，且本地 `main` 与 `origin/main` 对齐。本次复核未成功取得三个线上页面的实时响应，因此只能确认“已提交并推送”，不能把 Cloudflare 已完成部署或线上已经生效写成已验证事实。
 
 ## 1. 一页结论
 
@@ -264,3 +264,77 @@ AdSense 截图结论：
 - 广告预览为 Optional，目前不是阻塞项。
 - 下一步由站长在 `Payments > Payments info > Manage settings` 核对账户类型是 Individual 还是 Organization，并使用能够完成身份/税务核验和接收国际平信的真实姓名或公司地址。
 - 再进入 `Sites` 查看 `Requires review`、`Getting ready`、`Needs attention` 或 `Ready` 的准确状态并保存截图。
+
+## 13. 2026-08-25 状态校正与后续路线
+
+### 已完成并有本地证据
+
+- `7620c99`（2026-08-24 17:08，`Improve SEO tracking and search targeting`）已进入 `main` 并与 `origin/main` 对齐。
+- `1d3d722`（2026-08-24 21:05，`Improve priority game SEO content`）已进入 `main` 并与 `origin/main` 对齐。
+- Iron Legion、Multiplayer 分类内链，以及 Best 2 Player Browser Games 对比内容的改动已记录在第 12 节。
+- 站长原有的 `docs/07-first-backlink-outreach-batch.md` 修改、`WEbsite-trackcodes.txt` 和 GSC 原始导出目录仍保持为未提交内容，没有混入上述两个提交。
+
+### 尚未重新验证，不能写成已完成
+
+- Cloudflare 是否已经部署到 `1d3d722`，以及三个目标页面是否已经显示新增内容。
+- GA4 是否已经收到新增的游戏启动、iframe 加载和超时事件，以及 `provider`、`game_slug` 参数是否正确。
+- Cookie 接受、拒绝和重新打开设置的真实浏览器行为。
+- GSC 在 2026-08-23 基线之后的收录、曝光、点击、CTR 和排名变化。
+- Iron Legion、Duo、WHOT、Darts、Bounce Path 的真实启动、多人连接、匹配、广告和移动端体验。
+- AdSense `Sites` 的准确审批状态，以及 `Tell us about you` 是否已经完成。
+
+### 当前执行路线（按依赖关系排序）
+
+1. **部署验收**：先确认 Cloudflare 当前部署提交；在线核对 Iron Legion 正文、Multiplayer 到 Iron Legion 的内链、指南新增的 Duo/WHOT/Darts 内容。三项全部命中后才标记“线上生效”。
+2. **追踪验收**：用真实浏览器分别测试 Cookie 接受、拒绝和重新设置；在 GA4 DebugView 核对 `game_start`、`game_iframe_loaded`、`game_load_timeout` 及参数。失败时先修监测，不做流量归因。
+3. **少量真实试玩**：只测试当前有排名或内容承诺的 Iron Legion、Duo、WHOT、Darts、Bounce Path；记录玩家数、连接方式、控制、移动端、广告和失败现象，不扩大到全站逐款复测。
+4. **GSC 索引动作**：部署验收通过后，仅对三个核心分类和少数优先页面做 URL Inspection / Request indexing；同时导出最新 Page indexing 明细，按原因处理，不批量请求全部 URL。
+5. **观察窗口**：页面上线后 14–28 天不反复改标题；按周对比 Iron Legion、指南页和三个核心分类的曝光、排名、CTR、点击及游戏启动率。
+6. **外链与扩写**：先执行第一批高相关开发者/内容作者外联。只有现有页面出现稳定赢家后，才扩写相邻主题；没有数据证明的页面不批量生成。
+7. **收入闭环**：取得自然落地页、有效游戏启动、provider、设备、国家和供应商收入数据后，再判断广告位和内容扩张优先级。当前 421 曝光、6 点击的基线不足以预测稳定收入。
+
+本节用于校正第 7、8 节中已经过时的“尚未提交”状态；原 30/60/90 天方向仍有效，但实际执行应以上述依赖顺序和新的后台数据为准。
+
+## 14. 2026-08-25 Page indexing 与追踪后台验收
+
+### GSC Page indexing 导出结论
+
+本次导出来源为 `gamesformany.com-Coverage-2026-08-25`，筛选范围是 `All known pages`。原始 CSV 保留在站长的 Downloads 导出目录，本节记录可复用结论，避免再次重复分析。
+
+- Google 当前已知 URL：107。
+- 已索引：40，占已知 URL 的 37.4%。
+- 未索引：67，占已知 URL 的 62.6%。
+- 67 个 URL 的唯一原因是 `Discovered - currently not indexed`，来源为 Google systems，验证状态为 `Not Started`。
+- `Non-critical issues.csv` 为空；本次导出没有显示 `Crawled - currently not indexed`、Duplicate、Soft 404、Blocked 或 Redirect 等其他原因。
+- 图表从 2026-08-14 到 2026-08-21 一直保持 67 未索引、40 已索引；曝光同期每天约 46–64，说明已有部分页面参与搜索，但索引数量在这段快照内没有增长。
+- CSV 于 2026-08-25 导出，但 `Chart.csv` 的最后日期是 2026-08-21；不能把它解释为 8 月 25 日当天的实时索引状态。
+- `Metadata.csv` 显示范围为 `Sitemap: All known pages`，因此这份汇总不能直接证明 67 个 URL 是否都在当前 sitemap 中。当前 sitemap 与已知 URL 的逐 URL 差集仍需 URL 明细导出才能确认。
+
+行动结论：
+
+1. 不批量对 67 个 URL 申请索引，也不把“验证修复”当成首要动作；`Discovered` 说明 Google 已发现 URL，但尚未决定抓取。
+2. 先对三个核心分类、Iron Legion、Best 2 Player Browser Games、Duo、WHOT、Darts 等少量高价值 URL 做 URL Inspection，确认 canonical、最近抓取和是否允许索引。
+3. 继续通过独有内容、分类/榜单上下文内链和真实外链提高抓取优先级；不要为增加索引数制造更多薄页。
+4. 下一次需导出具体 URL 明细，而不只是问题汇总；届时才能把 67 个页面分成“应索引优先页”“低价值待增强页”“不应索引页”。
+5. 以周为单位观察索引数；优先内容 title 上线后 14–28 天内不因短期波动反复改标题。
+
+### AdSense 后台状态
+
+- `gamesformany.com` 的 Approval status 为 `Getting ready`，表示站点仍在准备/审核流程中，不能写成已经批准。
+- `Ads.txt status` 为 `Authorized`，说明 ads.txt 授权当前正常，不是阻塞项。
+- 页面顶部仍提示 payments account 需要处理；付款/主体信息仍是站长侧待办。
+- 当前无需为了 AdSense 先购买流量或投放广告。继续提高原创内容、可用性、自然搜索流量和政策完整性，同时由站长完成真实付款主体资料。
+
+### GA4 与 Clarity 验收状态
+
+- GA4 Realtime 截图当时为 0 活跃用户；这只表示截图时最近 30 分钟没有活跃用户，不能单独证明埋点失效。
+- GA4 DebugView 显示 0 debug devices，并提示等待 debug events；因此 `game_start`、`game_iframe_loaded`、`game_load_timeout` 尚未完成 DebugView 验收。
+- DebugView 下一步必须在启用 debug mode 的浏览器中接受 Cookie、打开一个游戏并等待 iframe 加载；另做一次可控超时测试，逐项确认三个事件及 `game_slug`、`provider` 参数。
+- Clarity 已收到 1 个会话，说明接受 Cookie 后至少有一次会话成功进入 Clarity；基础接入可以标记为“已收到会话”。
+- 该会话有 12 pages/session、54.58% scroll depth、9.4 分钟 active time；同时显示 dead clicks 100% 和 quick backs 100%。样本只有 1 个会话，不能据此判断网站普遍存在 UX 问题，应先查看该条录像定位具体点击，再等待更多真实会话。
+
+### 截至本次更新的准确状态
+
+- **已完成**：两批 SEO/追踪代码进入 `main`；Iron Legion 与双人榜单第一轮内容增强；ads.txt Authorized；Clarity 已收到至少一个同意 Cookie 后的会话；最新索引问题汇总已分析并写入文档。
+- **仍未完成**：GA4 三个游戏事件的 DebugView 逐项验收；67 个未索引 URL 的具体 URL 明细分组；少量优先页 URL Inspection；AdSense 付款主体资料；AdSense 最终 Ready/批准。
+- **当前最高优先级**：先完成 GA4 真实浏览器验收和优先 URL 明细确认，同时保持已部署 title 的观察窗口；不是继续批量改页面，也不是先等 7 天什么都不做。
