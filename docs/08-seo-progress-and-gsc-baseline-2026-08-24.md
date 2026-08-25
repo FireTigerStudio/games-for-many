@@ -338,3 +338,42 @@ AdSense 截图结论：
 - **已完成**：两批 SEO/追踪代码进入 `main`；Iron Legion 与双人榜单第一轮内容增强；ads.txt Authorized；Clarity 已收到至少一个同意 Cookie 后的会话；最新索引问题汇总已分析并写入文档。
 - **仍未完成**：GA4 三个游戏事件的 DebugView 逐项验收；67 个未索引 URL 的具体 URL 明细分组；少量优先页 URL Inspection；AdSense 付款主体资料；AdSense 最终 Ready/批准。
 - **当前最高优先级**：先完成 GA4 真实浏览器验收和优先 URL 明细确认，同时保持已部署 title 的观察窗口；不是继续批量改页面，也不是先等 7 天什么都不做。
+
+## 15. 追踪最小需求与 Semrush 下一批输入
+
+### 追踪需求：只服务 SEO 质量和变现判断
+
+追踪不直接提高 Google 排名。它只用于判断自然搜索访问是否真正启动游戏、游戏是否加载成功，以及哪些页面和供应商值得继续投入。
+
+本阶段只保留以下最小需求：
+
+1. 为 `GamePlayer` 和 `Analytics` 增加本地自动化测试，覆盖 `game_start`、`game_iframe_loaded`、`game_load_timeout`。
+2. 测试必须核对 `game_slug`、`game_title`、`provider`、`load_time_ms`、`timeout_ms`，并覆盖 Cookie 接受后发送、拒绝后不发送。
+3. 不开发生产调试页面、隐藏后台或永久 `analytics_debug` URL 参数，不为调试污染正式 GA4 数据。
+4. 生产验收只采用短时 DebugView/官方浏览器调试方式；本地测试通过后做一次，不要求站长每次发布重复手工测试。
+5. 该工作不阻塞 GSC 索引、内容增强和真实外链执行；完成最小测试后立即回到 SEO 主线。
+
+当前状态：GA4 Measurement ID、Consent 后发送和 `debug_check` 已验收；三个游戏业务事件尚未完成端到端验收。
+
+### Semrush：站长需要寻找和导出的内容
+
+#### Keyword Gap / Organic Research
+
+对标域名先使用 `crazygames.com`、`poki.com`、`plays.org`、`silvergames.com`、`playhop.com`，再加入 3–5 个真实出现在当前双人/多人浏览器游戏 SERP 的小型站点。
+
+筛选建议：United States；Desktop 和 Mobile 分别查看；Position 1–20；排除竞品品牌词；重点包含 `2 player`、`multiplayer`、`browser`、`with friends`、`same keyboard`。
+
+导出字段至少包含：Keyword、Position、Search Volume、KD、CPC、Intent、URL、Estimated Traffic、SERP Features。
+
+#### Backlink Gap
+
+每次选择 5–10 个高度相关站点，不批量导出全网链接。导出字段至少包含：Source URL、Source Title、Referring Domain、Authority Score、Target URL、Anchor、Follow/Nofollow、First Seen、Last Seen、Estimated Traffic。
+
+#### 人工联系人
+
+优先寻找两类对象：
+
+1. 已上线重点游戏的真实开发者、官方作品页、Press Kit、itch.io/GitHub 页面和公开联系方式；首批从 Iron Legion、WHOT、Duo Water and Fire、Darts Pro 等页面开始。
+2. 近两年仍更新，且确实写过 browser multiplayer、two-player browser、same-keyboard、party games 或 games to play with friends 的作者。
+
+原始 CSV 保持原样，按日期放入 `data/research/`。下一轮由 Codex 去重、排除垃圾目录和付费链接，并按主题相关性、页面真实流量、编辑独立性、本站可提供的独特资料筛选首批 20 个目标。

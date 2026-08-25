@@ -32,3 +32,12 @@ This does not make the dependency report clean. Revisit the framework-version co
 ## Pre-indexing rule
 
 The placeholder deployment is for publisher verification and technical testing. Search indexing stays disabled until at least the first reviewed game set, original descriptions, final navigation and legal pages are complete.
+
+## Post-deployment analytics acceptance
+
+Analytics supports SEO quality and monetization decisions; it is not a direct ranking factor.
+
+- Automated tests must verify `game_start`, `game_iframe_loaded` and `game_load_timeout`, including game/provider parameters and consent behavior.
+- Production acceptance uses a temporary GA4 DebugView session after consent; do not ship a permanent debug page, hidden admin panel or public debug query parameter.
+- Debug events are test evidence only and must not be treated as business KPIs.
+- Analytics acceptance does not block indexing requests, content work or outreach when the site remains crawlable and indexable.
