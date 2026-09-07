@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import gamesData from "@/data/games.json";
+import { createGameEventDetail } from "@/lib/analytics-events.mjs";
 import type { Game } from "@/lib/types";
 
 type GamePlayerProps = {
@@ -23,12 +24,10 @@ export function GamePlayer({ canEmbed, slug, title }: GamePlayerProps) {
 
   const dispatchGameEvent = useCallback((name: string, detail: Record<string, unknown> = {}) => {
     window.dispatchEvent(new CustomEvent(name, {
-      detail: {
-        game_slug: slug,
-        game_title: title,
-        provider: game?.sourcePlatform,
-        ...detail,
-      },
+      detail: createGameEventDetail(
+        { slug, title, provider: game?.sourcePlatform },
+        detail
+      ),
     }));
   }, [game?.sourcePlatform, slug, title]);
 

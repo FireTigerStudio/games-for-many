@@ -1,15 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { consentState, forwardGameEvent, GAME_EVENTS } from "@/lib/analytics-events.mjs";
 
 const CONSENT_KEY = "gfm-cookie-consent";
 const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || "y15ydkah2h";
-
-const GAME_EVENTS = [
-  ["gfm-game-start", "game_start"],
-  ["gfm-game-iframe-loaded", "game_iframe_loaded"],
-  ["gfm-game-load-timeout", "game_load_timeout"],
-] as const;
 
 type ClarityFunction = ((...args: unknown[]) => void) & { q?: unknown[][] };
 
@@ -27,7 +22,7 @@ export function Analytics() {
   useEffect(() => {
     const updateConsent = (event?: Event) => {
       const value = event instanceof CustomEvent ? event.detail : localStorage.getItem(CONSENT_KEY);
-      const state = value === "accepted" ? "granted" : "denied";
+      const state = consentState(value);
       setEnabled(value === "accepted");
 
       window.gtag("consent", "update", {
@@ -80,7 +75,7 @@ export function Analytics() {
     const listeners = GAME_EVENTS.map(([domEvent, analyticsEvent]) => {
       const listener = (event: Event) => {
         if (!(event instanceof CustomEvent)) return;
-        window.gtag("event", analyticsEvent, event.detail);
+        forwardGameEvent(window.gtag, enabled, analyticsEvent, event.detail);
       };
       window.addEventListener(domEvent, listener);
       return [domEvent, listener] as const;

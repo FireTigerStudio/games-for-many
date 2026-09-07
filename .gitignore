@@ -12,3 +12,8 @@ data/generated/
 /*.xlsx
 *.tsbuildinfo
 /bgames.com-sitemap.txt
+# Local SEO exports and large derived datasets
+/data/research/20260825-semrush/*.csv
+/data/research/20260825-semrush/derived/*.ndjson
+/gamesformany.com-Performance-on-Search-*/
+/WEbsite-trackcodes.txt

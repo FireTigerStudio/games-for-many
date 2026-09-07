@@ -2,6 +2,10 @@
 
 Static-first browser game directory for `gamesformany.com`, focused on reviewed two-player, party and multiplayer games for casual gamers, teens and adults.
 
+## Current project state
+
+Read [CURRENT_PROJECT_STATE.md](CURRENT_PROJECT_STATE.md) before continuing work. It is the canonical handoff for the current production version, local/undeployed work, verified analytics behavior, SEO priorities and the next task. Update it whenever a material task is completed or production changes.
+
 ## Local development
 
 ```bash
@@ -40,6 +44,6 @@ Until then, the game page shows a local placeholder and is marked `noindex`.
 - Output directory: `out`
 - Node version: 20 or newer
 - Production environment: `NEXT_PUBLIC_SITE_URL=https://gamesformany.com`
-- Production indexing: leave false until launch review, then set true and rebuild
+- Production indexing: keep `NEXT_PUBLIC_BLOCK_INDEXING` unset or `false`; set it to `true` only for a private preview
 
 `public/ads.txt` contains the GameMonetize authorization lines and is exported at `/ads.txt`.
