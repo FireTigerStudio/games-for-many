@@ -382,6 +382,10 @@ export const gameEditorial: Record<string, GameEditorial> = {
   }
 };
 
+export function hasIndependentGameEditorial(slug: string): boolean {
+  return Boolean(gameEditorial[slug]);
+}
+
 export function getGameEditorial(slug: string): GameEditorial | undefined {
   return gameEditorial[slug] ?? (gamePixBatch as Record<string, GameEditorial>)[slug];
 }

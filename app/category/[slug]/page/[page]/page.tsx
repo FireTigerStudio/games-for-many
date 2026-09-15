@@ -14,7 +14,9 @@ export function generateMetadata({ params }: { params: { slug: string; page: str
   const category = getCategory(params.slug);
   const page = Number(params.page);
   if (!category || !Number.isInteger(page) || page < 2 || page > getCategoryPageCount(params.slug)) return {};
-  return pageMetadata(`${category.title} Games - Page ${page}`, `Browse page ${page} of reviewed ${category.title.toLowerCase()} browser games.`, `/category/${category.slug}/page/${page}/`);
+  const metadata = pageMetadata(`${category.title} Games - Page ${page}`, `Browse page ${page} of reviewed ${category.title.toLowerCase()} browser games.`, `/category/${category.slug}/page/${page}/`);
+  metadata.robots = { index: false, follow: true };
+  return metadata;
 }
 
 export default function CategoryPaginationPage({ params }: { params: { slug: string; page: string } }) {

@@ -1,6 +1,6 @@
 # Current Project State
 
-> Last verified: 2026-09-07 (Asia/Singapore)
+> Last verified: 2026-09-15 (Asia/Singapore)
 >
 > This is the canonical continuation and handoff document. Read it before historical plans or chat logs. Update it in the same change whenever production, analytics verification, SEO priorities or the next task materially changes.
 
@@ -32,7 +32,7 @@ Success is not “rank first for everything.” The practical sequence is:
 
 - Technical SEO, indexable static routes, canonical metadata, sitemap/robots and the first GSC-targeted content changes are in production.
 - Commits `7620c99` and `1d3d722` improved search tracking/targeting and priority content for Iron Legion, WHOT, Darts Pro and Duo Water and Fire.
-- Baseline GSC export through 2026-08-23: 421 impressions, 6 clicks, approximately 1.4% CTR. Treat this as an old baseline, not current performance.
+- Baseline GSC export through 2026-08-23: 421 impressions, 6 clicks, approximately 1.4% CTR. A new equal-period comparison is documented in `docs/12-seo-ab-package-analysis-2026-09-14.md`: 2026-08-24 through 2026-09-08 fell to 6 impressions and 0 clicks, versus 567 impressions and 7 clicks in 2026-08-08 through 2026-08-23. Diagnose this loss before expanding content or outreach.
 
 ### Semrush opportunity work
 
@@ -50,7 +50,7 @@ Success is not “rank first for everything.” The practical sequence is:
 ### Outreach work
 
 - A 20-row audit exists in `docs/10-seo-priority-outreach-and-measurement-2026-08-31.md`.
-- Only about four targets currently meet the basic send-first standard: Game Duddles, Hardik Trehan/HT Hub, TwozyGames and GuessDoodle. Recheck that each page and contact method is still current before sending.
+- The older document labeled Game Duddles, Hardik Trehan/HT Hub, TwozyGames and GuessDoodle as roughly send-first. Live 2026-09-15 research supersedes that label: HT Hub is conditional; the others are hold, competitor or product-collaboration prospects. Use `docs/13-seo-recovery-execution-ledger-2026-09-15.md` for current outreach status.
 - No outreach has been sent. Do not send until the corresponding Games for Many page contains the promised verified comparison/value and the owner approves the message.
 
 ### Analytics and consent evidence
@@ -73,33 +73,30 @@ Always run `git status`, `git diff` and `git log` before acting. The repository 
 - `scripts/analyze-semrush-opportunities.py` and the small derived Markdown summary.
 - Updated SEO/outreach documents and raw-data ignore rules.
 - A substantial `docs/07-first-backlink-outreach-batch.md` revision. Review it as a separate evidence-based outreach draft; do not silently overwrite it.
+- The 2026-09-15 index-quality recovery change is staged locally: 30 publishable games without independent `gameEditorial` records and all category pagination pages now generate `noindex, follow`; those URLs are absent from the sitemap. The pages remain playable. The build contains 55 game sitemap URLs and zero category-pagination sitemap URLs. This is not deployed.
 
 Verification on 2026-09-07: analytics tests passed 4/4, import tests 8/8, screening tests 4/4, typecheck passed, lint passed with one pre-existing `app/layout.tsx` Google Analytics `next/script` warning, and the production build generated 228 pages. The analytics tests cover extracted logic, not a full React/browser component integration test.
 
 ## 5. Current gaps
 
-1. GSC data after 2026-08-23 has not been exported into the repository. Current ranking/index decisions therefore cannot be presented as live-current.
-2. Page indexing still needs the concrete URL export, not only aggregate reason counts.
-3. `game_load_timeout`, first-visit consent, withdrawal without refresh, browser cookie storage and Clarity consent behavior remain unverified.
+1. The supplemental daily GSC export places the visibility break at 2026-08-24. URL Inspection on 2026-09-15 found no robots, fetch or canonical failure for the four priority URLs, while GSC Manual actions and Security issues both show `No issues detected`. The remaining diagnosis is ranking/selection, authority/quality and early-site volatility rather than an identified global crawl block, manual penalty or reported security problem.
+2. GSC reports 39 indexed and 67 discovered-not-indexed submitted URLs. The online-two-player category had never been crawled but passed Live Test; Iron Legion was indexed from a 2026-08-13 crawl that predates the current production content. One indexing request for each was submitted on 2026-09-15.
+3. `game_load_timeout`, first-visit consent, withdrawal without refresh, browser cookie storage and Clarity consent behavior remain unverified. The current events export does not contain a `game_load_timeout` row.
 4. The 2,128 automated classifications need manual validation only for candidates that could change a page decision; do not manually polish all low-value rows.
-5. The first 20 outreach rows are not 20 send-ready contacts.
+5. The first 20 outreach rows are not 20 send-ready contacts. Live re-research and corrected statuses are recorded in `docs/13-seo-recovery-execution-ledger-2026-09-15.md`; the old four-target `send-ready` label is superseded.
 6. AdSense approval/payment and current policy-center state need fresh account evidence before revenue claims.
 7. Cloudflare's 2026-08-25 install log reported five high-severity dependency vulnerabilities. Audit exact dependency paths before changing packages; do not run `npm audit fix --force` blindly.
 
 ## 6. Immediate objective and execution order
 
-The immediate objective is to use current Google evidence to choose and ship a small 3–5 page SEO improvement batch, then use those stronger pages for selective outreach.
+Use `docs/13-seo-recovery-execution-ledger-2026-09-15.md` as the active step-by-step board. Finish one numbered item and update its status before starting another.
 
-1. This repository snapshot has passed analytics tests, existing regression tests, typecheck, lint and the 228-page production build. It has not been verified as deployed. Do not push/deploy without explicit user authorization.
-2. Owner exports fresh GSC data:
-   - Performance → Search results: compare 2026-08-24 through the latest complete date with the preceding equal-length period; export Queries and Pages.
-   - Page indexing: export concrete URL details and reasons.
-   - URL Inspection for only the priority categories/pages after the new data is assessed.
-3. Compare the new export with `docs/08-seo-progress-and-gsc-baseline-2026-08-24.md`; do not rerun old Semrush inputs unless new files arrive.
-4. Choose 3–5 pages from the current eight-page shortlist, led by evidence rather than the old order: Iron Legion, best two-player guide, WHOT, Bounce Path, Duo, Darts, Ninja Parkour and local-two-player category.
-5. Verify every gameplay/control/multiplayer statement against the actual embed before editing. Build and deploy one small batch, record its deployment commit/date, then observe GSC for 14–28 days.
-6. Send only the first individually verified outreach emails after the corresponding page value is live. Track replies, relevant referring domains and referral visits, not raw link count.
-
+1. Package A, URL Inspection, Manual actions and Security issues evidence are complete. Do not recollect or repeat indexing requests this cycle. Recheck Iron Legion and the online-two-player category around 2026-09-22.
+2. Local index-quality work is complete and verified: 30 C-tier games remain playable but are `noindex, follow`, all category pagination is `noindex, follow`, the sitemap contains 55 independently edited game URLs and no pagination URLs, 16/16 tests passed, typecheck/build passed, and lint has only the pre-existing GA warning.
+3. The exact next external action is deployment of this reversible index-quality change. It is blocked until the owner explicitly approves push/deployment; do not claim it is live before verifying the Cloudflare production commit.
+4. After deployment, strengthen 3-5 A-tier assets with visible first-hand evidence. AI may draft only from verified playtest notes and must not invent controls, devices, rooms, developers or experience.
+5. Recover C-tier pages in batches of no more than five after all ten evidence-gate items pass. Restore each qualifying page to the sitemap/index separately; do not bulk-fill 30 pages with generic text.
+6. Prepare at most three individualized outreach messages against live evidence. Sending remains blocked on owner approval. Track replies, relevant referring domains and referral visits, not raw link count.
 ## 7. Evidence routing
 
 Read in this order:
@@ -110,8 +107,11 @@ Read in this order:
 4. `docs/08-seo-progress-and-gsc-baseline-2026-08-24.md` — historical GSC baseline and technical audit.
 5. `docs/09-semrush-opportunity-and-outreach-2026-08-25.md` — Semrush input interpretation.
 6. `docs/10-seo-priority-outreach-and-measurement-2026-08-31.md` — candidate counts, outreach audit and page shortlist.
-7. `scripts/analyze-semrush-opportunities.py` and derived summary — reproducible automated classification.
-8. `components/Analytics.tsx`, `components/GamePlayer.tsx`, `components/CookieConsent.tsx`, `lib/analytics-events.mjs`, `scripts/analytics-events.test.mjs` — measurement implementation and tests.
+7. `docs/11-recurring-seo-data-export-runbook.md` — canonical click-by-click workflow for recurring GSC, GA4, Clarity, Semrush, Bing and AdSense evidence.
+8. `docs/12-seo-ab-package-analysis-2026-09-14.md` — current GSC/indexing/GA4/Clarity package acceptance, findings and diagnostic order.
+9. `docs/13-seo-recovery-execution-ledger-2026-09-15.md` — active ordered execution board, exact A/B/C tiers, recovery gate and current outreach research. This supersedes older send-ready labels and near-term action order.
+10. `scripts/analyze-semrush-opportunities.py` and derived summary — reproducible automated classification.
+11. `components/Analytics.tsx`, `components/GamePlayer.tsx`, `components/CookieConsent.tsx`, `lib/analytics-events.mjs`, `scripts/analytics-events.test.mjs` — measurement implementation and tests.
 
 Use live browsing only for facts that can change: current production SHA, live page output, GSC/GA4/Clarity/AdSense status, current outreach pages/contacts and current platform/policy requirements. Prefer first-party dashboards and official documentation. Do not guess missing historical decisions or treat search snippets as verification.
 

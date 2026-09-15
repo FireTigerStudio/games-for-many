@@ -6,7 +6,7 @@ import { GameCard } from "@/components/GameCard";
 import { GamePlayer } from "@/components/GamePlayer";
 import { SEOHead } from "@/components/SEOHead";
 import { getAllGames, getGame, getRelatedGames } from "@/lib/games";
-import { getGameEditorial } from "@/lib/game-editorial";
+import { getGameEditorial, hasIndependentGameEditorial } from "@/lib/game-editorial";
 import { pageMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 
@@ -38,6 +38,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const metadata = pageMetadata(seo?.title ?? `${game.title} - Play Online`, seo?.description ?? game.description, `/games/${game.slug}/`);
   if (game.licenseStatus !== "verified" || game.safetyStatus !== "approved" || !game.iframeUrl) {
     metadata.robots = { index: false, follow: false };
+  } else if (!hasIndependentGameEditorial(game.slug)) {
+    metadata.robots = { index: false, follow: true };
   }
   return metadata;
 }
