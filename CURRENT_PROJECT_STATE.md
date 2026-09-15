@@ -23,7 +23,7 @@ Success is not “rank first for everything.” The practical sequence is:
 - A game iframe is publishable only when its official embed, verified license and approved safety state pass the content gate.
 - Analytics/consent: `app/layout.tsx`, `components/Analytics.tsx`, `components/CookieConsent.tsx`, `components/CookieSettingsButton.tsx`.
 - Production GA4 Measurement ID: `G-1FXG6YDPHK`; Clarity default project ID is in `components/Analytics.tsx`.
-- Confirmed Cloudflare Production deployment: branch `main`, full commit `8b85ecebe793e1c4486fc094aebca06ef6e6b276`, deployed successfully on 2026-08-25. The build generated 228 static pages.
+- Confirmed Cloudflare Production deployment: branch `main`, commit `6714525`, deployed and publicly verified on 2026-09-15 at 15:47 +08:00. The build generated 228 static pages.
 - Before claiming a newer version is live, verify the exact Cloudflare Pages commit; public HTML cannot distinguish documentation-only commits.
 
 ## 3. Completed work
@@ -73,7 +73,7 @@ Always run `git status`, `git diff` and `git log` before acting. The repository 
 - `scripts/analyze-semrush-opportunities.py` and the small derived Markdown summary.
 - Updated SEO/outreach documents and raw-data ignore rules.
 - A substantial `docs/07-first-backlink-outreach-batch.md` revision. Review it as a separate evidence-based outreach draft; do not silently overwrite it.
-- The 2026-09-15 index-quality recovery change is staged locally: 30 publishable games without independent `gameEditorial` records and all category pagination pages now generate `noindex, follow`; those URLs are absent from the sitemap. The pages remain playable. The build contains 55 game sitemap URLs and zero category-pagination sitemap URLs. This is not deployed.
+- The 2026-09-15 index-quality recovery change is deployed in `6714525`: 30 publishable games without independent `gameEditorial` records and all category pagination pages generate `noindex, follow`; those URLs are absent from the sitemap. The pages remain playable. Public verification returned HTTP 200, 55 game sitemap URLs and zero category-pagination sitemap URLs.
 
 Verification on 2026-09-07: analytics tests passed 4/4, import tests 8/8, screening tests 4/4, typecheck passed, lint passed with one pre-existing `app/layout.tsx` Google Analytics `next/script` warning, and the production build generated 228 pages. The analytics tests cover extracted logic, not a full React/browser component integration test.
 
@@ -92,8 +92,8 @@ Verification on 2026-09-07: analytics tests passed 4/4, import tests 8/8, screen
 Use `docs/13-seo-recovery-execution-ledger-2026-09-15.md` as the active step-by-step board. Finish one numbered item and update its status before starting another.
 
 1. Package A, URL Inspection, Manual actions and Security issues evidence are complete. Do not recollect or repeat indexing requests this cycle. Recheck Iron Legion and the online-two-player category around 2026-09-22.
-2. Local index-quality work is complete and verified: 30 C-tier games remain playable but are `noindex, follow`, all category pagination is `noindex, follow`, the sitemap contains 55 independently edited game URLs and no pagination URLs, 16/16 tests passed, typecheck/build passed, and lint has only the pre-existing GA warning.
-3. The exact next external action is deployment of this reversible index-quality change. It is blocked until the owner explicitly approves push/deployment; do not claim it is live before verifying the Cloudflare production commit.
+2. Index-quality work is deployed and publicly verified in `6714525`: 30 C-tier games remain playable but are `noindex, follow`, all category pagination is `noindex, follow`, the sitemap contains 55 independently edited game URLs and no pagination URLs, 16/16 tests passed, typecheck/build passed, and lint has only the pre-existing GA warning.
+3. The exact next action is Stage 2 in `docs/13-seo-recovery-execution-ledger-2026-09-15.md`: strengthen 3-5 A-tier assets with visible first-hand evidence before any outreach.
 4. After deployment, strengthen 3-5 A-tier assets with visible first-hand evidence. AI may draft only from verified playtest notes and must not invent controls, devices, rooms, developers or experience.
 5. Recover C-tier pages in batches of no more than five after all ten evidence-gate items pass. Restore each qualifying page to the sitemap/index separately; do not bulk-fill 30 pages with generic text.
 6. Prepare at most three individualized outreach messages against live evidence. Sending remains blocked on owner approval. Track replies, relevant referring domains and referral visits, not raw link count.

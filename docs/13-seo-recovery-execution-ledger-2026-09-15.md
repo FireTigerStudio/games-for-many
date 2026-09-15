@@ -39,7 +39,7 @@ Official references:
 | 1B | DONE | Record the recovery decision, sequence and outreach rules | This ledger is linked from `CURRENT_PROJECT_STATE.md` |
 | 1C | DONE | Add `noindex, follow` to C pages and category pagination; remove both from sitemap | Built output: 55 game URLs in sitemap, zero pagination URLs; C/B/pagination metadata sampled successfully |
 | 1D | DONE | Run regression tests, typecheck, lint and production build | 16/16 tests, typecheck and build passed; lint passed with the pre-existing GA inline-script warning |
-| 1E | BLOCKED | Deploy the index-quality change | Requires explicit owner approval; record production commit and date |
+| 1E | DONE | Deploy the index-quality change | Production commit `6714525`; verified 2026-09-15 15:47 +08:00 |
 | 2 | TODO | Strengthen A-tier pages with visible first-hand evidence | Complete in a 3–5 page batch; verify every claim against the embed |
 | 3 | TODO | Recover C pages in batches of up to five | Each page passes all ten evidence-gate items before reindexing |
 | 4A | DONE | Re-research initial outreach prospects | Current prospect table below supersedes old “send-ready” labels |
