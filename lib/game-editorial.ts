@@ -8,6 +8,14 @@ export type GameEditorial = {
   tips: string[];
   pickedBecause: string;
   limitations: string;
+  friendSteps?: string[];
+  testEvidence?: {
+    date: string;
+    setup: string;
+    observations: string[];
+    notTested: string;
+    sources: { label: string; url: string }[];
+  };
 };
 
 export const gameEditorial: Record<string, GameEditorial> = {
@@ -22,12 +30,35 @@ export const gameEditorial: Record<string, GameEditorial> = {
     limitations: "Players looking for simultaneous head-to-head action may find the puzzle structure less competitive."
   },
   "ninja-parkour-multiplayer": {
-    summary: "A direct online obstacle race where movement accuracy matters more than fighting. Rooms and matchmaking make it useful for either planned sessions or a quick public race.",
-    objective: "Reach the finish before the other runners by moving steadily and timing jumps through the course.",
-    modes: "Create a room, join an existing room or enter matchmaking.", input: "Move with A/D or Left/Right and jump with W or Up Arrow.",
-    deviceSetup: "Keyboard controls are verified for desktop browser play.", invite: "Room creation and joining are visible; the exact sharing flow may vary inside the game.",
-    tips: ["Prioritize clean landings instead of jumping at every possible moment.", "Use early attempts to learn obstacle timing before trying to maximize speed.", "Keep movement inputs short near narrow platforms to avoid overcorrecting."],
-    pickedBecause: "It has a clear multiplayer objective, readable controls and both room and matchmaking routes.", limitations: "It is keyboard-focused, and success depends on precise platform movement."
+    summary: "Race friends and online players up colorful Japanese-inspired obstacle towers. The three-key controls are easy to pick up, while tight jumps and crowded courses leave plenty of room to improve; at review time, GamePix showed an 8.6/10 rating from 955 votes.",
+    objective: "Climb from the bottom of the course toward the top by combining horizontal movement with carefully timed jumps. Other players share the route, but there is no direct combat.",
+    modes: "Jump into a public online room for instant competition, or create a private room when you want to race friends. Each person controls one ninja on the shared course.",
+    input: "Move with A/D or Left/Right and jump with W or Up Arrow. GamePix also documents S or Down Arrow for camera movement; that camera input was not independently tested in this review.",
+    deviceSetup: "Desktop keyboard play was tested in Chrome. GamePix lists desktop and mobile browser support, but Games for Many has not yet tested the mobile controls.",
+    invite: "The pause screen showed a Share Room code with a copy button. A second device joining through that code and the publisher-documented QR flow were not independently tested.",
+    tips: ["Hold a direction while pressing jump when a platform requires forward momentum.", "Favor a controlled landing over continuous movement near narrow ledges.", "In a crowded room, use the name above your ninja to keep track of your own position."],
+    pickedBecause: "It is easy to understand in seconds, lively with other runners on screen and well suited to friends who want a non-combat online challenge on separate devices.",
+    limitations: "Choose another game if you need offline play or two people sharing one keyboard. In one desktop check, startup took roughly 25 seconds after the first Play Now click. Mobile play and a full course completion were not tested.",
+    friendSteps: [
+      "Choose the private-room option instead of entering a public room.",
+      "Pick a course, then open Share Room and copy the room code or link.",
+      "Send it to your friend and wait until both players appear before racing. Joining from a second device was not independently tested in this review."
+    ],
+    testEvidence: {
+      date: "September 15, 2026",
+      setup: "desktop Chrome",
+      observations: [
+        "Other runners were active in the tested public room.",
+        "A Share Room panel exposed a room code and copy control.",
+        "A/D or Left/Right moved the ninja; W or Up Arrow jumped.",
+        "The game-start sequence took about 25 seconds after the first Play Now click in this single check, and no ad appeared during roughly two minutes of play."
+      ],
+      notTested: "mobile controls, a second device joining the room, maximum room size, QR joining and a full course completion",
+      sources: [
+        { label: "GamePix game listing", url: "https://www.gamepix.com/play/ninja-parkour-multiplayer" },
+        { label: "Dinobros / Picoraptor portfolio", url: "https://picoraptor.com/" }
+      ]
+    }
   },
   "multiplayer-pong": {
     summary: "A minimal online paddle duel that starts quickly and keeps the rules familiar. It works well for short rematches because there is almost no setup to learn.",
