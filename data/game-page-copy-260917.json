@@ -6,16 +6,16 @@
     "new_intro": "Bounce Path is a bite-sized physics puzzle about shaping a route before the ball drops. Place ramps, angle blockers, then watch physics take over. It rewards experimentation over reflexes, so it's a good pick if you'd rather plan a solution than react to one."
   },
   "ninja-parkour-multiplayer": {
-    "new_title": "Ninja Parkour Multiplayer – 2D Online Race Game | Games for Many",
-    "new_description": "Race real players up a vertical 2D ninja course in your browser. Free, no download. Public rooms or private rooms with a share code.",
-    "new_h1": "Ninja Parkour Multiplayer – 2D Online Race in Your Browser",
-    "new_intro": "Ninja Parkour is a free 2D multiplayer race by Dinobros. You pick a colored ninja, drop into a Japanese-themed vertical course, and scramble up past lanterns, giant sushi and pagoda rooftops against other real players. Public rooms are open to anyone; private rooms use a share code so you can play with friends only."
+    "new_title": "Ninja Parkour Multiplayer – Play Free Online in Browser | Games for Many",
+    "new_description": "Play Ninja Parkour Multiplayer free online. 2D vertical parkour race by Dinobros – no download, join a public room or share a private code with friends.",
+    "new_h1": "Ninja Parkour Multiplayer – Free Online Ninja Parkour Game",
+    "new_intro": "Ninja Parkour Multiplayer is a free 2D online multiplayer parkour game by Dinobros. You pick a colored ninja, drop into a Japanese-themed vertical course, and race real players up through lanterns, giant sushi, chopsticks and pagoda rooftops. No download, no signup – open the page and you're in a room. Play public matches with random opponents, or create a private room with a share code to play with friends only. Works on desktop with WASD or arrow keys, and on mobile with touch controls."
   },
   "multiplayer-pong": {
-    "new_title": "Multiplayer Pong – Play Pong Online Free | Games for Many",
-    "new_description": "Play the classic paddle game online. Join public matchmaking or share a private room code and rally until one of you misses.",
-    "new_h1": "Multiplayer Pong – Classic Paddle Game in Your Browser",
-    "new_intro": "Two paddles, one ball, zero tutorials. This browser Pong drops you into a quick match against another real player. Hit public matchmaking for random opponents or start a private room and send the code to a friend."
+    "new_title": "Pong Online Multiplayer – Play Classic Pong Free | Games for Many",
+    "new_description": "Play pong online multiplayer free. Two paddles, one ball, real opponents. Public matchmaking or share a private room code with a friend.",
+    "new_h1": "Multiplayer Pong – Play Classic Pong Online",
+    "new_intro": "Two paddles, one ball, zero tutorial. Multiplayer Pong is the classic paddle game played online against a real opponent. Public matchmaking finds you someone in seconds; private rooms let you send a code to a specific friend. Controls are as simple as it gets – move up, move down, don't miss. Best-of-five is over in about two minutes, which makes it a great rematch loop."
   },
   "darts-pro-multiplayer": {
     "new_title": "Darts Pro Multiplayer – Online 501 Darts Game | Games for Many",
@@ -24,16 +24,16 @@
     "new_intro": "A pure aim game. Each player starts at 501 and takes turns whittling the number down – but you have to land on exactly zero, which is where the mental part comes in. Slower than the site's action titles, and rewards steady hands over quick reflexes."
   },
   "master-checkers-multiplayer": {
-    "new_title": "Master Checkers Multiplayer – Play Free Online | Games for Many",
-    "new_description": "Play checkers in your browser against an online opponent, the computer, or a friend on the same device. Plan captures and defend every move.",
-    "new_h1": "Master Checkers Multiplayer – Online, AI or 2 Player",
-    "new_intro": "One of the most flexible board-game pages on the site. Play checkers against an online opponent, sharpen up against the computer, or hand the mouse back and forth with someone in the same room. Same rules across all three modes, so switching setups doesn't cost you anything."
+    "new_title": "Checkers Online – Play Free vs Computer or Friend | Games for Many",
+    "new_description": "Play checkers online free. Face a real opponent, the computer, or share one device with a friend. Standard rules – captures are forced.",
+    "new_h1": "Master Checkers Multiplayer – Online, AI or 2 Player Checkers",
+    "new_intro": "Checkers with three modes in one page: play a real opponent online, sharpen up against the computer, or hand the mouse back and forth with someone next to you. Standard international rules – forward diagonal moves, forced captures, kings on the back row. Clean board, no clutter, no signup. If you want a longer strategy game, this is the pick over tic-tac-toe."
   },
   "tic-tac-toe-pro-multiplayer-challenge": {
-    "new_title": "Tic Tac Toe Pro Multiplayer – Free Online Game | Games for Many",
-    "new_description": "Take turns placing X and O and try to complete a line first. Lightweight online multiplayer tic tac toe, playable free in the browser.",
+    "new_title": "Tic Tac Toe Online 2 Player – Multiplayer Challenge Free | Games for Many",
+    "new_description": "Play tic tac toe online 2 player free. Fast three-in-a-row matches against a live opponent – no signup or download.",
     "new_h1": "Tic Tac Toe Pro – Multiplayer Challenge Online",
-    "new_intro": "A stripped-down online take on three-in-a-row. Matches last under a minute, so it works well as a warm-up or a rematch loop with a friend. If you want more strategy, jump to Master Checkers – if you want faster rounds, this is your page."
+    "new_intro": "A stripped-down online three-in-a-row against a live opponent. Matches last under a minute, which is the whole point – it's a rematch machine. No signup, no download, no ads between rounds. If you've played tic tac toe once in your life, you can jump in right now."
   },
   "nightmare-runners": {
     "new_title": "Nightmare Runners – 2 Player Knockout Race Game | Games for Many",
@@ -54,10 +54,10 @@
     "new_intro": "A tactical card duel that mixes resource management, castle building and direct attacks. There's a campaign, tournaments, online duels against friends and AI practice, so you can ramp up before playing anyone real. Better suited to players who want decisions than reflexes."
   },
   "carrom-pro": {
-    "new_title": "Carrom Pro – Local 2 Player Carrom Game | Games for Many",
-    "new_description": "Play carrom in your browser with realistic collisions. Classic carrom, fast Disc Pool or point-based Freestyle – all local pass-and-play.",
-    "new_h1": "Carrom Pro – Free Browser Carrom for 2 Players",
-    "new_intro": "A local carrom board with three rulesets: Classic, Disc Pool (faster, pool-style pockets) and Freestyle (point scoring). Two players share the same device and take turns aiming. Collisions feel closer to a real board than most browser carrom versions."
+    "new_title": "Carrom Online – Play Carrom Board Game Free (2 Player) | Games for Many",
+    "new_description": "Play carrom online free in your browser. Realistic physics, three rulesets – Classic Carrom, Disc Pool and Freestyle. Local 2 player pass-and-play.",
+    "new_h1": "Carrom Pro – Free Online Carrom Board Game",
+    "new_intro": "Carrom Pro is a browser carrom board with realistic collision physics and three rulesets. Classic Carrom follows the standard rules you'd play on a real wooden board. Disc Pool speeds things up with pool-style pockets. Freestyle scores by points instead of clearing pieces. All modes are local pass-and-play – two people share one device and take turns aiming with the striker. Feels closer to a real board than most browser carrom versions."
   },
   "turkish-draughts": {
     "new_title": "Turkish Draughts – Play Online, AI or 2 Player | Games for Many",
@@ -66,16 +66,16 @@
     "new_intro": "The Turkish variant of draughts, where pieces move and capture up-down and left-right instead of diagonally. That small rule change makes the whole board feel different – lots of familiar tactics stop working. Three modes: AI, same-device 2 player, and online opponent."
   },
   "dominoes-classic-duel": {
-    "new_title": "Dominoes Classic Duel – Play Online with AI | Games for Many",
-    "new_description": "Play classic dominoes online free. Match tile halves with equal dots to score points. Practice against AI or challenge an online opponent.",
+    "new_title": "Dominoes Online – Play Classic Dominoes Free (AI & Multiplayer) | Games for Many",
+    "new_description": "Play classic dominoes online free. Match tile ends by pip count, block opponents, empty your hand first. AI practice or real opponent.",
     "new_h1": "Dominoes Classic Duel – Online & AI Dominoes",
-    "new_intro": "The 28-tile classic (also called bones or stones). Match halves with the same pip count to keep the chain going and rack up points. There's an AI opponent for practice and an online mode when you want a real duel – both use the same standard ruleset."
+    "new_intro": "The 28-tile classic (also called bones or stones). Match halves with the same pip count to keep the chain going and rack up points. There's an AI opponent for practice and an online mode when you want a real duel – both use the same standard ruleset most people learn on a real dominoes set."
   },
   "tic-tac-toe-with-ai-and-multiplayer": {
-    "new_title": "Tic Tac Toe with AI & Multiplayer – Free Online | Games for Many",
-    "new_description": "Play tic tac toe in your browser against the computer or a friend. Fast, responsive HTML5 game – works on desktop and mobile.",
+    "new_title": "Tic Tac Toe Online – 2 Player & AI Modes Free | Games for Many",
+    "new_description": "Play tic tac toe online free. Two-player mode on one device or challenge the computer. Fast HTML5 game – desktop and mobile.",
     "new_h1": "Tic Tac Toe with AI & 2 Player Mode",
-    "new_intro": "A clean HTML5 tic-tac-toe board that loads fast on desktop and mobile. Two modes: play the computer to warm up, or hand the device back and forth with a friend. Rounds last seconds, which is the whole point."
+    "new_intro": "A clean HTML5 tic-tac-toe board that loads fast on desktop and mobile. Two modes: play the computer to warm up (three difficulty levels), or hand the device back and forth with a friend for a two-player match. Rounds last seconds, which is the whole point."
   },
   "music-night-battle-rhythm-game": {
     "new_title": "Music Night Battle – Online Rhythm Duel Game | Games for Many",
@@ -108,10 +108,10 @@
     "new_intro": "A co-op platformer starring two stick figures – one white, one black. Both need to collect the stars and monster balls in each level and make it to the portal together. Coordination matters more than speed; leaving your partner behind usually stalls the run."
   },
   "duo-water-and-fire": {
-    "new_title": "Duo Water and Fire – 2 Player Local Game | Games for Many",
-    "new_description": "Play the classic Water and Fire co-op on one device. Two players, separate keys, one key to grab and one exit to reach together.",
-    "new_h1": "Duo Water and Fire – Local 2 Player Co-op",
-    "new_intro": "The classic fire-and-water setup: water character avoids fire, fire character avoids water, both need to grab the key and reach the exit together. One device, two sets of keys, no online required. Good pick when you want something cooperative rather than competitive."
+    "new_title": "Fire and Water 2 Player Game – Duo Water and Fire | Games for Many",
+    "new_description": "Play the classic fire and water 2 player game online. Water avoids fire, fire avoids water – grab the key and reach the exit together on one device.",
+    "new_h1": "Duo Water and Fire – 2 Player Fire and Water Game",
+    "new_intro": "The classic fire-and-water two-player formula in a clean browser version. One player controls the water character, the other controls fire. Water burns in lava, fire dies in water, both need to grab the key and reach the exit together. Play on one keyboard – WASD for one character, arrow keys for the other. Levels get trickier as switches, buttons and moving platforms enter the mix. No download and no ads mid-level."
   },
   "kingdom-of-toilets": {
     "new_title": "Kingdom of Toilets – 2 Player Escape Platformer | Games for Many",
@@ -150,10 +150,10 @@
     "new_intro": "A water sort puzzle: pour colored liquids between tubes until each tube holds a single color. Later levels squeeze more colors and fewer empty tubes, so a run that seems obvious can dead-end fast. Good pick for a focused break."
   },
   "checkers-dames": {
-    "new_title": "Checkers Dames – Free Online Checkers Game | Games for Many",
-    "new_description": "A clean, free browser version of checkers (Dames). Classic rules, quick matches and a straightforward board – no download needed.",
+    "new_title": "Checkers Dames – Play Free Online Checkers Game | Games for Many",
+    "new_description": "Free browser checkers (Dames) with standard international rules. Play against another player – clean board, no download.",
     "new_h1": "Checkers – Dames | Free Browser Checkers",
-    "new_intro": "A straightforward browser checkers board (also known as Dames). Standard international rules – forward moves, forced captures, kings on the back row – so if you've played checkers before you can jump straight in."
+    "new_intro": "A straightforward browser checkers board (also known as Dames in French-speaking countries). Standard international rules – forward diagonal moves, forced captures, kings promoted on the back row. If you've played checkers before you can jump straight in. Cleaner design than most free versions."
   },
   "color-block": {
     "new_title": "Color Block – 3D Puzzle Game Free Online | Games for Many",
@@ -192,10 +192,10 @@
     "new_intro": "A colorful 3D multiplayer race with a brainrot-meme aesthetic. You collect bananas as you sprint, and those bananas literally build the bridge sections ahead of you. Choosing which line to run through matters as much as raw speed."
   },
   "whot-the-ultimate-nigerian-card-game": {
-    "new_title": "WHOT – Online Nigerian Card Game Multiplayer | Games for Many",
-    "new_description": "Play the Nigerian card game WHOT online. Match shapes or numbers and empty your hand first. AI practice or real-time multiplayer.",
+    "new_title": "WHOT Card Game Online – Play Nigerian WHOT Multiplayer | Games for Many",
+    "new_description": "Play WHOT online – the Nigerian card game where you match shapes or numbers to empty your hand first. AI practice or real-time multiplayer.",
     "new_h1": "WHOT – The Nigerian Card Game Online",
-    "new_intro": "A browser version of WHOT, the popular Nigerian card game. You match cards by shape or number and try to be first to empty your hand. There's an AI mode if you're learning and a real-time multiplayer mode if you already know how to play."
+    "new_intro": "WHOT is a hugely popular Nigerian card game, and this is a clean browser version. You match cards by shape (circle, cross, triangle, square, star) or by number, and try to be first to empty your hand. Special cards force opponents to draw, skip turns or change the required shape. Two modes: solo against AI if you're learning the rules, and real-time multiplayer against another player when you already know how to play."
   },
   "clonium": {
     "new_title": "Clonium – Chain Reaction Strategy Board Game | Games for Many",
@@ -300,10 +300,10 @@
     "new_intro": "A cute Valentine's-themed dress-up game with Angela and Tom. Pick outfits, accessories and details for the date. Aimed at younger players and short sessions – nothing to master, just style choices."
   },
   "backgammonia-online-backgammon-game": {
-    "new_title": "Backgammonia – Online Backgammon Free | Games for Many",
-    "new_description": "Play classic backgammon in your browser vs computer or a friend. No download – roll the dice and jump straight into a match.",
+    "new_title": "Backgammon Online – Play Free vs Computer or Friend | Games for Many",
+    "new_description": "Play backgammon online free. Standard rules, computer opponent or two-player on the same device. No physical set needed.",
     "new_h1": "Backgammonia – Online & 2 Player Backgammon",
-    "new_intro": "A browser backgammon board with a computer opponent and a two-player option on the same device. Standard rules, standard board – you don't need the physical set anymore. Turn-based pace means shared-pointer play works fine."
+    "new_intro": "A browser backgammon board with a computer opponent and a two-player option on the same device. Standard rules, standard board – rolling doubles, hitting blots, bearing off from the home board. You don't need the physical set anymore. Turn-based pace means shared-pointer play works fine."
   },
   "jungle-fight": {
     "new_title": "Jungle Fight – Lane Battle Strategy Game | Games for Many",
@@ -330,16 +330,16 @@
     "new_intro": "A voxel-style zombie survival with solo or 4-player co-op. You board up positions, upgrade weapons between waves, use traps at chokepoints and eventually drop bosses. Straightforward pick if you want a co-op zombie loop without a heavy install."
   },
   "iron-legion": {
-    "new_title": "Iron Legion – Free Online Tank Battle Game | Games for Many",
-    "new_description": "Play Iron Legion free online: real-time tank team battles, 10+ classic vehicles, control-point objectives and detailed terrain.",
-    "new_h1": "Iron Legion – Online Tank Battle Game",
-    "new_intro": "Iron Legion is a real-time online tank team battle. You pick from ten-plus classic tank models – light recon vehicles at one end, heavy assault tanks at the other – and fight for control points across detailed terrain. Vehicle choice and team coordination decide matches more than raw aim."
+    "new_title": "Iron Legion – Free Online Tank Battle Game (Team Multiplayer) | Games for Many",
+    "new_description": "Play Iron Legion free online. Real-time tank team battles with 10+ classic vehicle classes, control-point maps and detailed terrain.",
+    "new_h1": "Iron Legion Tank Game – Online Team Tank Battle",
+    "new_intro": "Iron Legion is a real-time online tank team battle. You pick from ten-plus classic tank models – light recon vehicles at one end, heavy assault tanks at the other – and fight for control points across detailed terrain. Vehicle choice, positioning and team coordination decide matches more than raw aim. Free to play, no download, no launcher."
   },
   "speen": {
-    "new_title": "Speen – Free Online Momentum IO Game | Games for Many",
-    "new_description": "Swing two connected circles, swap the pivot and use momentum to smash spike balls and rivals. Free online IO game.",
-    "new_h1": "Speen – Momentum Swing IO Game",
-    "new_intro": "An IO game with one weird mechanic – two circles connected together, and you swap which one pivots to swing through the world. Collect glow pickups, charge up a leg, smash spike balls, take out other players, then drop into shared multiplayer to fight for territory."
+    "new_title": "Speen – Momentum IO Game (Free Online) | Games for Many",
+    "new_description": "Play Speen free online. Momentum-based IO game where two connected circles swap pivots to swing through pickups, spike balls and rival players.",
+    "new_h1": "Speen – Free Online Momentum IO Game",
+    "new_intro": "Speen is an IO game with one weird mechanic: two circles connected together, and you swap which one pivots to swing through the world. Collect glow pickups, charge up a leg, smash spike balls, take out other players, then drop into the shared multiplayer world to paint territory and duel. The single-action control is deceptively deep once you get the swing rhythm."
   },
   "quiz-runner-io": {
     "new_title": "Quiz Runner IO – Trivia Multiplayer Race Game | Games for Many",
@@ -366,10 +366,10 @@
     "new_intro": "A slither-style snake arena. Eat glowing orbs to grow, outmaneuver other snakes into your body to trap them, then collect what they drop when they die. Standard formula but tightly built and fast to load."
   },
   "survev-io": {
-    "new_title": "Survev.io – Free Online Battle Royale Game | Games for Many",
-    "new_description": "Free top-down battle royale in your browser. Loot buildings, dodge the shrinking safe zone and outlast every other player.",
+    "new_title": "Survev.io – Play Free Online Battle Royale in Browser | Games for Many",
+    "new_description": "Play Survev.io free in your browser. Top-down battle royale – loot buildings, avoid the shrinking safe zone, be the last player standing.",
     "new_h1": "Survev.io – Top-Down Battle Royale Online",
-    "new_intro": "A top-down battle royale that runs entirely in your browser. Start with fists, loot buildings for weapons and gear, and stay ahead of a shrinking safe zone. If you want a battle royale without a launcher or a download, this is the pick."
+    "new_intro": "Survev.io is a top-down battle royale that runs entirely in your browser. Start with fists, loot buildings for weapons, gear, ammo and medkits, and stay ahead of a shrinking safe zone that eventually forces every player into the same shrinking circle. If you want a battle royale without a launcher, a download or an account, this is the pick."
   },
   "ultimate-flying-car": {
     "new_title": "Ultimate Flying Car – 2 Player Driving Game | Games for Many",
@@ -378,10 +378,10 @@
     "new_intro": "A vehicle sandbox in a browser: drive across a city, take off, glide between buildings, land on rooftops. Solo mode has races, stunt challenges and free roam; local two-player lets you share the city with a friend on the same device."
   },
   "drunken-boxing-2": {
-    "new_title": "Drunken Boxing 2 – 2 Player Local Boxing Game | Games for Many",
-    "new_description": "Manage balance, reach and stamina in an intentionally wobbly boxing match. Solo vs CPU or local 2 player.",
-    "new_h1": "Drunken Boxing 2 – Local 2 Player Boxing",
-    "new_intro": "A short arcade boxing duel where everyone is meant to be tipping over. Balance, reach and stamina all matter more than raw hits – throw too many punches and you gas out in the ropes. Solo against the CPU or hand off to a friend for a two-player match."
+    "new_title": "Drunken Boxing 2 – Play Online Free (2 Player) | Games for Many",
+    "new_description": "Play Drunken Boxing 2 free online. Ragdoll boxing duel with intentionally wobbly movement – solo vs CPU or local 2 player on one keyboard.",
+    "new_h1": "Drunken Boxing 2 – Free Online Ragdoll Boxing Game",
+    "new_intro": "Drunken Boxing 2 is a physics-based ragdoll boxing duel where the whole point is that both fighters can barely stand up. Punches are unpredictable, balance is a mess, and stamina drops fast. Play solo against the CPU, or hand off half the keyboard to a friend for a local two-player match. Rounds are short, chaotic and better with someone laughing next to you. No download – it runs directly in your browser."
   },
   "kobadoo-emojis": {
     "new_title": "Kobadoo Emojis – Memory Sequence Game Free | Games for Many",
@@ -414,22 +414,22 @@
     "new_intro": "A pixel-art local multiplayer platformer with retro-neon visuals. Battles are short and vibrant; controls are meant to be picked up quickly so you can hand a keyboard to a friend and go. No download."
   },
   "chess-multiplayer-online": {
-    "new_title": "Chess Multiplayer Online – Play Free Chess | Games for Many",
-    "new_description": "Play online chess in your browser free. No download or signup – pick a mode and start a game.",
+    "new_title": "Chess Online Multiplayer – Play Free Chess in Browser | Games for Many",
+    "new_description": "Play chess online multiplayer free in your browser. No signup or download – pick a mode and start a match against another player.",
     "new_h1": "Chess Multiplayer Online – Free Browser Chess",
-    "new_intro": "A browser chess board with a standard multiplayer setup. Pick a mode from the menu, jump into a match against another player – no login, no install. Standard rules, clean board."
+    "new_intro": "Standard chess in a browser. No account, no install, no ads mid-game. Pick a mode from the menu, jump into a match against another player. Standard rules and standard board – if you know how chess works, everything is where you'd expect it. Good pick if you want a quick game without opening a full chess platform."
   },
   "ludo-game-multiplayer": {
-    "new_title": "Ludo Game Multiplayer – Play Free Online | Games for Many",
-    "new_description": "Roll the dice and race four tokens home in classic Ludo multiplayer. Free browser play with friends or AI.",
+    "new_title": "Ludo Online Multiplayer – Play Free Ludo Game | Games for Many",
+    "new_description": "Play ludo online multiplayer free. Roll dice, race four tokens home. Classic Indian/Parcheesi board game against friends or AI.",
     "new_h1": "Ludo Game Multiplayer – Free Online Ludo",
-    "new_intro": "Standard Ludo, browser-based. Roll dice, race four tokens around the board and home. Multiplayer against friends is the main draw, but there's an AI mode if you're teaching someone or just want a quick round."
+    "new_intro": "Standard Ludo (also called Parcheesi in some regions) in a browser. Roll dice, race your four tokens around the board and home. Multiplayer against real players is the main mode, but there's an AI opponent if you're teaching someone or just want a quick round. Up to four players per match."
   },
   "duo-with-online-friends-multiplayer-card-game": {
-    "new_title": "DUO with Friends – Uno-Style Online Card Game | Games for Many",
-    "new_description": "Play a DUO card game (Uno-style) online with friends. Match colors and numbers, drop your last card first.",
-    "new_h1": "DUO with Friends – Multiplayer Card Game",
-    "new_intro": "A DUO-style card game (the Uno formula – match by color or number, special cards flip the turn order). Multiplayer with friends is the setup this page is built around; solo AI works as a warm-up."
+    "new_title": "DUO Online – Play Uno-Style Multiplayer Card Game Free | Games for Many",
+    "new_description": "Play DUO online – an Uno-style multiplayer card game. Match colors or numbers, use special cards, drop your last card first.",
+    "new_h1": "DUO with Friends – Uno-Style Card Game Online",
+    "new_intro": "A DUO-style card game (basically the Uno formula – match by color or number, use skip/reverse/draw cards). Multiplayer with friends is the main setup this page is built around; solo AI mode is there as a warm-up. Rounds are quick enough to run a best-of-five over a coffee break."
   },
   "bowling-hero-multiplayer": {
     "new_title": "Bowling Hero Multiplayer – Online Bowling Game | Games for Many",
@@ -438,16 +438,16 @@
     "new_intro": "A browser bowling game with a multiplayer setup. Aim your line, dial in the spin, roll. Solo mode is fine for practice; multiplayer scales up to friends in a lane rotation."
   },
   "reversi-multiplayer": {
-    "new_title": "Reversi Multiplayer – Online Othello Game Free | Games for Many",
-    "new_description": "Flip your opponent's discs and dominate the board in this classic Reversi (Othello) online multiplayer game.",
-    "new_h1": "Reversi Multiplayer – Online Othello",
-    "new_intro": "A Reversi (Othello) board with online, AI and local options. The whole game is about corner control and knowing when to give up tempo – simple to learn, hard to master, and matches don't take long."
+    "new_title": "Reversi Online – Play Othello Multiplayer Free | Games for Many",
+    "new_description": "Play Reversi (Othello) online multiplayer free. Flip your opponent's discs and control the board. AI or live opponent modes.",
+    "new_h1": "Reversi Multiplayer – Play Othello Online",
+    "new_intro": "Reversi (known as Othello in some regions) played online against a live opponent or the computer. Place a disc, flip everything between it and another one of your color, control the corners, don't give up tempo. Simple to learn, hard to master – matches run about 5-10 minutes."
   },
   "straight-4-multiplayer": {
-    "new_title": "Straight 4 Multiplayer – Connect Four Online | Games for Many",
-    "new_description": "Connect four discs in a row before your opponent does. Classic Connect Four online, free in your browser.",
+    "new_title": "Connect Four Online – Straight 4 Multiplayer Free | Games for Many",
+    "new_description": "Play Connect Four online free. Drop discs, block diagonals, get four in a row before your opponent. Multiplayer or AI.",
     "new_h1": "Straight 4 Multiplayer – Connect Four Online",
-    "new_intro": "Connect Four in browser form. Drop discs, block the other player's diagonals, get your four in a row first. Nothing hidden, nothing to unlock – a clean version of the classic."
+    "new_intro": "Connect Four in browser form. Drop discs into the seven-column grid, block your opponent's diagonals, get your four in a row first. Nothing hidden, nothing to unlock – a clean version of the classic. Play online multiplayer or against AI when nobody's around."
   },
   "goose-game-multiplayer": {
     "new_title": "Goose Game Multiplayer – Classic Board Game Online | Games for Many",
@@ -468,22 +468,22 @@
     "new_intro": "A raft-survival game with multiplayer. Every scrap of wood and food matters – you hook debris, expand your raft, keep hunger down, and try not to fall in. Multiplayer works for cooperation more than PvP."
   },
   "4-colors-multiplayer": {
-    "new_title": "4 Colors Multiplayer – Uno-Style Card Game Online | Games for Many",
-    "new_description": "Fast Uno-style multiplayer card game. Match colors or numbers and stack special cards to trip up your opponents.",
-    "new_h1": "4 Colors Multiplayer – Uno-Style Card Game",
-    "new_intro": "An Uno-style multiplayer card game with the classic four suits by color. Match by color or number, use skip and reverse and draw cards to control the flow. Fast rounds, low commitment, works well with 3 or 4 people."
+    "new_title": "4 Colors Multiplayer – Uno-Style Card Game Online Free | Games for Many",
+    "new_description": "Play 4 Colors – a free Uno-style multiplayer card game online. Match colors and numbers, use skip and draw cards to trip opponents.",
+    "new_h1": "4 Colors Multiplayer – Uno-Style Card Game Online",
+    "new_intro": "An Uno-style multiplayer card game with the classic four suits by color. Match by color or number, use skip, reverse and draw cards to control the flow of play. Fast rounds, low commitment. Works well with 3 or 4 players – this page is essentially free online Uno without the branding."
   },
   "rock-paper-scissors-multiplayer": {
-    "new_title": "Rock Paper Scissors Multiplayer – Play Online | Games for Many",
-    "new_description": "Play Rock Paper Scissors online multiplayer. Best-of rounds and quick matches – free in your browser, no download.",
+    "new_title": "Rock Paper Scissors Online Multiplayer – Play Free | Games for Many",
+    "new_description": "Play Rock Paper Scissors online multiplayer free. Best-of-five matches against a real opponent in your browser.",
     "new_h1": "Rock Paper Scissors Multiplayer – Online RPS",
-    "new_intro": "Rock Paper Scissors with an online layer. Pick your throw, see what the other player picked, repeat. It's the simplest game on the site and works exactly as you'd expect – jump in for a best-of-five with a friend."
+    "new_intro": "Rock Paper Scissors with an online layer. Pick your throw, see what the other player picked, repeat. It's the simplest game on the site and works exactly as you'd expect – jump in for a best-of-five with a friend when nothing else takes less than a minute to explain."
   },
   "battleship-war-multiplayer": {
-    "new_title": "Battleship Multiplayer – Online Battleship Game | Games for Many",
-    "new_description": "Place your fleet, call coordinates and sink your opponent's ships in this classic Battleship online multiplayer.",
-    "new_h1": "Battleship War Multiplayer – Online Battleship",
-    "new_intro": "The classic Battleship formula in browser form. Place your fleet, call coordinates on a hidden grid, sink your opponent before they sink you. Multiplayer online or against AI – rules are the ones you already know."
+    "new_title": "Battleship Online – Play Battleship Multiplayer Free | Games for Many",
+    "new_description": "Play Battleship online multiplayer free. Place your fleet, call coordinates and sink your opponent's ships before they sink you.",
+    "new_h1": "Battleship War Multiplayer – Online Battleship Game",
+    "new_intro": "The classic Battleship formula in browser form. Place your fleet on a hidden 10×10 grid, call coordinates on the other player's grid, sink their ships before they sink yours. Multiplayer online or against AI – rules are exactly the ones you already know from the board game."
   },
   "rage-jump-multiplayer-physics-frenzy": {
     "new_title": "Rage Jump Multiplayer – Physics Platformer Game | Games for Many",
@@ -492,16 +492,16 @@
     "new_intro": "A rage-platformer with unpredictable physics and pixel-art visuals. Jumps that should be easy aren't, and the multiplayer mode makes everyone else's failure funnier than your own. In the same spirit as Getting Over It, sized for a browser session."
   },
   "snake-and-ladders-multiplayer": {
-    "new_title": "Snakes and Ladders Multiplayer – Online Board Game | Games for Many",
-    "new_description": "Roll dice, climb ladders and dodge snakes in the classic children's board game online with friends or AI.",
+    "new_title": "Snakes and Ladders Online – Play Multiplayer Free | Games for Many",
+    "new_description": "Play snakes and ladders online multiplayer free. Roll dice, climb ladders, dodge snakes. Play against friends or the AI.",
     "new_h1": "Snakes and Ladders Multiplayer – Online Classic",
-    "new_intro": "The children's classic in browser form. Roll dice, climb ladders, get bitten by snakes, race to the top square. Multiplayer against friends works for a mixed-age group; AI mode fills in when it's just you."
+    "new_intro": "The children's classic in browser form. Roll dice, climb ladders, get bitten by snakes, race to square 100. Multiplayer against friends works for a mixed-age group; AI mode fills in when it's just you. Fast rounds, low stakes, easy for anyone to pick up."
   },
   "domino-online-multiplayer": {
-    "new_title": "Domino Online Multiplayer – Free Dominoes Game | Games for Many",
-    "new_description": "Play classic dominoes online free. Match tile ends, block opponents and empty your hand first.",
+    "new_title": "Domino Online Multiplayer – Free Dominoes Game with Friends | Games for Many",
+    "new_description": "Play dominoes online multiplayer free. Match tile ends, block opponents, empty your hand first. Play with friends or AI in your browser.",
     "new_h1": "Domino Online Multiplayer – Free Online Dominoes",
-    "new_intro": "A standard dominoes multiplayer setup in your browser. Match ends by pip count, block the other player where you can, get rid of your hand first. AI available if you're between friends."
+    "new_intro": "A clean online dominoes setup for browser play. Match tile ends by pip count, block the other player where you can, get rid of your hand first. Multiplayer against real people works with friends or random opponents; AI is there when you're between matches."
   },
   "multiplayer-cooking-coop": {
     "new_title": "Multiplayer Cooking Co-op – Overcooked-Style Game | Games for Many",
@@ -511,9 +511,9 @@
   },
   "last-card-multiplayer": {
     "new_title": "Last Card Multiplayer – Uno-Style Online Card Game | Games for Many",
-    "new_description": "Play Uno-style Last Card online with friends or AI. Match colors and numbers, use special cards to trip opponents up.",
+    "new_description": "Play Last Card online – a free Uno-style multiplayer card game. Match colors and numbers, chain special cards to force opponents to draw.",
     "new_h1": "Last Card Multiplayer – Uno-Style Card Game",
-    "new_intro": "Another Uno-style card game (Last Card is the New Zealand name most people know it by). Match colors or numbers, chain special cards to force your opponents to draw. Rules are close enough to Uno that you can jump straight in."
+    "new_intro": "Another Uno-style card game (Last Card is what the game is called in New Zealand and a few other countries). Match colors or numbers, chain special cards to force opponents to draw multiples. Rules are close enough to Uno that you can jump straight in."
   },
   "online-cats-multiplayer-park": {
     "new_title": "Online Cats Multiplayer Park – Cute Cat Game | Games for Many",
@@ -522,10 +522,10 @@
     "new_intro": "A social multiplayer cat game where everyone controls a cat wandering the same park. Explore, hang out near other players' cats, poke around the environment. Low-stakes, aimed at players who enjoy chill social spaces more than objectives."
   },
   "8-ball-pool-multiplayer": {
-    "new_title": "8 Ball Pool Multiplayer – Online Pool Game Free | Games for Many",
-    "new_description": "Play 8 ball pool online multiplayer in your browser. Aim, spin and pocket the 8 ball last – free, no download.",
+    "new_title": "8 Ball Pool Online Multiplayer – Play Free in Browser | Games for Many",
+    "new_description": "Play 8 ball pool online multiplayer free. Aim, add spin, pocket the 8 ball last. Real-time matches against other players.",
     "new_h1": "8 Ball Pool Multiplayer – Free Online Pool Game",
-    "new_intro": "Standard 8-ball pool in a browser. Aim, add spin, plan two shots ahead so the cue ball ends up in a useful spot. Multiplayer online is where the game shines; solo works as a warm-up."
+    "new_intro": "Standard 8-ball pool in a browser. Aim your cue, add spin if you know how, plan two shots ahead so the cue ball lands somewhere useful. Multiplayer online is where the game shines – you play a real person, so shot planning actually matters. Solo mode is there for practice."
   },
   "penalty-challenge-multiplayer": {
     "new_title": "Penalty Kick Multiplayer – Online Football Game | Games for Many",
