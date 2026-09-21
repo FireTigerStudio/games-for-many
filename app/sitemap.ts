@@ -17,6 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticPaths.map((path) => ({ url: `${siteConfig.url}${path}/`, lastModified: new Date("2026-08-10"), changeFrequency: path === "" ? "daily" as const : "monthly" as const, priority: path === "" ? 1 : 0.4 })),
     ...getPublishableGames().filter((game) => hasIndependentGameEditorial(game.slug)).map((game) => ({ url: `${siteConfig.url}/games/${game.slug}/`, lastModified: new Date(game.reviewedAt), changeFrequency: "weekly" as const, priority: 0.8 })),
     ...getIndexableCategories().map((category) => ({ url: `${siteConfig.url}/category/${category.slug}/`, lastModified: getCategoryLastModified(category.slug), changeFrequency: "weekly" as const, priority: 0.7 })),
-    ...blogPosts.filter((post) => post.indexable).map((post) => ({ url: `${siteConfig.url}/blog/${post.slug}/`, lastModified: new Date(post.publishedAt), changeFrequency: "monthly" as const, priority: 0.7 })),
+    ...blogPosts.filter((post) => post.indexable).map((post) => ({ url: `${siteConfig.url}/blog/${post.slug}/`, lastModified: new Date(post.modifiedAt), changeFrequency: "monthly" as const, priority: 0.7 })),
   ];
 }
