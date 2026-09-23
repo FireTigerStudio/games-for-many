@@ -1,11 +1,11 @@
 export const blogPosts = [
   {
     slug: "best-2-player-browser-games",
-    title: "Best 2 Player Browser Games (2026) – Free, No Download | Games for Many",
-    heading: "The Best 2 Player Browser Games to Play Free in 2026",
-    description: "The best 2 player browser games to play free right now. Couch co-op on one keyboard, online lobbies, private rooms – no download, no signup.",
+    title: "The Best 2 Player Browser Games — Play Free with a Friend | Games for Many",
+    heading: "The Best 2 Player Browser Games You Can Jump Into Right Now",
+    description: "20 tested 2 player browser games — co-op platformers, ragdoll duels, classic checkers and more. Zero download, one keyboard, jump in with a friend right now.",
     publishedAt: "2026-08-12",
-    modifiedAt: "2026-09-20",
+    modifiedAt: "2026-09-23",
     indexable: true,
   },
   {
