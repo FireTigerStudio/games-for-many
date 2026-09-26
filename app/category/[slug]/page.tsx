@@ -172,7 +172,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
         <div><h3>{"Are all racing games car games?"}</h3><p>{"No. Racing here means any game built around crossing a finish line first – parkour, bridge races, balloon races and water-park courses as well as vehicle competition. Filter by game title on each card if you specifically want cars."}</p></div>
         <div><h3>{"Do I need a gamepad?"}</h3><p>{"No. Every game here works on keyboard and mouse. Aiming games (darts, billiards, carrom) mostly use the mouse. Racing and parkour games use keyboard. A gamepad works on some titles but nothing requires it."}</p></div>
         <div><h3>{"Can I practice sports games alone?"}</h3><p>{"Depends on the game. Bowling Hero, Penalty Kick and Darts Pro Multiplayer all include solo modes. Multiplayer Pong is online-only – you need a live opponent."}</p></div>
-        <p>For more same-device options, browse <Link href="/category/local-2-player/">local two-player games</Link>. Our <Link href="/blog/best-2-player-browser-games/">two-player browser game testing guide</Link> covers the controls.</p>
+        <p>For more same-device options, browse <Link href="/category/local-2-player/">local two-player games</Link>. Our <Link href="/blog/2-player-racing-games-online/">two-player racing guide</Link> separates shared-keyboard races from online multiplayer races.</p>
       </section>}
       {isIoArena && <section className="prose-copy mt-14">
         <h2>{"What is an IO game?"}</h2>
@@ -192,6 +192,8 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
         <div><h3>{"Can I play IO games with a specific friend?"}</h3><p>{"Some games (Imposter Duck, Rocketcar Cup) expose room or friend options. Most public arenas (Survev.io, Snake War) use pure public matchmaking – you can both join the same server but you might not end up in the same match."}</p></div>
         <div><h3>{"Do these games have weapons or violence?"}</h3><p>{"Some do. Survev.io, GrowWars.io and Viking Tomahawk include weapons in a cartoon or top-down style. Territory and racing games (Color Path IO, Speen, Rocketcar Cup) don't. Each game page describes the combat style."}</p></div>
         <div><h3>{"Why is the count smaller than other IO sites?"}</h3><p>{"Because a game only makes the list if the multiplayer mode actually works during review. A lot of games tagged \".io\" or \"arena\" on supplier catalogs turn out to be AI-only or have no active players. Those get filtered out."}</p></div>
+        <h2>{"More IO game guides"}</h2>
+        <p>Compare our guides to <Link href="/blog/games-like-agar-io/">games like Agar.io</Link>, <Link href="/blog/games-like-slither-io/">Slither.io alternatives</Link>, <Link href="/blog/games-like-diep-io/">Diep.io alternatives</Link> and <Link href="/blog/games-like-territorial-io/">Territorial.io alternatives</Link>. For a broader selection, browse <Link href="/blog/unblocked-io-games/">unblocked .IO games</Link>.</p>
         <p>For a planned duel, browse <Link href="/category/online-2-player/">online two-player games</Link>; for more team and co-op options, see <Link href="/category/multiplayer/">multiplayer games</Link>.</p>
       </section>}
     </div>

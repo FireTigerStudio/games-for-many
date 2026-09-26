@@ -9,7 +9,7 @@ export function SiteHeader() {
           <Link href="/category/local-2-player/">Local 2 Player</Link>
           <Link href="/category/online-2-player/">Online 2 Player</Link>
           <Link href="/category/multiplayer/">Multiplayer</Link>
-          <Link href="/blog/best-2-player-browser-games/">Guides</Link>
+          <Link href="/blog/">Guides</Link>
         </nav>
       </div>
     </header>
