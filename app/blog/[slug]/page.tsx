@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { SEOHead } from "@/components/SEOHead";
@@ -11,6 +12,7 @@ import GamesLikeTerritorialIo from "@/content/blog/games-like-territorial-io.mdx
 import SameKeyboardTwoPlayerGames from "@/content/blog/same-keyboard-2-player-games.mdx";
 import UnblockedIoGames from "@/content/blog/unblocked-io-games.mdx";
 import { blogPosts } from "@/lib/blogs";
+import { getGame } from "@/lib/games";
 import { pageMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 
@@ -32,7 +34,18 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const post = blogPosts.find((item) => item.slug === params.slug);
   if (!post) return {};
+  const heroGame = getGame(post.heroGameSlug);
   const metadata = pageMetadata(post.title, post.description, `/blog/${post.slug}/`);
+  if (heroGame) {
+    metadata.openGraph = {
+      ...metadata.openGraph,
+      images: [{ url: heroGame.thumbnail, alt: post.heroImageAlt }],
+    };
+    metadata.twitter = {
+      ...metadata.twitter,
+      images: [{ url: heroGame.thumbnail, alt: post.heroImageAlt }],
+    };
+  }
   if (post.slug === "best-2-player-browser-games") metadata.title = { absolute: post.title };
   if (!post.indexable) metadata.robots = { index: false, follow: true };
   return metadata;
@@ -41,6 +54,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 export default function BlogPost({ params }: { params: { slug: string } }) {
   const post = blogPosts.find((item) => item.slug === params.slug);
   if (!post) notFound();
+  const heroGame = getGame(post.heroGameSlug);
+  if (!heroGame) notFound();
   const Content = blogContent[params.slug as keyof typeof blogContent];
   if (!Content) notFound();
   const articleSchema = {
@@ -51,6 +66,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
     datePublished: post.publishedAt,
     dateModified: post.modifiedAt,
     author: { "@type": "Organization", name: siteConfig.name },
+    image: heroGame.thumbnail,
     mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}/`,
   };
   const faqSchema = post.faq
@@ -71,6 +87,9 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Guides" }, { label: post.title }]} />
       <h1 className="text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">{post.heading}</h1>
       <p className="mt-5 text-lg leading-8 text-slate-600">{post.description}</p>
+      <figure className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm">
+        <Image alt={post.heroImageAlt} className="aspect-[16/9] w-full object-cover" height={675} priority src={heroGame.thumbnail} width={1200} />
+      </figure>
       <div className="prose-copy"><Content /></div>
     </article>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import gamesData from "@/data/games.json";
 import { createGameEventDetail } from "@/lib/analytics-events.mjs";
@@ -7,14 +8,16 @@ import type { Game } from "@/lib/types";
 
 type GamePlayerProps = {
   canEmbed: boolean;
+  imageAlt: string;
   slug: string;
+  thumbnail: string;
   title: string;
 };
 
 const games = gamesData as Game[];
 const LOAD_TIMEOUT_MS = 15_000;
 
-export function GamePlayer({ canEmbed, slug, title }: GamePlayerProps) {
+export function GamePlayer({ canEmbed, imageAlt, slug, thumbnail, title }: GamePlayerProps) {
   const [started, setStarted] = useState(false);
   const game = games.find((item) => item.slug === slug);
   const iframeUrl = started ? game?.iframeUrl : null;
@@ -75,8 +78,10 @@ export function GamePlayer({ canEmbed, slug, title }: GamePlayerProps) {
 
   if (!started || !iframeUrl) {
     return (
-      <div className="flex h-full items-center justify-center bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 p-8 text-center text-white">
-        <div className="max-w-lg">
+      <div className="relative flex h-full items-center justify-center overflow-hidden bg-slate-950 p-8 text-center text-white">
+        <Image alt={imageAlt} className="object-cover opacity-45" fill sizes="(min-width: 1024px) 900px, 100vw" src={thumbnail} />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/80 via-violet-950/60 to-slate-900/85" />
+        <div className="relative z-10 max-w-lg">
           <p className="text-2xl font-bold">Ready to play {title}?</p>
           <p className="mt-3 leading-7 text-slate-300">The official third-party game and its advertising services load only after you start.</p>
           <button className="mt-6 rounded-full bg-violet-500 px-7 py-3 font-bold text-white shadow-lg transition hover:bg-violet-400 focus:outline-none focus:ring-4 focus:ring-violet-300" onClick={startGame} type="button">

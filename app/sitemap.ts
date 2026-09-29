@@ -5,6 +5,7 @@ import { hasIndependentGameEditorial } from "@/lib/game-editorial";
 import { siteConfig } from "@/lib/site";
 
 export const dynamic = "force-static";
+const imageSeoModifiedAt = "2026-09-29";
 
 function getCategoryLastModified(slug: string): Date {
   const reviewedAt = getGamesByCategory(slug).map((game) => game.reviewedAt).sort().at(-1);
@@ -15,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = ["", "/blog", "/about", "/contact", "/privacy", "/terms", "/cookies"];
   return [
     ...staticPaths.map((path) => ({ url: `${siteConfig.url}${path}/`, lastModified: new Date(path === "/blog" ? "2026-09-26" : "2026-08-10"), changeFrequency: path === "" ? "daily" as const : "monthly" as const, priority: path === "" ? 1 : path === "/blog" ? 0.7 : 0.4 })),
-    ...getPublishableGames().filter((game) => hasIndependentGameEditorial(game.slug)).map((game) => ({ url: `${siteConfig.url}/games/${game.slug}/`, lastModified: new Date(game.reviewedAt), changeFrequency: "weekly" as const, priority: 0.8 })),
+    ...getPublishableGames().filter((game) => hasIndependentGameEditorial(game.slug)).map((game) => ({ url: `${siteConfig.url}/games/${game.slug}/`, lastModified: new Date(game.reviewedAt > imageSeoModifiedAt ? game.reviewedAt : imageSeoModifiedAt), changeFrequency: "weekly" as const, priority: 0.8 })),
     ...getIndexableCategories().map((category) => ({ url: `${siteConfig.url}/category/${category.slug}/`, lastModified: getCategoryLastModified(category.slug), changeFrequency: "weekly" as const, priority: 0.7 })),
     ...blogPosts.filter((post) => post.indexable).map((post) => ({ url: `${siteConfig.url}/blog/${post.slug}/`, lastModified: new Date(post.modifiedAt), changeFrequency: "monthly" as const, priority: 0.7 })),
   ];

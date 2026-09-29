@@ -9,6 +9,7 @@ import { NinjaParkourContent } from "@/components/NinjaParkourContent";
 import { SEOHead } from "@/components/SEOHead";
 import { getAllGames, getGame, getRelatedGames } from "@/lib/games";
 import { getGameEditorial, hasIndependentGameEditorial } from "@/lib/game-editorial";
+import { gameImageAlt } from "@/lib/image-seo";
 import { pageMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 
@@ -26,7 +27,16 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   if (!game) return {};
   const copy = pageCopy[game.slug];
   const metadata = pageMetadata(copy.new_title, copy.new_description, `/games/${game.slug}/`);
+  const imageAlt = gameImageAlt(game);
   metadata.title = { absolute: copy.new_title };
+  metadata.openGraph = {
+    ...metadata.openGraph,
+    images: [{ url: game.thumbnail, alt: imageAlt }],
+  };
+  metadata.twitter = {
+    ...metadata.twitter,
+    images: [{ url: game.thumbnail, alt: imageAlt }],
+  };
   if (game.licenseStatus !== "verified" || game.safetyStatus !== "approved" || !game.iframeUrl) {
     metadata.robots = { index: false, follow: false };
   } else if (!hasIndependentGameEditorial(game.slug)) {
@@ -62,7 +72,7 @@ export default function GamePage({ params }: { params: { slug: string } }) {
         <article>
           <h1 className="text-4xl font-black tracking-tight text-slate-950">{copy.new_h1}</h1>
           <div className="mt-6 aspect-[3/2] overflow-hidden rounded-2xl bg-slate-900">
-            <GamePlayer canEmbed={Boolean(canEmbed)} slug={game.slug} title={game.title} />
+            <GamePlayer canEmbed={Boolean(canEmbed)} imageAlt={gameImageAlt(game)} slug={game.slug} thumbnail={game.thumbnail} title={game.title} />
           </div>
           <div className="prose-copy mt-8">
             {game.slug === "ninja-parkour-multiplayer" ? <><p>{copy.new_intro}</p><NinjaParkourContent /></> : <>

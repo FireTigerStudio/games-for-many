@@ -6,6 +6,8 @@ type BlogPost = {
   publishedAt: string;
   modifiedAt: string;
   indexable: boolean;
+  heroGameSlug: string;
+  heroImageAlt: string;
   faq?: Array<{ question: string; answer: string }>;
 };
 
@@ -16,8 +18,10 @@ export const blogPosts: BlogPost[] = [
     heading: "The Best 2 Player Browser Games You Can Jump Into Right Now",
     description: "20 tested 2 player browser games — co-op platformers, ragdoll duels, classic checkers and more. Zero download, one keyboard, jump in with a friend right now.",
     publishedAt: "2026-08-12",
-    modifiedAt: "2026-09-23",
+    modifiedAt: "2026-09-29",
     indexable: true,
+    heroGameSlug: "rocketcar-cup",
+    heroImageAlt: "Rocketcar Cup in a roundup of the best two player browser games",
   },
   {
     slug: "same-keyboard-2-player-games",
@@ -25,8 +29,10 @@ export const blogPosts: BlogPost[] = [
     heading: "Same Keyboard 2 Player Games: Setup and Top Picks",
     description: "Find verified same-keyboard games and learn how split controls, pass-and-play and keyboard conflicts affect local multiplayer.",
     publishedAt: "2026-08-12",
-    modifiedAt: "2026-08-12",
+    modifiedAt: "2026-09-29",
     indexable: true,
+    heroGameSlug: "nightmare-runners",
+    heroImageAlt: "Nightmare Runners same-keyboard two player browser game",
   },
   {
     slug: "games-like-agar-io",
@@ -34,8 +40,10 @@ export const blogPosts: BlogPost[] = [
     heading: "Games Like Agar.io — The Best Free Browser Alternatives",
     description: "Missing Agar.io? Play the best games like Agar.io free in your browser. Cell-eating, snake, and territory .io games with no download or signup needed.",
     publishedAt: "2026-09-24",
-    modifiedAt: "2026-09-24",
+    modifiedAt: "2026-09-29",
     indexable: true,
+    heroGameSlug: "fish-eat-getting-big",
+    heroImageAlt: "Fish Eat Getting Big in a guide to free browser games like Agar.io",
     faq: [
       {
         question: "Is Agar.io shutting down?",
@@ -65,8 +73,10 @@ export const blogPosts: BlogPost[] = [
     heading: "Games Like Slither.io — The Best Snake .IO Alternatives",
     description: "Play the best games like Slither.io free in your browser. Snake .io alternatives with grow, trap, and multiplayer duel mechanics – no download needed.",
     publishedAt: "2026-09-24",
-    modifiedAt: "2026-09-24",
+    modifiedAt: "2026-09-29",
     indexable: true,
+    heroGameSlug: "greedy-snake-multiplayer-duel",
+    heroImageAlt: "Greedy Snake Multiplayer Duel in a guide to browser games like Slither.io",
     faq: [
       {
         question: "Why does Slither.io feel laggy now?",
@@ -92,8 +102,10 @@ export const blogPosts: BlogPost[] = [
     heading: "Games Like Diep.io — The Best Tank & Arena Combat Alternatives",
     description: "Play the best games like Diep.io free in your browser. Tank battles, arena PvP, and evolution shooters with upgrade trees – no download or signup.",
     publishedAt: "2026-09-24",
-    modifiedAt: "2026-09-24",
+    modifiedAt: "2026-09-29",
     indexable: true,
+    heroGameSlug: "iron-legion",
+    heroImageAlt: "Iron Legion tank battle in a guide to browser games like Diep.io",
     faq: [
       {
         question: "Can I play Diep.io unblocked at school?",
@@ -119,8 +131,10 @@ export const blogPosts: BlogPost[] = [
     heading: "Games Like Territorial.io — Best Territory & Strategy .IO Alternatives",
     description: "Play the best games like Territorial.io free in your browser. Territory expansion, chain reactions, and lane strategy .io games – no download or signup.",
     publishedAt: "2026-09-24",
-    modifiedAt: "2026-09-24",
+    modifiedAt: "2026-09-29",
     indexable: true,
+    heroGameSlug: "color-path-io",
+    heroImageAlt: "Color Path IO in a guide to territory strategy games like Territorial.io",
     faq: [
       {
         question: "Is Territorial.io still active?",
@@ -146,8 +160,10 @@ export const blogPosts: BlogPost[] = [
     heading: "2 Player Racing Games You Can Play Online in Your Browser",
     description: "Play the best 2 player racing games online free in your browser. Local shared-keyboard races and online multiplayer lobbies – no download needed.",
     publishedAt: "2026-09-24",
-    modifiedAt: "2026-09-24",
+    modifiedAt: "2026-09-29",
     indexable: true,
+    heroGameSlug: "aquapark-balls-party",
+    heroImageAlt: "Aquapark Balls Party in a guide to two player racing games online",
     faq: [
       {
         question: "Can two players share the same keyboard?",
@@ -173,8 +189,10 @@ export const blogPosts: BlogPost[] = [
     heading: "Unblocked .IO Games You Can Play Free in Any Browser",
     description: "Play the best unblocked .io games free in your browser. Snake, agar, battle royale, tank arena – no download, no signup, works at school or work.",
     publishedAt: "2026-09-24",
-    modifiedAt: "2026-09-24",
+    modifiedAt: "2026-09-29",
     indexable: true,
+    heroGameSlug: "survev-io",
+    heroImageAlt: "Survev.io in a guide to free IO games that run in a browser",
     faq: [
       {
         question: "Are these .io games actually unblocked at school?",
